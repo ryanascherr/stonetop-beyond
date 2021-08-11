@@ -4,7 +4,7 @@ function Homepage() {
 
     return (
         <header className="">
-            <h1>Body!</h1>
+            <h1></h1>
         </header>
     )
 }
