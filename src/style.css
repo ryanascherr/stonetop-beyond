@@ -37,3 +37,20 @@ body {
     color: var(--off-white);
     padding: 50px 0;
 }
+
+.footer {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 25px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: var(--light-blue);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
