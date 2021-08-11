@@ -11,6 +11,7 @@ export default function PupotonContainer() {
   return (
     <div>
         <Header />
+        <Homepage />
         <Footer />
     </div>
   );

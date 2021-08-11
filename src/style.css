@@ -1,0 +1,39 @@
+:root {
+    --darkest-blue: #012840;
+    --kinda-dark-blue: #175973;
+    --blue: #2999A6;
+    --light-blue: #7ED9D9;
+    --off-white: #D0F2F2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+.header {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 50px 0;
+}
