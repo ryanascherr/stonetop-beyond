@@ -1,105 +1,25 @@
 import React from 'react';
 import blessedPic from '../../img/icon-blessed.png';
+import { useQuery } from '@apollo/client';
+import { QUERY_PLAYBOOKS } from '../../utils/queries'
 
 export default function Playbook() {
+
+  const { data } = useQuery(QUERY_PLAYBOOKS);
+  console.log(data);
+  const playbooks = data?.playbooks || [];
+  console.log(playbooks);
+
+  const listOfPlaybooks = playbooks.map(playbook => {
+    return <div>
+      {playbook.name}
+    </div>
+  })
+
   return (
-    <div className="content">
-      <div className="title">
-        <h2>Choose one of the Playbooks below to get started!</h2>
-      </div>
-      <div className="playbook-container">
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-        <div className="playbook">
-          <h2>The Blessed</h2>
-          <h3>Medium Complexity</h3>
-          <div className="playbook-image-container">
-            <img className="playbook-image" src={blessedPic} alt="The Blessed"></img>
-          </div>
-          <p>Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials.
-          </p>
-          <button>Select</button>
-        </div>
-      </div>
-      
+    <div className="">
+      {listOfPlaybooks}
+      Playbooks
     </div>
   );
 }
