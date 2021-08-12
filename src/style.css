@@ -86,30 +86,27 @@ body {
 
 .nav-tabs {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    background-color: var(--darkest-blue);
+    flex-direction: column;
+    margin-top: 10px;
 }
 
 .nav-link {
-    margin: 0 10px;
-    border-bottom: 5px solid var(--darkest-blue);
-    border-radius: 10px 10px 0 0;
-    background-color: var(--off-white);
-    padding: 10px 10px 10px 10px;
-    color: var(--darkest-blue);
-    font-weight: bold;
+    padding: 10px;
     width: 100px;
     text-align: center;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 10px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    font-weight: bold;
 }
 
 .nav-link:hover {
-    color:var(--kinda-dark-blue)
+    color:var(--light-blue);
 }
 
 .active {
-    border-bottom: none;
-    padding-bottom: 12px;
+    width: 125px;
 }
 
 /* Playbook */
@@ -151,6 +148,40 @@ body {
 }
 
 /* Media Queries */
+
+@media only screen and (min-width: 481px) {
+    
+    .nav-tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        background-color: var(--darkest-blue);
+        margin: 0;
+    }
+    
+    .nav-link {
+        margin: 0 10px;
+        border-bottom: 5px solid var(--darkest-blue);
+        border-radius: 10px 10px 0 0;
+        background-color: var(--off-white);
+        padding: 10px 10px 10px 10px;
+        color: var(--darkest-blue);
+        font-weight: bold;
+        width: 100px;
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        color:var(--kinda-dark-blue);
+    }
+    
+    .active {
+        border-bottom: none;
+        padding-bottom: 12px;
+    }
+
+}
 
 @media only screen and (min-width: 768px) {
     

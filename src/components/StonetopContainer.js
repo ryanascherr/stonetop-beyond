@@ -8,6 +8,7 @@ import Background from './pages/Background';
 import Drive from './pages/Drive';
 import Origin from './pages/Origin';
 import Stat from './pages/Stat';
+import Finalize from './pages/Finalize';
 import "../style.css";
 // import Auth from '../utils/auth';
 
@@ -27,6 +28,9 @@ export default function StonetopContainer() {
     }
     if (currentPage === 'Stat') {
       return <Stat />;
+    }
+    if (currentPage === 'Finalize') {
+      return <Finalize />;
     }
     return <Playbook />;
   };
