@@ -10,7 +10,7 @@ import Origin from '../pages/Origin';
 import Stat from '../pages/Stat';
 import Finalize from '../pages/Finalize';
 import "../style.css";
-// import Auth from '../utils/auth';
+import Auth from '../utils/auth';
 
 export default function StonetopContainer() {
 
@@ -37,12 +37,19 @@ export default function StonetopContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
+  let landingPage = "";
+
+  if (Auth.loggedIn()) {
+    landingPage = <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+  } else {
+    landingPage = <Homepage />
+  }
+
   return (
     <div>
         <Header />
-        {/* <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-        {renderPage()} */}
-        <Homepage></Homepage>
+        {landingPage}
+        {renderPage()};
         <Footer />
     </div>
   );
