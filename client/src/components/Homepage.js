@@ -1,7 +1,85 @@
 import React, { useState } from 'react';
+import { useMutation } from '@apollo/client';
+import { ADD_USER, LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 const Homepage = () => {
+
+  // SIGNUP
+
+  const [signupState, setSignupState] = useState({
+    username: '',
+    email: '',
+    password: '',
+  });
+  const [addUser] = useMutation(ADD_USER);
+
+  const handleSignupChange = (event) => {
+    event.preventDefault();
+    const { name, value } = event.target;
+
+    setSignupState({
+      ...signupState,
+      [name]: value,
+    });
+  };
+
+
+  const handleSignup = async (event) => {
+    event.preventDefault();
+    console.log(signupState);
+
+    try {
+      const { data } = await addUser({
+        variables: { ...signupState },
+      });
+      console.log(data);
+      Auth.login(data.addUser.token);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  // LOGIN
+
+  const [loginState, setLoginState] = useState({
+    email: '',
+    password: ''
+  });
+  const [login] = useMutation(LOGIN_USER);
+
+  // update state based on form input changes
+  const handleLoginChange = (event) => {
+
+    const { name, value } = event.target;
+
+    setLoginState({
+      ...loginState,
+      [name]: value,
+    });
+  };
+
+  // submit form
+  const handleLogin = async (event) => {
+    event.preventDefault();
+
+    try {
+      const { data } = await login({
+        variables: { ...loginState },
+      });
+
+      Auth.login(data.login.token);
+
+    } catch (e) {
+      console.error(e);
+    }
+
+    // clear form values
+    setLoginState({
+      email: '',
+      password: '',
+    });
+  };
 
   return (
     <div className="content">
@@ -18,11 +96,11 @@ const Homepage = () => {
               <h3>Password:</h3>
             </div>
             <div className="inputs">
-              <input type="email" name="email" id='login-email'></input>
-              <input type="password" name="password"></input>
+              <input type="email" name="email" id='login-email' defaultValue={loginState.email} onChange={handleLoginChange}></input>
+              <input type="password" name="password" defaultValue={loginState.password} onChange={handleLoginChange}></input>
             </div>
           </div>
-          <button>Login</button>
+          <button onClick={handleLogin}>Login</button>
         </div>
         <div className="signup-container">
           <h2>Signup</h2>
@@ -33,12 +111,12 @@ const Homepage = () => {
               <h3>Password:</h3>
             </div>
             <div className="inputs">
-              <input type="text" name="username"></input>
-              <input type="email" name="email" id='signup-email'></input>
-              <input type="password" name="password"></input>
+              <input type="text" name="username" defaultValue={signupState.username} onChange={handleSignupChange}></input>
+              <input type="email" name="email" id='signup-email' defaultValue={signupState.email} onChange={handleSignupChange}></input>
+              <input type="password" name="password" defaultValue={signupState.password} onChange={handleSignupChange}></input>
             </div>
           </div>
-          <button>Signup</button>
+          <button onClick={handleSignup}>Signup</button>
         </div>
       </div>
     </div>
