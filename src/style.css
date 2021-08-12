@@ -30,6 +30,7 @@ h1 {
 
 body {
     background-color: var(--off-white);
+    color: var(--darkest-blue)
 }
 
 .header {
@@ -53,4 +54,34 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* NavTabs */
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: var(--darkest-blue);
+}
+
+.nav-link {
+    margin: 0 10px;
+    border-bottom: 5px solid var(--darkest-blue);
+    border-radius: 10px 10px 0 0;
+    background-color: var(--off-white);
+    padding: 10px 10px 10px 10px;
+    color: var(--darkest-blue);
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color:var(--kinda-dark-blue)
+}
+
+.active {
+    border-bottom: none;
+    padding-bottom: 12px;
 }
