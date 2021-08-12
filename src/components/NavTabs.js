@@ -13,7 +13,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
             href="#background"
             onClick={() => handlePageChange('Background')}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={currentPage === 'Background' ? 'nav-link active' : 'nav-link'}
         >
             Background
@@ -21,7 +20,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
             href="#drive"
             onClick={() => handlePageChange('Drive')}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={currentPage === 'Drive' ? 'nav-link active' : 'nav-link'}
         >
             Drive
@@ -29,7 +27,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
             href="#origin"
             onClick={() => handlePageChange('Origin')}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={currentPage === 'Origin' ? 'nav-link active' : 'nav-link'}
         >
             Origin
@@ -37,10 +34,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
             href="#stat"
             onClick={() => handlePageChange('Stat')}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={currentPage === 'Stat' ? 'nav-link active' : 'nav-link'}
         >
-            Stat
+            Stats
         </a>
     </div>
   );

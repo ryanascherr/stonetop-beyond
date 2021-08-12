@@ -28,9 +28,35 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+img {
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--off-white);
+    color: var(--darkest-blue);
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid var(--off-white);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    border: 2px solid var(--off-white);
+}
+
 body {
     background-color: var(--off-white);
     color: var(--darkest-blue)
+}
+
+.content {
+    /* width: 95%; */
+    /* margin: 0 15px; */
+    padding: 50px 0;
 }
 
 .header {
@@ -84,4 +110,61 @@ body {
 .active {
     border-bottom: none;
     padding-bottom: 12px;
+}
+
+/* Playbook */
+
+.playbook-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.playbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 15px;
+    box-shadow: 10px 10px 5px gray;
+    width: 100%;
+}
+
+.playbook-image-container {
+    max-width: 100px;
+}
+
+.playbook-image {
+    border-radius: 50%;
+}
+
+.playbook-container p {
+    text-align: center;
+}
+
+.playbook > h2, h3, div, p {
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+    
+    .playbook {
+        width: 45%;
+        margin: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .playbook {
+        width: 30%;
+    }
+
 }

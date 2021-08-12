@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <header className="footer">
-            <h3>Made with love by <a href="https://github.com/ryanascherr" target="_blank">Ryan Scherr</a></h3>
+            <h3>Made with love by <a href="https://github.com/ryanascherr" target="_blank" rel="nonreferrer">Ryan Scherr</a></h3>
         </header>
     )
 }
