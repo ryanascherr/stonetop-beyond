@@ -1,0 +1,192 @@
+[
+    {
+      "playbook": "The Blessed",
+      "name": "Conciliation",
+      "description": "Calm, soothe, or mollify a hostile spirit or beast."
+    },
+    {
+      "playbook": "The Blessed",
+      "name": "Cultivation",
+      "description": "Calm, soothe, or mollify a hostile spirit or beast."
+    },
+    {
+      "playbook": "The Blessed",
+      "name": "Preservation",
+      "description": "Convince others to protect something of natural beauty or of importance to Danu."
+    },
+    {
+      "playbook": "The Blessed",
+      "name": "Renewal",
+      "description": "Restore someone or thing to its prior, untainted state, or defeat a perversion of the natural order."
+    },
+    {
+      "playbook": "The Fox",
+      "name": "Conscience",
+      "description": "Forego comfort or advantage to do the right thing."
+    },
+    {
+      "playbook": "The Fox",
+      "name": "Excitement",
+      "description": "Cause an ally trouble by taking an unnecessary risk."
+    },
+    {
+      "playbook": "The Fox",
+      "name": "Glory",
+      "description": "Show off in front of NPCs who will tell your tale."
+    },
+    {
+      "playbook": "The Fox",
+      "name": "Romance",
+      "description": "Get intimate with someone you’re attracted to."
+    },
+    {
+      "playbook": "The Fox",
+      "name": "Trickery",
+      "description": "Get someone or thing to act on false information."
+    },
+    {
+      "playbook": "The Heavy",
+      "name": "Challenge",
+      "description": "Provoke a fight with a worthy foe, just you & them."
+    },
+    {
+      "playbook": "The Heavy",
+      "name": "Honor",
+      "description": "Fullfill a vow or oath made to an NPC."
+    },
+    {
+      "playbook": "The Heavy",
+      "name": "Peace",
+      "description": "Prevent violence or end it without hurting anyone."
+    },
+    {
+      "playbook": "The Heavy",
+      "name": "Pride",
+      "description": "Put someone in their place."
+    },
+    {
+      "playbook": "The Judge",
+      "name": "Duty",
+      "description": "Cause trouble by adhering strictly to doctrine."
+    },
+    {
+      "playbook": "The Judge",
+      "name": "Harmony",
+      "description": "Settle a dispute without anyone feeling wronged."
+    },
+    {
+      "playbook": "The Judge",
+      "name": "Knowledge",
+      "description": "Teach another something important."
+    },
+    {
+      "playbook": "The Judge",
+      "name": "Zeal",
+      "description": "Pass judgement hastily, without considering nuance or consequences."
+    },
+    {
+      "playbook": "The Lightbearer",
+      "name": "Charity",
+      "description": "Bring relief or comfort to someone who is suffering."
+    },
+    {
+      "playbook": "The Lightbearer",
+      "name": "Faith",
+      "description": "Walk brazenly into danger, sure of Helior’s plan."
+    },
+    {
+      "playbook": "The Lightbearer",
+      "name": "Hope",
+      "description": "Lead another to act despite fear or doubt."
+    },
+    {
+      "playbook": "The Lightbearer",
+      "name": "Mercy",
+      "description": "Forgive a wrong or set a helpless enemy free."
+    },
+    {
+      "playbook": "The Marshal",
+      "name": "Honor",
+      "description": "Keep a promise you made to an NPC."
+    },
+    {
+      "playbook": "The Marshal",
+      "name": "Prestige",
+      "description": "Impress an NPC from outside your home steading."
+    },
+    {
+      "playbook": "The Marshal",
+      "name": "Resolve",
+      "description": "Give an order or enact a plan knowing it will bring an ally to harm."
+    },
+    {
+      "playbook": "The Marshal",
+      "name": "Ruthlessness",
+      "description": "Deny mercy to an enemy or betray a supposed ally."
+    },
+    {
+      "playbook": "The Ranger",
+      "name": "Mercy",
+      "description": "Release someone/thing from bondage or suffering."
+    },
+    {
+      "playbook": "The Ranger",
+      "name": "Stewardship",
+      "description": "Put the best interests of a place or beast over a person’s desires."
+    },
+    {
+      "playbook": "The Ranger",
+      "name": "Tenacity",
+      "description": "Refuse to turn back despite objection or disaster."
+    },
+    {
+      "playbook": "The Ranger",
+      "name": "Wonder",
+      "description": "Show someone a place or thing of beauty."
+    },
+    {
+      "playbook": "The Seeker",
+      "name": "Cunning",
+      "description": "Set up a ploy and then take advantage of it."
+    },
+    {
+      "playbook": "The Seeker",
+      "name": "Curiosity",
+      "description": "Cause trouble by touching, opening, or tinkering with something."
+    },
+    {
+      "playbook": "The Seeker",
+      "name": "Respect",
+      "description": "Impress another with your superior knowledge."
+    },
+    {
+      "playbook": "The Seeker",
+      "name": "Secrecy",
+      "description": "Deflect or evade an inquiry into your doings."
+    },
+    {
+      "playbook": "The Seeker",
+      "name": "Victory",
+      "description": "Endanger others in order to defeat the supernatural."
+    },
+    {
+      "playbook": "The Would-Be-Hero",
+      "name": "Bravery",
+      "description": "Face up to one of your fears."
+    },
+    {
+      "playbook": "The Would-Be-Hero",
+      "name": "Glory",
+      "description": "Impress onlookers with your bravery."
+    },
+    {
+      "playbook": "The Would-Be-Hero",
+      "name": "Sacrifice",
+      "description": "Suffer or endure hardship so that someone else does not need to do so."
+    },
+    {
+      "playbook": "The Would-Be-Hero",
+      "name": "Succor",
+      "description": "Provide aid or comfort to an NPC in need."
+    }
+]

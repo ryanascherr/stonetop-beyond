@@ -1,0 +1,172 @@
+[
+    {
+        "playbook": "Basic",
+        "name": "Aid",
+        "description": "<p>When you <b><i>help someone who has not yet rolled</i></b>, the GM picks 1:</p><ul><li>They can accomplish more than they could alone</li><li>They gain advantage on their roll</li></ul><p>Regardless, you are exposed to any risk, cost, or consequence associated with their roll.</p>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Clash",
+        "description": "<p>When you <b><i>fight in melee or close quarters</i></b>, roll +STR: <b>on a 10+</b>, your maneuver works as expected (deal your damage) and pick 1:</p><ul><li>Avoid, prevent, or counter your enemy’s attack</li><li>Strike hard and fast, for 1d6 extra damage, butsuffer your enemy’s attack</li></ul><p><b>On a 7-9</b>, your maneuver works, mostly (deal your damage) but you suffer your enemy’s attack.</p>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Defend",
+        "description": "<p>When you <b><i>take up a defensive stance or jump in to protect others</i></b>, roll +CON: <b>on a 10+</b>, hold 3 Readiness (or 4 if you bear a shield); <b>on a 7-9</b>, hold 1 Readiness (or 2 with a shield). Spend your Readiness 1-for-1 to:</p><ul><li>Suffer an attack’s damage/effects instead of your ward</li><li>Halve an attack’s effect or damage</li><li>Draw all attention from your ward to yourself</li><li>Strike back at an attacker (deal your damage, with disadvantage)</li></ul><p>When you <b><i>go on the offense, cease to focus on defense, or the threat passes</i></b>, lose any Readiness that you hold.</p>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Defy Danger",
+        "description": "<p>When <b><i>danger looms, the stakes are high, and you do something chancy</i></b>, check if another move applies. If not, roll...</p><ul><li>... +STR to power through or test your might</li><li>... +DEX to employ speed, agility, or finesse</li><li>... +CON to endure or hold steady</li><li>... +INT to apply expertise or enact a clever plan</li><li>... +WIS to exert willpower or rely on your senses</li><li>... +CHA to charm, bluff, impress, or fit in</li></ul><p><b>On a 10+</b>, you pull it off as well as one could hope; <b>on a 7-9</b>, you can do it, but the GM will present a lesser success, a cost, or a consequence (and maybe a choice between them, or a chance to back down).</p>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Interfere",
+        "description": "<p>When you <b><i>try to foil another PC’s action and neither of you back down</i></b>, roll...</p><ul><li>... +STR to power through or test your might</li><li>... +DEX to employ speed, agility, or finesse</li><li>... +CON to endure or hold steady</li><li>... +INT to apply expertise or enact a clever plan</li><li>... +WIS to exert willpower or rely on your senses</li><li>... +CHA to charm, bluff, impress, or fit in</li></ul><p><b>On a 10+</b>, they pick 1 from the list below; <b>on a 7-9</b>, they pick 1 from the list below but you are left off balance, exposed, or otherwise vulnerable.</p><ul><li>Do it anyway, but with disadvantage on their (next) roll</li><li>Relent, change course, or otherwise allow their move to be foiled</li></ul>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Know Things",
+        "description": "<p>When you <b><i>consult your accumulated knowledge</i></b>, roll +INT: <b>on a 10+</b>, the GM will tell you something interesting and useful about the topic at hand; <b>on a 7-9</b>, the GM will tell you something interesting—it’s on you to make it useful; <b>either way</b> the GM might ask, “How do you know this?”</p>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Let Fly",
+        "description": "<p>When you <b><i>launch a ranged attack</i></b>, roll +DEX: <b>on a 10+</b>, you have a clear shot—deal your damage; <b>on a 7-9</b>, deal your damage but pick 1:</p><ul><li>You must move or hold steady to get the shot, placing you in danger</li><li>Take what you can get; you have disadvantage on your damage roll</li><li>Deplete your ammo, marking the next status next to your weapon (don’t pick this if it’s <i>thrown</i>)</li></ul>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Persuade NPCs",
+        "description": "<p>When you <b><i>press or entice an NPC</i></b>, say what you want them to do (or not do). If they <b><i>have reason to resist</i></b>, roll +CHA: <b>on a 10+</b>, they either do as you want or reveal the easiest way to convince them; <b>on a 7-9</b>, they reveal something you can do to convince them, though it’ll likely be costly, tricky, or distasteful.</p>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Persuade PCs",
+        "description": "<p>When you <b><i>press or entice a PC and they resist</i></b>, ask their player: 'Could I possibly get you to do this, yes or no?' If answer is 'No,' let it drop.</p><p>If the answer is 'Yes,' you can roll +CHA: <b>on a 10+</b>, they mark XP if they do what you want, and if they don't, they must reveal how you could convince them; <b>on a 7-9</b>, they mark XP if they do what you want (but can refuse or make a counter-offer if they like).</p>"
+    },
+    {
+        "playbook": "Basic",
+        "name": "Seek Insight",
+        "description": "<p>When you <b><i>study a situation or person</i></b>, looking to the GM for insight, roll +WIS: <b>on a 10+</b>, ask the GM 3 questions from the list below; <b>on a 7-9</b>, ask 1; either way, gain advantage on your next move that acts on the answers.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Amulets and Talismans",
+        "description": "<p>When you <b><i>craft a protective charm for someone</i></b>, spend 1 Stock and name a source of harm (fire, stabbing, etc.). When they <b><i>would suffer such harm while bearing your charm</i></b>, roll +INT: <b>on a 10+</b>, they ignore the harm entirely; <b>on a 7-9</b>, they suffer only half the damage or effect; <b>on a 6-</b>, they suffer the harm normally. One can benefit from only 1 charm at a time, and it loses its potency after 1 use.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Barkskin",
+        "description": "<p>When you <b><i>are touching the ground</i></b>, you have 2 armor. When you <b><i>mark another with 1 Stock</i></b>, they gain this benefit so long as the mark remains.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Big Magic",
+        "description": "<p>Each time you take this move, choose an additional remarkable trait for your sacred pouch and increase your max Stock by 2.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Danu's Grasp",
+        "description": "<p>When you <b><i>call on the world itself to bind a spirit or a perversion of nature</i></b>, spend 1 Stock and roll +WIS: <b>on a 10+</b>, choose 2 from the list below; <b>on a 7-9</b>, choose 1.</p><ul><li>You avoid or prevent their counterattack</li><li>Roots, vines, and earth restrain them</li><li>They take 2d4 damage (ignores armor)</li></ul><p>If this brings them to 0 HP, they are pulled into the earth and bound in rune-etched stone.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Healer's Arts",
+        "description": "<p>When <b><i>someone Recovers under your care</i></b>, they recover (extra) HP equal to your WIS. If you <b><i>also spend 1 Stock</i></b>, they heal an extra 5 HP and their wounds/injuries are stabilized.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Heed my Words",
+        "description": "<p>When you <b><i>Persuade by talking sense or warning against foolishness</i></b>, you have advantage.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Improved Stat",
+        "description": "<p>Each time you take this move, increase one of your stats by 1 (to a max of +2).</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Into the Lion's Den",
+        "description": "<p>When you <b><i>approach a beast calmly and show no fear</i></b>, it will not harm you—though it may well threaten you and test your nerve. When you <b><i>lay your hand gently upon a beast</i></b>, it will calm to your touch.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Lightning Rod",
+        "description": "<p>When you <b><i>Defend while touching the ground</i></b>, you can spend 1 Readiness to intercept a nearby magical attack and redirect it harmlessly into the ground.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Rites of the Land",
+        "description": "<p>When <b><i>Seasons Change and you oversee the sacred rites</i></b>, you can sacrifice 2 Surplus to increase the steading’s Fortunes by 1 (max +3). If you sacrifice something (or someone) much-loved and greatly valued, you can redo a roll from Seasons Change, with your choice of advantage or disdvantage.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Spirit Tongue",
+        "description": "<p>You can speak with natural beasts and spirits of the wild. You can always ask the GM 'what spirits are active here?' and get an honest answer.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Borrow Power",
+        "description": "<p style='text-align: center;'>(Requires Spirit Tongue)</p><p>When <b><i>a spirit or beast loans you power</i></b>, ask the GM for one of its moves. Store it in your sacred pouch in place of 1 Stock. When you <b><i>use the borrowed move</i></b>, roll +WIS: <b>on a 10+</b>, you do it and can use the move again; <b>on a 7-9</b>, you do it, but lose the move.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Call the Spirits",
+        "description": "<p style='text-align: center;'>(Requires Spirit Tongue)</p><p>When you <b><i>perform a short ritual and invoke the spirit(s) of a place or object</i></b>, spend 1 Stock. The spirit(s) manifest before you and will hear what you have to say. What they do next is up to them.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Trackless Step",
+        "description": "<p>When you <b><i>move through nature with care and patience</i></b>, you make no sound, leave no trace and can ignore any hindering or treacherous terrain (briars, mire, scree, etc.). When you <b><i>spend 1 Stock and mark others</i></b>, they each gain this benefit so long as the mark remains. 1 Stock can mark a number of individuals up to your level +INT.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Veil",
+        "description": "<p>When you <b><i>wrap yourself or another in a subtle veil</i></b>, spend 1 Stock and choose 1:</p><ul><li>A type of being you name (including “people”) will tend to ignore your presence</li><li>People will perceive you as someone else, though you must wear something of an individual’s in order to impersonate them</li></ul><p>When <b><i>your deception comes under scrutiny</i></b>, roll +INT: <b>on a 10+</b>, the veil holds, and no one is the wiser; <b>on a 7-9</b>, the veil holds, but there is further scrutiny or a complication (GM’s choice).</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Wards and Bindings",
+        "description": "<p>When you <b><i>mark a boundary with sacred signs</i></b>, spend 1 Stock and describe who or what they affect (using no more words than your level). Also, choose whether the affected beings are repelled or trapped by the signs.</p><p>When <b><i>your wards or bindings are first tested</i></b>, roll +INT: <b>on 10+</b>, they will hold as long as the signs remain unmarred (and the affected creature can do nothing to affect them directly); <b>on a 7-9</b>, they hold for now but may be overcome through might or will.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Aid",
+        "description": "<p>When you <b><i>help someone who has not yet rolled</i></b>, the GM picks 1:</p><ul><li>They can accomplish more than they could alone</li><li>They gain advantage on their roll</li></ul><p>Regardless, you are exposed to any risk, cost, or consequence associated with their roll.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Wild Soul",
+        "description": "<p>Each time you take this move, gain a Ranger move of your choice for which you qualify. You can’t pick Improved Stat or Superior Stat.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Nature's Wrath",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Danu’s Grasp)</p><p>Danu’s Grasp gains the area tag and can affect any creature. A mortal reduced to 0 HP is subdued or killed (your choice) rather than bound in stone.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Potent Workings",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Amulets & Talismans)</p><p>When you <b><i>craft a protective charm</i></b>, you may spend 1 additional Stock to choose 1:</p><ul><li>Name an additional type of harm</li><li>On a 10+, the charm retains its potency</li></ul>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Shared Souls",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Into the Lion's Den)</p><p>When you <b><i>mark a beast with 1 Stock</i></b>, you can perceive the world through its senses no matter the distance between you. You can also guide its actions; treat it as a follower with Loyalty +1. Only one such beast can be affected at a time.</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Suck the Poison Out",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Healer's Arts)</p><p>When you <b><i>draw a malady from a patient’s body, mind, or soul</i></b>, spend 1 Stock and roll +WIS: <b>on a 10+</b>, you remove the malady and can safely discard it or store it in your sacred pouch (taking the space of 1 Stock) to study or inflict on another; <b>on a 7-9</b>, you remove it, but choose 1:</p><ul><li>Your patient suffers lingering harm or trauma</li><li>You suffer some of the malady’s effects</li><li>It will be harmful and dangerous to discard</li></ul>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Superior Stat",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>Increase one of your stats by +1 (to a max of +3).</p>"
+    },
+    {
+        "playbook": "The Blessed",
+        "name": "Voice of the Earth Mother",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Spirit Tongue)</p><p>When you <b><i>speak on behalf of Danu</i></b>, natural beasts and spirits of the wild respect your authority. All but the most headstrong will do as you command, even against their instincts.</p>"
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "playbook": "The Blessed",
+        "location": "Stonetop:",
+        "names": "Arwel, Blodwen, Brynmor, Celyn, Fflur, Gwynn, Tegwen, or Winned"
+    },
+    {
+        "playbook": "The Blessed",
+        "location": "The Steplands (Hillfolk):",
+        "names": "Bejn, Decla, Franza, Irv, Ivet, Jak, Sibl, or Yez"
+    },
+    {
+        "playbook": "The Blessed",
+        "location": "The Wild (mix and match 1-3 of these):",
+        "names": "Autumn, Badger, Big, Black, Bloody, Brave, Crow, Cub, Dark, Doe, Fang, Fierce, Flower, Gentle, Green, Grim, Hart, Leaf, Little, Lonely, Old, Owl, Pale, Pup, Quick, Quiet, Rain, Red, Sharp, Snake, Snow, Spring, Summer, Tall, Tree, Yellow, White, Wind, Winter, Wolf, Whisper"
+    },
+    {
+        "playbook": "The Fox",
+        "location": "Stonetop:",
+        "names": "Bran, Carwyn, Delyth, Elin, Fion, Geral, Mair, Rannon, Vaughn, or Wynn"
+    },
+    {
+        "playbook": "The Fox",
+        "location": "Gordin's Delve:",
+        "names": "Pick a name from any list"
+    },
+    {
+        "playbook": "The Fox",
+        "location": "Marshedge:",
+        "names": "Comyna, Crevan, Fitz, Greagir, Maired, Nainsi, Naiclas, or Saraid"
+    },
+    {
+        "playbook": "The Fox",
+        "location": "Lygos or some other point south:",
+        "names": "Amit, Baz, Dafna, Mahsa, Parviz, Sanaz, Tzofiya, Yaniv"
+    },
+    {
+        "playbook": "The Heavy",
+        "location": "Stonetop:",
+        "names": "Aerona, Arthfael, Cadmor, Esyllt, Pedr, Rhonwen, Terrwen, or Trystan"
+    },
+    {
+        "playbook": "The Heavy",
+        "location": "Gordin's Delve:",
+        "names": "Pick a name from any list"
+    },
+    {
+        "playbook": "The Heavy",
+        "location": "Marshedge:",
+        "names": "Aengus, Bairbre, Bronach, Flann, Laughn, Muirdoc, Quinn, or Treasa"
+    },
+    {
+        "playbook": "The Heavy",
+        "location": "The Steplands (Hillfolk):",
+        "names": "Andr, Gabrl, Kaetl, Mael, Maela, Par, Ral, or Umbert"
+    },
+    {
+        "playbook": "The Heavy",
+        "location": "The Manmarch:",
+        "names": "Bathhilde, Clothar, Ganter, Hiltrude, Ludig, Luise, Modd, or Wiland"
+    },
+    {
+        "playbook": "The Heavy",
+        "location": "Lygos or some other point south:",
+        "names": "Arihl, Akios, Bhadur, Seble, Shahnaz, Shay, Tisi, or Zubin"
+    },
+    {
+        "playbook": "The Judge",
+        "location": "Stonetop:",
+        "names": "Arianrhod, Caerwyn, Einion, Eleri, Magda, Nerys, Trahaern, or Trefor"
+    },
+    {
+        "playbook": "The Judge",
+        "location": "Gordin's Delve:",
+        "names": "Pick a name from any list"
+    },
+    {
+        "playbook": "The Judge",
+        "location": "Marshedge:",
+        "names": "Briget, Comhall, Elnor, Liadain, Mirdach, Onghus, Somha, or Toal"
+    },
+    {
+        "playbook": "The Judge",
+        "location": "Lygos or some other point south:",
+        "names": "Abrim, Cassander, Despina, Hypatta, Morecai, Nomika, Sofia, or Yose"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "location": "Stonetop:",
+        "names": "Dai, Eirian, Eurig, Haf, Haul, Hefin, Hulwen, or Tesni"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "location": "Gordin's Delve:",
+        "names": "Pick a name from any list"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "location": "Marshedge:",
+        "names": "Adfin, Callach, Conlad, Eadna, Fionntan, Niamh, Orlaith, or Sorsha"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "location": "Lygos or some other point south:",
+        "names": "Arash, Azar, Hafiz, Murat, Roshan, Shideh, Zara, or Zohara"
+    },
+    {
+        "playbook": "The Marshal",
+        "location": "Stonetop:",
+        "names": "Bethan, Cadfael, Ffraid, Gwythyr, Llewelyn, Meredith, Rhianna, or Urien"
+    },
+    {
+        "playbook": "The Marshal",
+        "location": "Gordin's Delve:",
+        "names": "Pick a name from any list"
+    },
+    {
+        "playbook": "The Marshal",
+        "location": "Marshedge:",
+        "names": "Brigh, Cathal, Conn, Donal, Fionna, Laith, Talulla, or Torin"
+    },
+    {
+        "playbook": "The Marshal",
+        "location": "The Steplands (Hillfolk):",
+        "names": "Adl, Aeln, Clotild, Judoc, Katrn, Mygl, Pirn, or Sera"
+    },
+    {
+        "playbook": "The Marshal",
+        "location": "The Manmarch:",
+        "names": "Berkhard, Gerhild, Hartig, Hilde, Sabrinne, Ulrike, Urrsla, or Weillem"
+    },
+    {
+        "playbook": "The Marshal",
+        "location": "Lygos or some other point south:",
+        "names": "Ameer, Calixta, Hadar, Kelila, Sulaim, Ursa or Xandros"
+    },
+    {
+        "playbook": "The Ranger",
+        "location": "Stonetop:",
+        "names": "Aran, Bledyn, Branwen, Deryn, Ifur, Meinir, Rhys or Teagan"
+    },
+    {
+        "playbook": "The Ranger",
+        "location": "Marshedge:",
+        "names": "Asling, Conar, Enna, Flannan, Macha, Mave, Proinsias, or Rowen"
+    },
+    {
+        "playbook": "The Ranger",
+        "location": "The Steplands (Hillfolk):",
+        "names": "Bernd, Elown, Irn, Kani, Pol, Nol, Rozn, or Sterin"
+    },
+    {
+        "playbook": "The Ranger",
+        "location": "The Manmarch:",
+        "names": "Alfher, Bertrim, Dagmar, Elfrida, Hramn, Meike, Swanhilde, or Wulfrim"
+    },
+    {
+        "playbook": "The Ranger",
+        "location": "Lygos or some other point south:",
+        "names": "Ari, Boriz, Dimitra, Gorhan, Nitza, Selen, Todora, or Vasil"
+    },
+    {
+        "playbook": "The Seeker",
+        "location": "Stonetop:",
+        "names": "Alis, Dylan, Eilwen, Gerlt, Gwenda, Macsen, Mirgan, Owena, Taliesyn, or Twymor"
+    },
+    {
+        "playbook": "The Seeker",
+        "location": "The Steplands (Hillfolk):",
+        "names": "Anook, Anxo, Dors, Jory, Mari, Padg, Pons, or Silf"
+    },
+    {
+        "playbook": "The Seeker",
+        "location": "Gordin's Delve:",
+        "names": "Pick a name from any list"
+    },
+    {
+        "playbook": "The Seeker",
+        "location": "Marshedge:",
+        "names": "Aiden, Barrfind, Caolan, Ciara, Deirbhile, Moirin, Tiern, or Reamann"
+    },
+    {
+        "playbook": "The Seeker",
+        "location": "Lygos or some other point south:",
+        "names": "Dana, Eliana, Erez, Fikri, Isra, Persefoni, Spiro, or Vahid"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "location": "Stonetop:",
+        "names": "Anwen, Caradoc, Dafyd, Glenys, Madoc, Morwenna, Siwan, or Wyn"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "location": "The Steplands (Hillfolk):",
+        "names": "Annic, Cosette, Denl, Hugenne, Jag, Marc, Oanz, or Sandre"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "location": "Gordin's Delve:",
+        "names": "Pick a name from any list"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "location": "Marshedge:",
+        "names": "Bridin, Clian, Engis, Fearghul, Lan, Neasa, Nill, or Una"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "location": "Lygos or some other point south:",
+        "names": "Chara, Davud, Korina, Omid, Parvaneh, Tamir, Takish, or Yannis"
+    }
+]
