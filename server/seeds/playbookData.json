@@ -1,0 +1,56 @@
+[
+    {
+      "name": "The Blessed",
+      "complexity": "Medium Complexity",
+      "image": "/img/icon-blessed.png",
+      "description": "Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials."
+    },
+    {
+      "name": "The Fox",
+      "complexity": "Lower Complexity",
+      "image": "/img/icon-fox.png",
+      "description": "Clever, quick, and skillful. Not above bending the rules or fighting dirty. Can be quite the charmer, too."
+    },
+    {
+      "name": "The Heavy",
+      "complexity": "Low/Medium Complexity",
+      "image": "/img/icon-heavy.png",
+      "description": "Not just a violent individual—our violent individual. A champion, yes, but a bit of a liability, too."
+    },
+    {
+      "name": "The Judge",
+      "complexity": "Lower Complexity",
+      "image": "/img/icon-judge.png",
+      "description": "Settler of disputes, chronicler, and divine bulwark against chaos. Insightful, tough, not necessarily persuasive."
+    },
+    {
+      "name": "The Lightbearer",
+      "complexity": "High Complexity",
+      "image": "/img/icon-lightbearer.png",
+      "description": "Invokes divine power via flame and candle. Beacon of hope, charity, and mercy. Fiery foe of the dark."
+    },
+    {
+      "name": "The Marshal",
+      "complexity": "Medium/High Complexity",
+      "image": "/img/icon-marshal.png",
+      "description": "Leads the town’s militia, plus a crew of followers. Makes choices about who lives and who dies."
+    },
+    {
+      "name": "The Ranger",
+      "complexity": "Lower Complexity",
+      "image": "/img/icon-ranger.png",
+      "description": "At home in the wild, the one you want with you when you travel. A resourceful guide and deadly hunter."
+    },
+    {
+      "name": "The Seeker",
+      "complexity": "Very High Complexity",
+      "image": "/img/icon-seeker.png",
+      "description": "Collector of lost lore and power, with potent artifacts that might well lead to their ruin."
+    },
+    {
+      "name": "The Would-Be-Hero",
+      "complexity": "Variable Complexity",
+      "image": "/img/icon-would-be-hero.png",
+      "description": "They’re in over their head and full of fear and anger, but they just might outshine us all."
+    }
+]
