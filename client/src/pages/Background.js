@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { QUERY_BACKGROUND, } from '../utils/queries';
+import { QUERY_BACKGROUND } from '../utils/queries';
 
 export default function Background() {
 
@@ -13,6 +13,16 @@ export default function Background() {
   return (
     <div className="content">
       <div className="background-container">
+        <div className="background">
+          <h2>{background.name}</h2>
+          <div dangerouslySetInnerHTML={{__html: background.description}}></div>
+          <button>Select</button>
+        </div>
+        <div className="background">
+          <h2>{background.name}</h2>
+          <div dangerouslySetInnerHTML={{__html: background.description}}></div>
+          <button>Select</button>
+        </div>
         <div className="background">
           <h2>{background.name}</h2>
           <div dangerouslySetInnerHTML={{__html: background.description}}></div>

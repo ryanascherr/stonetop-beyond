@@ -22,3 +22,14 @@ export const QUERY_BACKGROUND = gql`
     }
   }
 `;
+
+export const QUERY_DRIVE = gql`
+  query getDrive($playbook: String!) {
+    getDrive(playbook: $playbook) {
+      _id
+      playbook
+      name
+      description
+    }
+  }
+`;
