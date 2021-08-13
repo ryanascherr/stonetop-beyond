@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_USER, LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
+import village from '../img/stonetop-village.jpeg';
 
 const Homepage = () => {
 

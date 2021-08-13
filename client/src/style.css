@@ -53,6 +53,10 @@ body {
     color: var(--darkest-blue)
 }
 
+.hidden {
+    display: none;
+}
+
 .logout {
     position: absolute;
     top: 0;

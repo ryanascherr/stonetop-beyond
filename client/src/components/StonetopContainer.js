@@ -38,9 +38,12 @@ export default function StonetopContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   let landingPage = "";
+  let render;
 
   if (Auth.loggedIn()) {
     landingPage = <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+    render = renderPage();
+
   } else {
     landingPage = <Homepage />
   }
@@ -48,8 +51,8 @@ export default function StonetopContainer() {
   return (
     <div>
         <Header />
-        {landingPage}
-        {renderPage()};
+        {landingPage};
+        {render};
         <Footer />
     </div>
   );

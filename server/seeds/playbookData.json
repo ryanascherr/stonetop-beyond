@@ -2,13 +2,13 @@
     {
       "name": "The Blessed",
       "complexity": "Medium Complexity",
-      "image": "/img/icon-blessed.png",
+      "image": "../img/icon-blessed.png",
       "description": "Nature priest. Speaks to spirits and beasts. Works subtle magics via sacred markings and materials."
     },
     {
       "name": "The Fox",
       "complexity": "Lower Complexity",
-      "image": "/img/icon-fox.png",
+      "image": "icon-fox.png",
       "description": "Clever, quick, and skillful. Not above bending the rules or fighting dirty. Can be quite the charmer, too."
     },
     {

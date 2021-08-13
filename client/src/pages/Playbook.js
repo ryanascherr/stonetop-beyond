@@ -1,12 +1,14 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { QUERY_PLAYBOOKS } from '../utils/queries'
+import { QUERY_PLAYBOOKS } from '../utils/queries';
+import image from '../img/icon-blessed.png';
 
 export default function Playbook() {
 
   const { data } = useQuery(QUERY_PLAYBOOKS);
   console.log(data);
-  const playbooks = data?.playbooks || [];
+
+  const playbooks = data?.getPlaybooks || [];
   console.log(playbooks);
 
   const listOfPlaybooks = playbooks.map(playbook => {
@@ -17,12 +19,13 @@ export default function Playbook() {
         <img src={playbook.image}></img>
       </div>
       <p>{playbook.description}</p>
+      <button>Select</button>
     </div>
   })
 
   return (
     <div className="playbook-container">
-        {listOfPlaybooks}
+      {listOfPlaybooks}
     </div>
   );
 }
