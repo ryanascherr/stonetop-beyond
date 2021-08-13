@@ -1,7 +1,7 @@
 const { signToken } = require('../utils/auth');
 const { AuthenticationError } = require('apollo-server-express');
 
-const { Playbook, User, Background, Drive } = require('../models');
+const { Playbook, User, Background, Drive, Origin } = require('../models');
 
 const resolvers = {
     Query: {
@@ -13,6 +13,9 @@ const resolvers = {
         },
         getDrive: async (parent, { playbook }) => {
             return Drive.findOne({ playbook })
+        },
+        getOrigin: async (parent, { playbook }) => {
+            return Origin.findOne({ playbook })
         },
     },
     Mutation: {

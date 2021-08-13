@@ -209,6 +209,28 @@ body {
     width: 100%;
 }
 
+/* Origin */
+
+.origin-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.origin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 15px;
+    box-shadow: 10px 10px 5px gray;
+    width: 100%;
+}
+
 /* Homepage */
 
 .login-signup-container {
@@ -300,7 +322,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     
-    .playbook, .background, .drive {
+    .playbook, .background, .drive, .origin {
         width: 45%;
         margin: 15px;
     }
@@ -309,7 +331,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
 
-    .playbook, .background, .drive {
+    .playbook, .background, .drive, .origin {
         width: 30%;
     }
 

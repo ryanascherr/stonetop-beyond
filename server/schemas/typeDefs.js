@@ -31,6 +31,13 @@ const typeDefs = gql`
         description: String
     }
 
+    type Origin {
+        _id: ID
+        playbook: String
+        location: String
+        names: String
+    }
+
     type Auth {
         token: ID!
         user: User
@@ -42,6 +49,7 @@ const typeDefs = gql`
         getPlaybooks: [Playbook]
         getBackground(playbook: String!): Background
         getDrive(playbook: String!): Drive
+        getOrigin(playbook: String!): Origin
     }
 
     type Mutation {

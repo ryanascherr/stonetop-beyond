@@ -33,3 +33,14 @@ export const QUERY_DRIVE = gql`
     }
   }
 `;
+
+export const QUERY_ORIGIN = gql`
+  query getOrigin($playbook: String!) {
+    getOrigin(playbook: $playbook) {
+      _id
+      playbook
+      location
+      names
+    }
+  }
+`;
