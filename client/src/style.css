@@ -127,6 +127,10 @@ body {
     width: 125px;
 }
 
+.selected {
+    border: 10px solid var(--light-blue);
+}
+
 /* Playbook */
 
 .playbook-container {

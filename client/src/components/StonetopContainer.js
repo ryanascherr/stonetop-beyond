@@ -51,8 +51,8 @@ export default function StonetopContainer() {
   return (
     <div>
         <Header />
-        {landingPage};
-        {render};
+        {landingPage}
+        {render}
         <Footer />
     </div>
   );

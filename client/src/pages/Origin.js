@@ -23,15 +23,18 @@ export default function Origin() {
 
   return (
     <div className="content">
+      <h2>Pick one origin and a name to match (or make up something similar)!</h2>
+      <h3>Choose a place of origin</h3>
       <select>
         <option value="-">-</option>
         {originDropdown}
       </select>
+      <h3>Choose a name</h3>
       <input type="text" name="" id=""></input>
+      <button>Select</button>
       <div className="origin-container">
         {listOfOrigins}
       </div>
-      <button>Select</button>
     </div>
   );
 }
