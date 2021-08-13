@@ -9,13 +9,13 @@ const resolvers = {
             return Playbook.find();
         },
         getBackground: async (parent, { playbook }) => {
-            return Background.findOne({ playbook })
+            return Background.find({ playbook })
         },
         getDrive: async (parent, { playbook }) => {
-            return Drive.findOne({ playbook })
+            return Drive.find({ playbook })
         },
         getOrigin: async (parent, { playbook }) => {
-            return Origin.findOne({ playbook })
+            return Origin.find({ playbook })
         },
     },
     Mutation: {

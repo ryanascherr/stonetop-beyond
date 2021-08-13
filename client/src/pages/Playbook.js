@@ -11,7 +11,7 @@ export default function Playbook() {
   console.log(playbooks);
 
   const listOfPlaybooks = playbooks.map(playbook => {
-    return <div className="playbook">
+    return <div className="playbook" key={playbook._id}>
       <h2>{playbook.name}</h2>
       <h3>{playbook.complexity}</h3>
       <div className="playbook-image-container">

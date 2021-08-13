@@ -47,9 +47,9 @@ const typeDefs = gql`
         getUsers: [User]
         getUser(username: String!): User
         getPlaybooks: [Playbook]
-        getBackground(playbook: String!): Background
-        getDrive(playbook: String!): Drive
-        getOrigin(playbook: String!): Origin
+        getBackground(playbook: String!): [Background]
+        getDrive(playbook: String!): [Drive]
+        getOrigin(playbook: String!): [Origin]
     }
 
     type Mutation {

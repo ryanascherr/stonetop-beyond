@@ -10,6 +10,9 @@ const moveData = require('./moveData.json');
 db.once('open', async () => {
     await Playbook.deleteMany({});
     await Background.deleteMany({});
+    await Drive.deleteMany({});
+    await Origin.deleteMany({});
+    await Move.deleteMany({});
 
     const playbooks = await Playbook.insertMany(playbookData);
     const backgrounds = await Background.insertMany(backgroundData);
