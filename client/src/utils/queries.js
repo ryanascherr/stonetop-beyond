@@ -11,3 +11,14 @@ export const QUERY_PLAYBOOKS = gql`
     }
   }
 `;
+
+export const QUERY_BACKGROUND = gql`
+  query getBackground($playbook: String!) {
+    getBackground(playbook: $playbook) {
+      _id
+      playbook
+      name
+      description
+    }
+  }
+`;

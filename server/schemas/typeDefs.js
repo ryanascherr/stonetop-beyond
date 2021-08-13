@@ -17,6 +17,13 @@ const typeDefs = gql`
         description: String
     }
 
+    type Background {
+        _id: ID
+        playbook: String
+        name: String
+        description: String
+    }
+
     type Auth {
         token: ID!
         user: User
@@ -26,6 +33,7 @@ const typeDefs = gql`
         getUsers: [User]
         getUser(username: String!): User
         getPlaybooks: [Playbook]
+        getBackground(playbook: String!): Background
     }
 
     type Mutation {

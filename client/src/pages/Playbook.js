@@ -1,7 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_PLAYBOOKS } from '../utils/queries';
-import image from '../img/icon-blessed.png';
 
 export default function Playbook() {
 
@@ -24,8 +23,10 @@ export default function Playbook() {
   })
 
   return (
-    <div className="playbook-container">
-      {listOfPlaybooks}
+    <div className="content">
+      <div className="playbook-container">
+        {listOfPlaybooks}
+      </div>
     </div>
   );
 }

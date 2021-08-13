@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -30,6 +31,10 @@ h1 {
 
 img {
     width: 100%;
+}
+
+li {
+    list-style-type: none;
 }
 
 button {
@@ -160,6 +165,28 @@ body {
     margin-bottom: 10px;
 }
 
+/* Background */
+
+.background-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 15px;
+    box-shadow: 10px 10px 5px gray;
+    width: 100%;
+}
+
 /* Homepage */
 
 .login-signup-container {
@@ -170,6 +197,7 @@ body {
 
 .login-signup-container input {
     margin: 5px 0;
+    padding: 5px;
     border: 2px solid var(--darkest-blue);
     color: var(--darkest-blue);
     height: 22.222px;

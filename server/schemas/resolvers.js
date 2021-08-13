@@ -1,13 +1,16 @@
 const { signToken } = require('../utils/auth');
 const { AuthenticationError } = require('apollo-server-express');
 
-const { Playbook, User } = require('../models');
+const { Playbook, User, Background } = require('../models');
 
 const resolvers = {
     Query: {
         getPlaybooks: async () => {
             return Playbook.find();
-        }
+        },
+        getBackground: async (parent, { playbook }) => {
+            return Background.findOne({ playbook })
+        },
     },
     Mutation: {
         addUser: async (parent, { username, email, password }) => {
