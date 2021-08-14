@@ -289,6 +289,54 @@ body {
     margin-bottom: 20px;
 }
 
+/* Stat */
+
+.stat-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 15px;
+    box-shadow: 10px 10px 5px gray;
+    width: 100%;
+}
+
+.stat h2 {
+    margin-bottom: 10px;
+}
+
+.stat-container select {
+    padding: 5px;
+    color: var(--darkest-blue);
+}
+
+.stat-btn {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    border: 2px solid var(--darkest-blue);
+}
+
+.stat-btn:hover {
+    background-color: var(--off-white);
+    color: var(--darkest-blue);
+    border: 2px solid var(--darkest-blue);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Homepage */
 
 .login-signup-container {
@@ -391,7 +439,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     
-    .playbook, .background, .drive, .origin {
+    .playbook, .background, .drive, .origin, .stat {
         width: 45%;
         margin: 15px;
     }
@@ -400,7 +448,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
 
-    .playbook, .background, .drive, .origin {
+    .playbook, .background, .drive, .origin, .stat {
         width: 30%;
     }
 

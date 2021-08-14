@@ -9,7 +9,7 @@ export default function Origin() {
     $(".origin-btn").click(function () {
       let origin = $(".origin-select").val();
       let name = $(".origin-name").val().trim();
-      if (origin == "-" || name == "" || !name) {
+      if (origin === "-" || name === "" || !name) {
         alert("Please pick an origin and a name!");
       } else {
         localStorage.setItem('origin', origin);

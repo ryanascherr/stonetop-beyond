@@ -121,7 +121,7 @@ const Homepage = () => {
         </div>
       </div>
       <div className="village-pic-container">
-        <img src={village} className="village-pic"></img>
+        <img src={village} className="village-pic" alt="The village of Stonetop"></img>
       </div>
     </div>
   )

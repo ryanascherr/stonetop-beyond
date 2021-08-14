@@ -16,6 +16,12 @@ export default function Playbook() {
       window.localStorage.removeItem("drive");
       window.localStorage.removeItem("origin");
       window.localStorage.removeItem("name");
+      window.localStorage.removeItem("str");
+      window.localStorage.removeItem("dex");
+      window.localStorage.removeItem("int");
+      window.localStorage.removeItem("wis");
+      window.localStorage.removeItem("con");
+      window.localStorage.removeItem("cha");
       let playbook = $(this).data("playbook");
       console.log(playbook);
       localStorage.setItem('playbook', playbook);
