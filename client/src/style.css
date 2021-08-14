@@ -34,7 +34,11 @@ img {
 }
 
 li {
-    list-style-type: none;
+    margin-left: 10px;
+}
+
+ul {
+    margin-bottom: 10px;
 }
 
 button {
@@ -335,6 +339,17 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0 10px;
+}
+
+.village-pic-container {
+    border: 5px solid var(--darkest-blue);
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.village-pic {
+    width: 100%;
 }
 
 /* Media Queries */

@@ -16,6 +16,11 @@ export default function Drive() {
   })
 
   let playbook = localStorage.getItem('playbook');
+  if (!playbook) {
+    $(".drive-title").text("Pick a playbook first!");
+  } else {
+    $(".drive-title").text("Choose one of the drives below!");
+  }
 
   const { data } = useQuery(QUERY_DRIVE, {
     variables: { playbook: playbook }
@@ -33,8 +38,7 @@ export default function Drive() {
 
   return (
     <div className="content">
-      <h2>Choose one of the drives below!</h2>
-      <h3>You gain experience by following your drive</h3>
+      <h2 className="drive-title"></h2>
       <div className="drive-container">
         {listOfDrives}
       </div>

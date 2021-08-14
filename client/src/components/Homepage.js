@@ -120,6 +120,9 @@ const Homepage = () => {
           <button onClick={handleSignup}>Signup</button>
         </div>
       </div>
+      <div className="village-pic-container">
+        <img src={village} className="village-pic"></img>
+      </div>
     </div>
   )
 }

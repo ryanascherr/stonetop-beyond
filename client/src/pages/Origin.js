@@ -5,14 +5,17 @@ import $ from 'jquery';
 
 export default function Origin() {
 
-  // $(document).ready(function () {
-  //   $(".origin-btn").click(function () {
-  //     let origin = $(this).data("origin");
-  //     console.log(origin);
-  //     localStorage.setItem('origin', origin);
-  //     $(this).addClass("selected");
-  //   })
-  // })
+  $(document).ready(function () {
+    $(".origin-btn").click(function () {
+      let origin = $(".origin-select").val();
+      let name = $(".origin-name").val().trim();
+      console.log(origin);
+      console.log(name);
+      localStorage.setItem('origin', origin);
+      localStorage.setItem('name', name);
+      $(this).addClass("selected");
+    })
+  })
 
   let playbook = localStorage.getItem('playbook');
 
@@ -37,13 +40,13 @@ export default function Origin() {
     <div className="content">
       <div className="origin-options">
         <h2 className="title">Pick one origin and a name to match (or make up something similar)!</h2>
-        <h3>Choose a place of origin</h3>
-        <select>
+        <h3>Choose a place of origin:</h3>
+        <select className="origin-select">
           <option value="-">-</option>
           {originDropdown}
         </select>
-        <h3>Choose a name</h3>
-        <input type="text" name="" id=""></input>
+        <h3>Choose a name:</h3>
+        <input type="text" name="" id="" className="origin-name"></input>
         <button className="origin-btn">Select</button>
       </div>
       <div className="origin-container">
