@@ -27,7 +27,7 @@ export default function Stat() {
   $(document).ready(function () {
   if (!playbook) {
     $(".stat-title").text("Pick a playbook first!");
-  } else if (playbook == "The Would-Be-Hero") {
+  } else if (playbook === "The Would-Be-Hero") {
     $(".stat-title").text("Apply each of the following numbers to one of the stats below: +1, +0, +0, +0, +0, -1");
   } else {
     $(".stat-title").text("Apply each of the following numbers to one of the stats below: +2, +1, +1, +0, +0, -1");
