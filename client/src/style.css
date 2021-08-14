@@ -273,18 +273,19 @@ body {
     text-align: center;
 }
 
-.origin-options button {
+.origin-btn {
     background-color: var(--darkest-blue);
     color: var(--off-white);
-    border: 2px ;
+    border: 2px solid var(--darkest-blue);
 }
 
-.origin-options button:hover {
-    background-color: var(--darkest-blue);
-    color: var(--off-white);
+.origin-btn:hover {
+    background-color: var(--off-white);
+    color: var(--darkest-blue);
+    border: 2px solid var(--darkest-blue);
 }
 
-.title {
+.origin-title {
     margin-bottom: 20px;
 }
 

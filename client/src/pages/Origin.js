@@ -9,22 +9,23 @@ export default function Origin() {
     $(".origin-btn").click(function () {
       let origin = $(".origin-select").val();
       let name = $(".origin-name").val().trim();
-      console.log(origin);
-      console.log(name);
-      localStorage.setItem('origin', origin);
-      localStorage.setItem('name', name);
-      $(this).addClass("selected");
+      if (origin == "-" || name == "" || !name) {
+        alert("Please pick an origin and a name!");
+      } else {
+        localStorage.setItem('origin', origin);
+        localStorage.setItem('name', name);
+      }
     })
   })
 
   let playbook = localStorage.getItem('playbook');
   
   $(document).ready(function () {
-  if (!playbook) {
-    $(".origin-title").text("Pick a playbook first!");
-  } else {
-    $(".origin-title").text("Pick one origin and a name to match (or make up something similar)!");
-  }
+    if (!playbook) {
+      $(".origin-title").text("Pick a playbook first!");
+    } else {
+      $(".origin-title").text("Pick one origin and a name to match (or make up something similar)!");
+    }
   })
 
   const { data } = useQuery(QUERY_ORIGIN, {
