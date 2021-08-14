@@ -34,7 +34,6 @@ export default function Background() {
   const { data } = useQuery(QUERY_BACKGROUND, {
     variables: { playbook: playbook }
   });
-  console.log(data);
 
   const backgrounds = data?.getBackground || [];
 

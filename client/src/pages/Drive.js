@@ -33,7 +33,7 @@ export default function Drive() {
   const { data } = useQuery(QUERY_DRIVE, {
     variables: { playbook: playbook }
   });
-  console.log(data);
+  
   const drives = data?.getDrive || [];
 
   const listOfDrives = drives.map(drive => {
