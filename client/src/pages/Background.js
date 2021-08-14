@@ -47,7 +47,7 @@ export default function Background() {
 
   return (
     <div className="content">
-      <h2 className="background-title"></h2>
+      <h2 className="background-title"> </h2>
       <div className="background-container">
         {listOfBackgrounds}
       </div>

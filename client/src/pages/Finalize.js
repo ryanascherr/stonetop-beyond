@@ -28,7 +28,7 @@ export default function Finalize() {
 
   return (
     <div className="content">
-      <h2 className="finalize-title"></h2>
+      <h2 className="finalize-title"> </h2>
       <div className="character-review hidden">
         <h3>Playbook: {playbook}</h3>
         <h3>Background: {background}</h3>

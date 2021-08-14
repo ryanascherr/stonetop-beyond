@@ -29,8 +29,6 @@ export default function Stat() {
     })
   })
 
-  let stats;
-
   let playbook = localStorage.getItem('playbook');
 
   $(document).ready(function () {
@@ -45,7 +43,7 @@ export default function Stat() {
 
   return (
     <div className="content">
-      <h2 className="stat-title"></h2>
+      <h2 className="stat-title"> </h2>
       <div className="stat-container">
         <div className="stat">
           <h2>STR</h2>

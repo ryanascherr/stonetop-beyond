@@ -108,6 +108,10 @@ body {
     outline: 5px dashed var(--blue);
 }
 
+.completed {
+    color: green;
+}
+
 /* NavTabs */
 
 .nav-tabs {

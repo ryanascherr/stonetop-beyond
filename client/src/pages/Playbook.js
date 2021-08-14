@@ -36,17 +36,15 @@ export default function Playbook() {
   })
 
   const { data } = useQuery(QUERY_PLAYBOOKS);
-  console.log(data);
 
   const playbooks = data?.getPlaybooks || [];
-  console.log(playbooks);
 
   const listOfPlaybooks = playbooks.map(playbook => {
     return <div className="playbook" id={playbook.name} key={playbook._id}>
       <h2>{playbook.name}</h2>
       <h3>{playbook.complexity}</h3>
       <div className="playbook-image-container">
-        <img src={blessedIcon} className="playbook-image"></img>
+        <img src={blessedIcon} className="playbook-image" alt="Icon"></img>
       </div>
       <p>{playbook.description}</p>
       <button data-playbook={playbook.name} className="playbook-btn">Select</button>

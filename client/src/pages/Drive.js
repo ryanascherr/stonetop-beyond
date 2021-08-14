@@ -46,7 +46,7 @@ export default function Drive() {
 
   return (
     <div className="content">
-      <h2 className="drive-title"></h2>
+      <h2 className="drive-title"> </h2>
       <div className="drive-container">
         {listOfDrives}
       </div>

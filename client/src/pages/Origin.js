@@ -53,7 +53,7 @@ export default function Origin() {
   return (
     <div className="content">
       <div className="origin-options">
-        <h2 className="origin-title"></h2>
+        <h2 className="origin-title"> </h2>
         <h3>Choose a place of origin:</h3>
         <select className="origin-select">
           <option value="-">-</option>
