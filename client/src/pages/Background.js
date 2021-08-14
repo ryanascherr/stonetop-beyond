@@ -13,6 +13,11 @@ export default function Background() {
       localStorage.setItem('background', background);
       $(".background").removeClass("selected");
       $(this).parent().addClass("selected");
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+       });
     })
   })
 

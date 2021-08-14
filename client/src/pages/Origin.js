@@ -14,6 +14,11 @@ export default function Origin() {
       } else {
         localStorage.setItem('origin', origin);
         localStorage.setItem('name', name);
+        window.scroll({
+          top: 0, 
+          left: 0, 
+          behavior: 'smooth' 
+         });
       }
     })
   })

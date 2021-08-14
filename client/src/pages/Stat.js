@@ -11,12 +11,21 @@ export default function Stat() {
       let wis = $(".wis").val();
       let con = $(".con").val();
       let cha = $(".cha").val();
-      localStorage.setItem('str', str);
-      localStorage.setItem('dex', dex);
-      localStorage.setItem('int', int);
-      localStorage.setItem('wis', wis);
-      localStorage.setItem('con', con);
-      localStorage.setItem('cha', cha);
+      if (str !== "-" && dex !== "-" && int !== "-" && wis !== "-" && con !== "-" && cha !== "-") {
+        localStorage.setItem('str', str);
+        localStorage.setItem('dex', dex);
+        localStorage.setItem('int', int);
+        localStorage.setItem('wis', wis);
+        localStorage.setItem('con', con);
+        localStorage.setItem('cha', cha);
+        window.scroll({
+          top: 0, 
+          left: 0, 
+          behavior: 'smooth' 
+        });
+      } else {
+        alert("Please choose a number for all of your stats!");
+      }
     })
   })
 

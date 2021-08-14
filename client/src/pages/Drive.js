@@ -12,6 +12,11 @@ export default function Drive() {
       localStorage.setItem('drive', drive);
       $(".drive").removeClass("selected");
       $(this).parent().addClass("selected");
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+       });
     })
   })
 
