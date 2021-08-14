@@ -16,11 +16,14 @@ export default function Drive() {
   })
 
   let playbook = localStorage.getItem('playbook');
+
+  $(document).ready(function () {
   if (!playbook) {
     $(".drive-title").text("Pick a playbook first!");
   } else {
     $(".drive-title").text("Choose one of the drives below!");
   }
+  })
 
   const { data } = useQuery(QUERY_DRIVE, {
     variables: { playbook: playbook }

@@ -104,6 +104,10 @@ body {
     text-decoration: underline;
 }
 
+.selected {
+    outline: 5px dashed var(--blue);
+}
+
 /* NavTabs */
 
 .nav-tabs {
@@ -129,10 +133,6 @@ body {
 
 .active {
     width: 125px;
-}
-
-.selected {
-    border: 10px solid var(--light-blue);
 }
 
 /* Playbook */

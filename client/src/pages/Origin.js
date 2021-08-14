@@ -18,6 +18,14 @@ export default function Origin() {
   })
 
   let playbook = localStorage.getItem('playbook');
+  
+  $(document).ready(function () {
+  if (!playbook) {
+    $(".origin-title").text("Pick a playbook first!");
+  } else {
+    $(".origin-title").text("Pick one origin and a name to match (or make up something similar)!");
+  }
+  })
 
   const { data } = useQuery(QUERY_ORIGIN, {
     variables: { playbook: playbook }
@@ -39,7 +47,7 @@ export default function Origin() {
   return (
     <div className="content">
       <div className="origin-options">
-        <h2 className="title">Pick one origin and a name to match (or make up something similar)!</h2>
+        <h2 className="origin-title"></h2>
         <h3>Choose a place of origin:</h3>
         <select className="origin-select">
           <option value="-">-</option>

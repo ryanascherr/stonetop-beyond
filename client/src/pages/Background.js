@@ -17,11 +17,14 @@ export default function Background() {
   })
 
   let playbook = localStorage.getItem('playbook');
+
+  $(document).ready(function () {
   if (!playbook) {
     $(".background-title").text("Pick a playbook first!");
   } else {
     $(".background-title").text("Choose one of the backgrounds below!");
   }
+  })
 
   const { data } = useQuery(QUERY_BACKGROUND, {
     variables: { playbook: playbook }
