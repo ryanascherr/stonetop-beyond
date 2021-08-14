@@ -15,8 +15,10 @@ export default function Drive() {
     })
   })
 
+  let playbook = localStorage.getItem('playbook');
+
   const { data } = useQuery(QUERY_DRIVE, {
-    variables: { playbook: "The Heavy" }
+    variables: { playbook: playbook }
   });
   console.log(data);
   const drives = data?.getDrive || [];

@@ -15,10 +15,13 @@ export default function Background() {
     })
   })
 
+  let playbook = localStorage.getItem('playbook');
+
   const { data } = useQuery(QUERY_BACKGROUND, {
-    variables: { playbook: "The Heavy" }
+    variables: { playbook: playbook }
   });
   console.log(data);
+  // console.log(playbook2);
   const backgrounds = data?.getBackground || [];
 
   const listOfBackgrounds = backgrounds.map(background => {
