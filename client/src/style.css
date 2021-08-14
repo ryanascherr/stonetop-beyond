@@ -191,6 +191,14 @@ body {
     width: 100%;
 }
 
+.background h2 {
+    margin-bottom: 10px;
+}
+
+.background button {
+    margin-top: 10px;
+}
+
 /* Drive */
 
 .drive-container {
@@ -213,6 +221,14 @@ body {
     width: 100%;
 }
 
+.drive h2 {
+    margin-bottom: 10px;
+}
+
+.drive button {
+    margin-top: 10px;
+}
+
 /* Origin */
 
 .origin-container {
@@ -233,6 +249,39 @@ body {
     padding: 15px;
     box-shadow: 10px 10px 5px gray;
     width: 100%;
+}
+
+.origin h2 {
+    margin-bottom: 10px;
+}
+
+.origin-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.origin-options select, .origin-options input {
+    margin-bottom: 10px;
+    padding: 5px;
+    color: var(--darkest-blue);
+    text-align: center;
+}
+
+.origin-options button {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    border: 2px ;
+}
+
+.origin-options button:hover {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+}
+
+.title {
+    margin-bottom: 20px;
 }
 
 /* Homepage */

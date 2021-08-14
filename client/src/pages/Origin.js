@@ -28,22 +28,24 @@ export default function Origin() {
 
   const listOfOrigins = origins.map(origin => {
     return <div className="origin" key={origin._id}>
-      <h2>{origin.location}</h2>
+      <h2>{origin.location}:</h2>
       <p>{origin.names}</p>
     </div>
   })
 
   return (
     <div className="content">
-      <h2>Pick one origin and a name to match (or make up something similar)!</h2>
-      <h3>Choose a place of origin</h3>
-      <select>
-        <option value="-">-</option>
-        {originDropdown}
-      </select>
-      <h3>Choose a name</h3>
-      <input type="text" name="" id=""></input>
-      <button className="origin-btn">Select</button>
+      <div className="origin-options">
+        <h2 className="title">Pick one origin and a name to match (or make up something similar)!</h2>
+        <h3>Choose a place of origin</h3>
+        <select>
+          <option value="-">-</option>
+          {originDropdown}
+        </select>
+        <h3>Choose a name</h3>
+        <input type="text" name="" id=""></input>
+        <button className="origin-btn">Select</button>
+      </div>
       <div className="origin-container">
         {listOfOrigins}
       </div>
