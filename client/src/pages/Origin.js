@@ -30,13 +30,14 @@ export default function Origin() {
       $(".origin-title").text("Pick a playbook first!");
     } else {
       $(".origin-title").text("Pick one origin and a name to match (or make up something similar)!");
+      $(".test").removeClass("hidden");
     }
   })
 
   const { data } = useQuery(QUERY_ORIGIN, {
     variables: { playbook: playbook }
   });
-  console.log(data);
+
   const origins = data?.getOrigin || [];
 
   const originDropdown = origins.map(origin => {
@@ -52,19 +53,21 @@ export default function Origin() {
 
   return (
     <div className="content">
-      <div className="origin-options">
-        <h2 className="origin-title"> </h2>
-        <h3>Choose a place of origin:</h3>
-        <select className="origin-select">
-          <option value="-">-</option>
-          {originDropdown}
-        </select>
-        <h3>Choose a name:</h3>
-        <input type="text" name="" id="" className="origin-name"></input>
-        <button className="origin-btn">Select</button>
-      </div>
-      <div className="origin-container">
-        {listOfOrigins}
+      <h2 className="origin-title"> </h2>
+      <div className="test hidden">
+        <div className="origin-options">
+          <h3>Choose a place of origin:</h3>
+          <select className="origin-select">
+            <option value="-">-</option>
+            {originDropdown}
+          </select>
+          <h3>Choose a name:</h3>
+          <input type="text" name="" id="" className="origin-name"></input>
+          <button className="origin-btn">Select</button>
+        </div>
+        <div className="origin-container">
+          {listOfOrigins}
+        </div>
       </div>
     </div>
   );

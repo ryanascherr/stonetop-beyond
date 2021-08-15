@@ -315,7 +315,7 @@ body {
     width: 100%;
 }
 
-.stat h2 {
+.stat h2, .stat select {
     margin-bottom: 10px;
 }
 
@@ -339,6 +339,10 @@ body {
 .btn-container {
     display: flex;
     justify-content: center;
+}
+
+.stat p {
+    text-align: center;
 }
 
 /* Finalize */

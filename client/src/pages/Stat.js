@@ -46,7 +46,7 @@ export default function Stat() {
       <h2 className="stat-title"> </h2>
       <div className="stat-container">
         <div className="stat">
-          <h2>STR</h2>
+          <h2>Strength</h2>
           <select className="origin-select str">
             <option value="-">-</option>
             <option value="+2">+2</option>
@@ -54,9 +54,10 @@ export default function Stat() {
             <option value="+0">+0</option>
             <option value="-1">-1</option>
           </select>
+          <p>Used to Clash, as well as Defy Danger or Interfere by powering through or testing your might.</p>
         </div>
         <div className="stat">
-          <h2>DEX</h2>
+          <h2>Dexterity</h2>
           <select className="origin-select dex">
             <option value="-">-</option>
             <option value="+2">+2</option>
@@ -64,9 +65,10 @@ export default function Stat() {
             <option value="+0">+0</option>
             <option value="-1">-1</option>
           </select>
+          <p>Used to Let Fly, as well as Defy Danger or Interfere by employing speed agility, or finesse.</p>
         </div>
         <div className="stat">
-          <h2>INT</h2>
+          <h2>Intelligence</h2>
           <select className="origin-select int">
             <option value="-">-</option>
             <option value="+2">+2</option>
@@ -74,9 +76,10 @@ export default function Stat() {
             <option value="+0">+0</option>
             <option value="-1">-1</option>
           </select>
+          <p>Used to Know Things, as well as Defy Danger or Interfere by applying expertise or enacting a clever plan.</p>
         </div>
         <div className="stat">
-          <h2>WIS</h2>
+          <h2>Wisdom</h2>
           <select className="origin-select wis">
             <option value="-">-</option>
             <option value="+2">+2</option>
@@ -84,9 +87,10 @@ export default function Stat() {
             <option value="+0">+0</option>
             <option value="-1">-1</option>
           </select>
+          <p>Used to Seek Insight, as well as Defy Danger or Interfere by exerting willpower or replying on your senses.</p>
         </div>
         <div className="stat">
-          <h2>CON</h2>
+          <h2>Constitution</h2>
           <select className="origin-select con">
             <option value="-">-</option>
             <option value="+2">+2</option>
@@ -94,9 +98,10 @@ export default function Stat() {
             <option value="+0">+0</option>
             <option value="-1">-1</option>
           </select>
+          <p>Used to Defend, as well as Defy Danger or Interfere by enduring or holding steady.</p>
         </div>
         <div className="stat">
-          <h2>CHA</h2>
+          <h2>Charisma</h2>
           <select className="origin-select cha">
             <option value="-">-</option>
             <option value="+2">+2</option>
@@ -104,6 +109,7 @@ export default function Stat() {
             <option value="+0">+0</option>
             <option value="-1">-1</option>
           </select>
+          <p>Used to Persuade NPCs and Persuade PCs, as well as Defy Danger or Interfere by charming, bluffing, impressing, or fitting in.</p>
         </div>
       </div>
       <div className="btn-container">
