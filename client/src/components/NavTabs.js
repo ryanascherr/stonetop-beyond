@@ -1,19 +1,60 @@
 import React from 'react';
+import $ from 'jquery';
+import Background from '../pages/Background';
 
 function NavTabs({ currentPage, handlePageChange }) {
 
-    // let playbook = localStorage.getItem('playbook');
+    let checked = `&#9989;`;
+    let unchecked = `&#10060;`;
 
-    // console.log("Hi!");
+    let playbook = localStorage.getItem('playbook');
+    let background = localStorage.getItem('background');
+    let drive = localStorage.getItem('drive');
+    let origin = localStorage.getItem('origin');
+    let str = localStorage.getItem('str');
+
+    $(document).ready(function () {
+        if (playbook) {
+            $(".playbook-check").html(checked);
+        } else {
+            $(".playbook-check").html(unchecked);
+        }
     
-
-    // if (playbook) {
-    //     $("#playbook-nav").addClass("completed");
-    // }
+        if (background) {
+            $(".background-check").html(checked);
+        } else {
+            $(".background-check").html(unchecked);
+        }
+    
+        if (drive) {
+            $(".drive-check").html(checked);
+        } else {
+            $(".drive-check").html(unchecked);
+        }
+    
+        if (origin) {
+            $(".origin-check").html(checked);
+        } else {
+            $(".origin-check").html(unchecked);
+        }
+    
+        if (str) {
+            $(".stat-check").html(checked);
+        } else {
+            $(".stat-check").html(unchecked);
+        }
+    })
 
     return (
         <div>
-            
+            <div className="checks">
+                <h2 className="playbook-check"></h2>
+                <h2 className="background-check"></h2>
+                <h2 className="drive-check"></h2>
+                <h2 className="origin-check"></h2>
+                <h2 className="stat-check"></h2>
+                <h2 className=""></h2>
+            </div>
             <div className="nav-tabs">
                 <a
                     href="#playbook"

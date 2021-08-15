@@ -112,6 +112,22 @@ body {
     color: green;
 }
 
+/* Checks */
+
+.checks {
+    display: flex;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.checks h2 {
+    width: 100px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
 /* NavTabs */
 
 .nav-tabs {
@@ -425,7 +441,7 @@ body {
 
 /* Media Queries */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 650px) {
     
     .nav-tabs {
         display: flex;

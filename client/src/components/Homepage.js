@@ -34,8 +34,11 @@ const Homepage = () => {
       const { data } = await addUser({
         variables: { ...signupState },
       });
-      console.log(data);
+
       Auth.login(data.addUser.token);
+
+      window.location.reload();
+      
     } catch (e) {
       console.error(e);
     }
@@ -70,6 +73,8 @@ const Homepage = () => {
       });
 
       Auth.login(data.login.token);
+
+      window.location.reload();
 
     } catch (e) {
       console.error(e);

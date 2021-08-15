@@ -32,6 +32,7 @@ export default function Playbook() {
         left: 0, 
         behavior: 'smooth' 
        });
+       window.location.reload();
     })
   })
 

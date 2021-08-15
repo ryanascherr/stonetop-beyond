@@ -23,6 +23,7 @@ export default function Stat() {
           left: 0, 
           behavior: 'smooth' 
         });
+        window.location.reload();
       } else {
         alert("Please choose a number for all of your stats!");
       }
