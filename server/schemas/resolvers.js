@@ -17,7 +17,10 @@ const resolvers = {
         getBackgrounds: async (parent, { playbook }) => {
             return Background.find({ playbook })
         },
-        getDrive: async (parent, { playbook }) => {
+        getDrive: async (parent, { name, playbook }) => {
+            return Drive.find({ name, playbook })
+        },
+        getDrives: async (parent, { playbook }) => {
             return Drive.find({ playbook })
         },
         getOrigin: async (parent, { playbook }) => {

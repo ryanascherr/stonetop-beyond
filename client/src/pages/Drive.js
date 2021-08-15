@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { QUERY_DRIVE } from '../utils/queries';
+import { QUERY_DRIVES } from '../utils/queries';
 import $ from 'jquery';
 
 export default function Drive() {
@@ -31,11 +31,11 @@ export default function Drive() {
   }
   })
 
-  const { data } = useQuery(QUERY_DRIVE, {
+  const { data } = useQuery(QUERY_DRIVES, {
     variables: { playbook: playbook }
   });
   
-  const drives = data?.getDrive || [];
+  const drives = data?.getDrives || [];
 
   const listOfDrives = drives.map(drive => {
     return <div className="drive" key={drive._id}>

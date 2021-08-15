@@ -47,8 +47,19 @@ export const QUERY_BACKGROUNDS = gql`
 `;
 
 export const QUERY_DRIVE = gql`
-  query getDrive($playbook: String!) {
-    getDrive(playbook: $playbook) {
+  query getDrive($name: String!, $playbook: String!) {
+    getDrive(name: $name, playbook: $playbook) {
+      _id
+      playbook
+      name
+      description
+    }
+  }
+`;
+
+export const QUERY_DRIVES = gql`
+  query getDrives($playbook: String!) {
+    getDrives(playbook: $playbook) {
       _id
       playbook
       name

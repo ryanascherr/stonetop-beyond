@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 import { useQuery } from '@apollo/client';
 import { QUERY_PLAYBOOK } from '../utils/queries';
 import blessedIcon from '../img/icon-blessed.png';
@@ -15,7 +14,7 @@ let { data } = useQuery(QUERY_PLAYBOOK, {
 const selectedPlaybook = data?.getPlaybook || [];
 
 const listOfPlaybooks = selectedPlaybook.map(playbook => {
-  return <div className="playbook" id={playbook.name} key={playbook._id}>
+  return <div className="finalize-playbook" id={playbook.name} key={playbook._id}>
     <h2>{playbook.name}</h2>
     <h3>{playbook.complexity}</h3>
     <div className="playbook-image-container">

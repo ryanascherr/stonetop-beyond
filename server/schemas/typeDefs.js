@@ -50,7 +50,8 @@ const typeDefs = gql`
         getPlaybooks: [Playbook]
         getBackgrounds(playbook: String!): [Background]
         getBackground(name: String!): [Background]
-        getDrive(playbook: String!): [Drive]
+        getDrive(name: String!, playbook: String!): [Drive]
+        getDrives(playbook: String!): [Drive]
         getOrigin(playbook: String!): [Origin]
     }
 

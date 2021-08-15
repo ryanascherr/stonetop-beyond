@@ -370,9 +370,8 @@ body {
 .character-review {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .character-review h2 {
@@ -389,6 +388,42 @@ body {
     background-color: var(--off-white);
     color: var(--darkest-blue);
     border: 2px solid var(--darkest-blue);
+}
+
+.finalize-playbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 15px;
+    box-shadow: 10px 10px 5px gray;
+    width: 100%;
+}
+
+.finalize-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 15px;
+    box-shadow: 10px 10px 5px gray;
+    width: 100%;
+}
+
+.finalize-drive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 15px;
+    box-shadow: 10px 10px 5px gray;
+    width: 100%;
 }
 
 /* Homepage */
