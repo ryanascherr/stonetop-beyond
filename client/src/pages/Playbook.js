@@ -27,12 +27,12 @@ export default function Playbook() {
       localStorage.setItem('playbook', playbook);
       $(".playbook").removeClass("selected");
       $(this).parent().addClass("selected");
+      // window.location.reload();
       window.scroll({
         top: 0, 
         left: 0, 
         behavior: 'smooth' 
        });
-       window.location.reload();
     })
   })
 

@@ -19,7 +19,7 @@ export default function Origin() {
           left: 0, 
           behavior: 'smooth' 
          });
-        window.location.reload();
+        // window.location.reload();
       }
     })
   })

@@ -14,7 +14,7 @@ import Auth from '../utils/auth';
 
 export default function StonetopContainer() {
 
-  const [currentPage, setCurrentPage] = useState('Playbook');
+  const [currentPage, setCurrentPage] = useState('');
 
   const renderPage = () => {
     if (currentPage === 'Background') {

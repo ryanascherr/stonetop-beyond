@@ -37,8 +37,19 @@ const Homepage = () => {
 
       Auth.login(data.addUser.token);
 
+      window.localStorage.removeItem("playbook");
+      window.localStorage.removeItem("background");
+      window.localStorage.removeItem("drive");
+      window.localStorage.removeItem("origin");
+      window.localStorage.removeItem("name");
+      window.localStorage.removeItem("str");
+      window.localStorage.removeItem("dex");
+      window.localStorage.removeItem("int");
+      window.localStorage.removeItem("wis");
+      window.localStorage.removeItem("con");
+      window.localStorage.removeItem("cha");
       window.location.reload();
-      
+
     } catch (e) {
       console.error(e);
     }
@@ -74,6 +85,17 @@ const Homepage = () => {
 
       Auth.login(data.login.token);
 
+      window.localStorage.removeItem("playbook");
+      window.localStorage.removeItem("background");
+      window.localStorage.removeItem("drive");
+      window.localStorage.removeItem("origin");
+      window.localStorage.removeItem("name");
+      window.localStorage.removeItem("str");
+      window.localStorage.removeItem("dex");
+      window.localStorage.removeItem("int");
+      window.localStorage.removeItem("wis");
+      window.localStorage.removeItem("con");
+      window.localStorage.removeItem("cha");
       window.location.reload();
 
     } catch (e) {
