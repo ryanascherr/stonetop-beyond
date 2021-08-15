@@ -6,10 +6,6 @@ import $ from 'jquery';
 
 export default function Playbook() {
 
-  // let selectedPlaybook = JSON.stringify(localStorage.getItem('playbook'));
-  // console.log(selectedPlaybook);
-  // $("#"(selectedPlaybook).addClass("selected"));
-
   $(document).ready(function () {
     $(".playbook-btn").click(function () {
       window.localStorage.removeItem("background");

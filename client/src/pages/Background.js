@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { QUERY_BACKGROUND } from '../utils/queries';
+import { QUERY_BACKGROUNDS } from '../utils/queries';
 import $ from 'jquery';
 
 export default function Background() {
@@ -32,11 +32,11 @@ export default function Background() {
   }
   })
 
-  const { data } = useQuery(QUERY_BACKGROUND, {
+  const { data } = useQuery(QUERY_BACKGROUNDS, {
     variables: { playbook: playbook }
   });
 
-  const backgrounds = data?.getBackground || [];
+  const backgrounds = data?.getBackgrounds || [];
 
   const listOfBackgrounds = backgrounds.map(background => {
     return <div className="background" key={background._id}>

@@ -46,8 +46,10 @@ const typeDefs = gql`
     type Query {
         getUsers: [User]
         getUser(username: String!): User
+        getPlaybook(name: String!): [Playbook]
         getPlaybooks: [Playbook]
-        getBackground(playbook: String!): [Background]
+        getBackgrounds(playbook: String!): [Background]
+        getBackground(name: String!): [Background]
         getDrive(playbook: String!): [Drive]
         getOrigin(playbook: String!): [Origin]
     }

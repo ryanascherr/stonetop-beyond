@@ -5,10 +5,16 @@ const { Playbook, User, Background, Drive, Origin } = require('../models');
 
 const resolvers = {
     Query: {
+        getPlaybook: async (parent, { name }) => {
+            return Playbook.find({ name });
+        },
         getPlaybooks: async () => {
             return Playbook.find();
         },
-        getBackground: async (parent, { playbook }) => {
+        getBackground: async (parent, { name }) => {
+            return Background.find({ name })
+        },
+        getBackgrounds: async (parent, { playbook }) => {
             return Background.find({ playbook })
         },
         getDrive: async (parent, { playbook }) => {
