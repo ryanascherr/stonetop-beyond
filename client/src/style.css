@@ -375,6 +375,22 @@ body {
     margin: 0 auto;
 }
 
+.character-review h2 {
+    margin-bottom: 10px;
+}
+
+.finalize-btn {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    border: 2px solid var(--darkest-blue);
+}
+
+.finalize-btn:hover {
+    background-color: var(--off-white);
+    color: var(--darkest-blue);
+    border: 2px solid var(--darkest-blue);
+}
+
 /* Homepage */
 
 .login-signup-container {

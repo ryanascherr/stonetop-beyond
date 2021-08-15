@@ -30,17 +30,20 @@ export default function Finalize() {
     <div className="content">
       <h2 className="finalize-title"> </h2>
       <div className="character-review hidden">
-        <h3>Playbook: {playbook}</h3>
-        <h3>Background: {background}</h3>
-        <h3>Drive: {drive}</h3>
-        <h3>Name: {name}</h3>
-        <h3>Origin: {origin}</h3>
-        <h3>Strength: {str}</h3>
-        <h3>Dexterity: {dex}</h3>
-        <h3>Intelligence: {int}</h3>
-        <h3>Wisdom: {wis}</h3>
-        <h3>Constitution: {con}</h3>
-        <h3>Charisma: {cha}</h3>
+        <h2>Playbook: {playbook}</h2>
+        <h2>Background: {background}</h2>
+        <h2>Drive: {drive}</h2>
+        <h2>Name: {name}</h2>
+        <h2>Origin: {origin}</h2>
+        <h2>Strength: {str}</h2>
+        <h2>Dexterity: {dex}</h2>
+        <h2>Intelligence: {int}</h2>
+        <h2>Wisdom: {wis}</h2>
+        <h2>Constitution: {con}</h2>
+        <h2>Charisma: {cha}</h2>
+        <div className="btn-container">
+          <button className="finalize-btn">Create Your Character</button>
+        </div>
       </div>
     </div>
   );
