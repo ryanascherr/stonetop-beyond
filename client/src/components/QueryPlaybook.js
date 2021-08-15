@@ -21,7 +21,6 @@ const listOfPlaybooks = selectedPlaybook.map(playbook => {
       <img src={blessedIcon} className="playbook-image" alt="Icon"></img>
     </div>
     <p>{playbook.description}</p>
-    <button data-playbook={playbook.name} className="playbook-btn">Select</button>
   </div>
 })
 

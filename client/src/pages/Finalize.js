@@ -23,44 +23,61 @@ export default function Finalize() {
       $(".finalize-title").text("Make sure to choose a playbook, background, drive, origin, name, and stats!");
     } else {
       $(".finalize-title").text("Review the information below and finalize your character when you're ready!");
-      $(".character-review").removeClass("hidden");
+      $(".finalize-container").removeClass("hidden");
     }
   })
 
   return (
     <div className="content">
       <h2 className="finalize-title"> </h2>
-      <div className="character-review hidden">
-        <h2>Name: {name}</h2>
-        <h2>Origin: {origin}</h2>
-        <h2>Playbook:</h2>
-        <QueryPlaybook></QueryPlaybook>
-        <h2>Background:</h2>
-        <QueryBackground></QueryBackground>
-        <h2>Drive:</h2>
-        <QueryDrive></QueryDrive>
-        <div className="stat-container">
-          <div className="stat">
-            <h2>Strength: {str}</h2>
+      <div className="finalize-container hidden">
+        <div className="character-review">
+          <div>
+            <h2>Name:</h2>
+            <h2 className="finalize-card"><i>{name}</i></h2>
           </div>
-          <div className="stat">
-            <h2>Dexterity: {dex}</h2>
+          <div>
+            <h2>Origin:</h2>
+            <h2 className="finalize-card"><i>{origin}</i></h2>
           </div>
-          <div className="stat">
-            <h2>Intelligence: {int}</h2>
+          <div>
+            <h2>Playbook:</h2>
+            <QueryPlaybook></QueryPlaybook>
           </div>
-          <div className="stat">
-            <h2>Wisdom: {wis}</h2>
+          <div>
+            <h2>Background:</h2>
+            <QueryBackground></QueryBackground>
           </div>
-          <div className="stat">
-            <h2>Constitution: {con}</h2>
+          <div>
+          <h2>Drive:</h2>
+          <QueryDrive></QueryDrive>
           </div>
-          <div className="stat">
-            <h2>Charisma: {cha}</h2>
+          <div>
+            <h2>Stats:</h2>
+            <div className="stat-container">
+              <div className="stat">
+                <h2>Strength: {str}</h2>
+              </div>
+              <div className="stat">
+                <h2>Dexterity: {dex}</h2>
+              </div>
+              <div className="stat">
+                <h2>Intelligence: {int}</h2>
+              </div>
+              <div className="stat">
+                <h2>Wisdom: {wis}</h2>
+              </div>
+              <div className="stat">
+                <h2>Constitution: {con}</h2>
+              </div>
+              <div className="stat">
+                <h2>Charisma: {cha}</h2>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="btn-container">
-          <button className="finalize-btn">Create Your Character</button>
+          <div className="btn-container">
+            <button className="finalize-btn">Create Your Character</button>
+          </div>
         </div>
       </div>
     </div>

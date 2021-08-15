@@ -17,7 +17,6 @@ const QueryBackground = () => {
         return <div className="finalize-drive" key={drive._id}>
             <h2>{drive.name}</h2>
             <p>{drive.description}</p>
-            <button className="drive-btn" data-drive={drive.name}>Select</button>
         </div>
     })
 

@@ -312,7 +312,7 @@ body {
 /* Stat */
 
 .stat-container {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -374,8 +374,8 @@ body {
     align-items: center;
 }
 
-.character-review h2 {
-    margin-bottom: 10px;
+.character-review > * {
+    margin: 20px;
 }
 
 .finalize-btn {
@@ -399,7 +399,16 @@ body {
     color: var(--off-white);
     padding: 15px;
     box-shadow: 10px 10px 5px gray;
-    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.finalize-playbook p {
+    text-align: center;
+}
+
+.finalize-playbook > h2, h3, div, p {
+    margin-bottom: 10px;
 }
 
 .finalize-background {
@@ -411,7 +420,12 @@ body {
     color: var(--off-white);
     padding: 15px;
     box-shadow: 10px 10px 5px gray;
-    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.finalize-background h2 {
+    margin-bottom: 10px;
 }
 
 .finalize-drive {
@@ -423,7 +437,22 @@ body {
     color: var(--off-white);
     padding: 15px;
     box-shadow: 10px 10px 5px gray;
-    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.finalize-drive p {
+    text-align: center;
+}
+
+.finalize-card {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px gray;
+    max-width: 500px;
+    margin-top: 10px;
 }
 
 /* Homepage */
