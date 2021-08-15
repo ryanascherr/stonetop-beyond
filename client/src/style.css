@@ -41,6 +41,10 @@ ul {
     margin-bottom: 10px;
 }
 
+p {
+    font-size: large;
+}
+
 button {
     padding: 10px;
     background-color: var(--off-white);
@@ -153,6 +157,70 @@ body {
 
 .active {
     width: 125px;
+}
+
+/* Homepage */
+
+.login-signup-container {
+    display: flex;
+    justify-content: center;
+    color: var(--dark-green);
+}
+
+.login-signup-container input {
+    margin: 5px 0;
+    padding: 5px;
+    border: 2px solid var(--darkest-blue);
+    color: var(--darkest-blue);
+    height: 22.222px;
+}
+
+.login-signup-container button {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    border: 2px solid var(--darkest-blue);
+}
+
+.login-signup-container button:hover {
+    background-color: var(--off-white);
+    color: var(--darkest-blue);
+}
+
+.login-container, .signup-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--darkest-blue);
+    padding: 20px;
+    margin: 10px;
+}
+
+.descriptors-inputs-container {
+    display: flex;
+}
+
+.descriptors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.descritpors, .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.village-pic-container {
+    border: 5px solid var(--darkest-blue);
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.village-pic {
+    width: 100%;
 }
 
 /* Playbook */
@@ -445,6 +513,10 @@ body {
     text-align: center;
 }
 
+.finalize-drive h2 {
+    margin-bottom: 10px;
+}
+
 .finalize-card {
     background-color: var(--darkest-blue);
     color: var(--off-white);
@@ -453,70 +525,6 @@ body {
     box-shadow: 10px 10px 5px gray;
     max-width: 500px;
     margin-top: 10px;
-}
-
-/* Homepage */
-
-.login-signup-container {
-    display: flex;
-    justify-content: center;
-    color: var(--dark-green);
-}
-
-.login-signup-container input {
-    margin: 5px 0;
-    padding: 5px;
-    border: 2px solid var(--darkest-blue);
-    color: var(--darkest-blue);
-    height: 22.222px;
-}
-
-.login-signup-container button {
-    background-color: var(--darkest-blue);
-    color: var(--off-white);
-    border: 2px solid var(--darkest-blue);
-}
-
-.login-signup-container button:hover {
-    background-color: var(--off-white);
-    color: var(--darkest-blue);
-}
-
-.login-container, .signup-container {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid var(--darkest-blue);
-    padding: 20px;
-    margin: 10px;
-}
-
-.descriptors-inputs-container {
-    display: flex;
-}
-
-.descriptors {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.descritpors, .inputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 10px;
-}
-
-.village-pic-container {
-    border: 5px solid var(--darkest-blue);
-    border-radius: 10px;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.village-pic {
-    width: 100%;
 }
 
 /* Media Queries */
