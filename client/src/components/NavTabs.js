@@ -1,6 +1,5 @@
 import React from 'react';
 import $ from 'jquery';
-import Background from '../pages/Background';
 
 function NavTabs({ currentPage, handlePageChange }) {
 
@@ -48,12 +47,12 @@ function NavTabs({ currentPage, handlePageChange }) {
     return (
         <div>
             <div className="checks">
-                <h2 className="playbook-check"></h2>
-                <h2 className="background-check"></h2>
-                <h2 className="drive-check"></h2>
-                <h2 className="origin-check"></h2>
-                <h2 className="stat-check"></h2>
-                <h2 className=""></h2>
+                <h2 className="playbook-check"> </h2>
+                <h2 className="background-check"> </h2>
+                <h2 className="drive-check"> </h2>
+                <h2 className="origin-check"> </h2>
+                <h2 className="stat-check"> </h2>
+                <h2 className=""> </h2>
             </div>
             <div className="nav-tabs">
                 <a

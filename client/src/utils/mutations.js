@@ -23,3 +23,15 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_CHARACTER = gql`
+  mutation addCharacter($username: String!, $email: String!, $password: String!) {
+    addCharacter(username: $username, email: $email, password: $password) {
+      token
+      user {
+        _id
+        username
+      }
+    }
+  }
+`;

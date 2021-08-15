@@ -1,7 +1,7 @@
 const { signToken } = require('../utils/auth');
 const { AuthenticationError } = require('apollo-server-express');
 
-const { Playbook, User, Background, Drive, Origin } = require('../models');
+const { Playbook, User, Background, Drive, Origin, Character } = require('../models');
 
 const resolvers = {
     Query: {
@@ -50,6 +50,10 @@ const resolvers = {
 
             return { token, user };
         },
+        addCharacter: async (parent, { playbook, background, drive, origin, name, str, dex, int, wis, con, cha }) => {
+            const character = await Character.create({ playbook, background, drive, origin, name, str, dex, int, wis, con, cha });
+            return { user };
+        }
     }
 };
 

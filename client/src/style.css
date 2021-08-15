@@ -98,6 +98,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 100px 0;
 }
 
 .footer a {
@@ -213,13 +214,13 @@ body {
 }
 
 .village-pic-container {
-    border: 5px solid var(--darkest-blue);
-    border-radius: 10px;
     margin: 0 auto;
     max-width: 800px;
 }
 
 .village-pic {
+    border: 5px solid var(--darkest-blue);
+    border-radius: 10px;
     width: 100%;
 }
 
@@ -230,6 +231,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .playbook {
@@ -268,6 +270,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .background {
@@ -298,6 +301,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .drive {
@@ -328,6 +332,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .origin {
@@ -380,7 +385,6 @@ body {
 /* Stat */
 
 .stat-container {
-    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -423,6 +427,7 @@ body {
 .btn-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .stat p {
@@ -450,6 +455,7 @@ body {
     background-color: var(--darkest-blue);
     color: var(--off-white);
     border: 2px solid var(--darkest-blue);
+    margin-bottom: 50px;
 }
 
 .finalize-btn:hover {
