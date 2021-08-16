@@ -26,6 +26,9 @@ const resolvers = {
         getOrigin: async (parent, { playbook }) => {
             return Origin.find({ playbook })
         },
+        getCharacter: async (parent, { name }) => {
+            return Character.find({ name })
+        },
     },
     Mutation: {
         addUser: async (parent, { username, email, password }) => {
@@ -33,6 +36,10 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
           },
+        addCharacter: async (parent, { playbook, background, drive, origin, name, str, dex, int, wis, con, cha }) => {
+            const character = await Character.create({ playbook, background, drive, origin, name, str, dex, int, wis, con, cha });
+            return character;
+        },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 

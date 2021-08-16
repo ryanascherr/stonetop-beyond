@@ -69,12 +69,13 @@ const typeDefs = gql`
         getDrive(name: String!, playbook: String!): [Drive]
         getDrives(playbook: String!): [Drive]
         getOrigin(playbook: String!): [Origin]
+        getCharacter(name: String!): [Character]
     }
 
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-        
+        addCharacter(playbook: String, background: String, drive: String, origin: String, name: String, str: String, dex: String, int: String, wis: String, con: String, cha: String): Character
     }
 `;
 
