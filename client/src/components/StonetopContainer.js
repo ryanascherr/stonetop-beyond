@@ -9,6 +9,7 @@ import Drive from '../pages/Drive';
 import Origin from '../pages/Origin';
 import Stat from '../pages/Stat';
 import Finalize from '../pages/Finalize';
+import CharacterSheet from './CharacterSheet';
 import "../style.css";
 import Auth from '../utils/auth';
 
@@ -59,8 +60,9 @@ export default function StonetopContainer() {
   return (
     <div>
         <Header />
-        {landingPage}
-        {render}
+        {/* {landingPage}
+        {render} */}
+        <CharacterSheet />
         <Footer />
     </div>
   );

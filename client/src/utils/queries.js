@@ -21,6 +21,12 @@ export const QUERY_CHARACTER = gql`
       background
       drive
       origin
+      str
+      dex
+      int
+      wis
+      con
+      cha
     }
   }
 `;

@@ -537,6 +537,52 @@ body {
     margin-top: 10px;
 }
 
+/* Character Sheet */
+
+.character-sheet-stat-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.two-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-stats .character-sheet-stat {
+    width: 33%;
+    min-width: 100px;
+}
+
+.character-sheet-stat {
+    /* background-color: var(--darkest-blue); */
+    border: 5px solid var(--darkest-blue);
+    color: var(--darkest-blue);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 150px;
+    width: 50%;
+    position: relative;
+}
+
+.character-sheet-stat:hover{
+    cursor: pointer;
+}
+
+.fixed {
+    position: absolute;
+    bottom: -13px;
+    left: 35%;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 650px) {
