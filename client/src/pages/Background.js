@@ -5,6 +5,9 @@ import $ from 'jquery';
 
 export default function Background() {
 
+  $(document).ready(function () {
+    window.scrollTo(0, 0);
+  })
 
   $(document).ready(function () {
     $(".background-btn").click(function () {
@@ -13,12 +16,7 @@ export default function Background() {
       localStorage.setItem('background', background);
       $(".background").removeClass("selected");
       $(this).parent().addClass("selected");
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
-       });
-      // window.location.reload();
+      window.location.reload();
     })
   })
 

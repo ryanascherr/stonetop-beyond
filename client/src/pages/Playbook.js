@@ -7,6 +7,10 @@ import $ from 'jquery';
 export default function Playbook() {
 
   $(document).ready(function () {
+    window.scrollTo(0, 0);
+  })
+
+  $(document).ready(function () {
     $(".playbook-btn").click(function () {
       window.localStorage.removeItem("background");
       window.localStorage.removeItem("drive");
@@ -23,12 +27,7 @@ export default function Playbook() {
       localStorage.setItem('playbook', playbook);
       $(".playbook").removeClass("selected");
       $(this).parent().addClass("selected");
-      // window.location.reload();
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
-       });
+      window.location.reload();
     })
   })
 
@@ -41,7 +40,7 @@ export default function Playbook() {
       <h2>{playbook.name}</h2>
       <h3>{playbook.complexity}</h3>
       <div className="playbook-image-container">
-        <img src={blessedIcon} className="playbook-image" alt="Icon"></img>
+        <img src={playbook.image} className="playbook-image" alt="Icon"></img>
       </div>
       <p>{playbook.description}</p>
       <button data-playbook={playbook.name} className="playbook-btn">Select</button>

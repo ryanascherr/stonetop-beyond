@@ -14,7 +14,14 @@ import Auth from '../utils/auth';
 
 export default function StonetopContainer() {
 
-  const [currentPage, setCurrentPage] = useState('');
+  let [currentPage, setCurrentPage] = useState('');
+
+  if (currentPage === "" && window.location.hash) {
+    currentPage = window.location.hash;
+    currentPage = currentPage.slice(1);
+    currentPage = currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
+    console.log(currentPage);
+  }
 
   const renderPage = () => {
     if (currentPage === 'Background') {
@@ -41,6 +48,7 @@ export default function StonetopContainer() {
   let render;
 
   if (Auth.loggedIn()) {
+    console.log({currentPage});
     landingPage = <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
     render = renderPage();
 

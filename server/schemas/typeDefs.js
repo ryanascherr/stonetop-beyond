@@ -74,7 +74,7 @@ const typeDefs = gql`
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-        addCharacter(playbook: String, background: String, drive: String, origin: String, name: String, str: String, dex: String, int: String, wis: String, con: String, cha: String)
+        
     }
 `;
 

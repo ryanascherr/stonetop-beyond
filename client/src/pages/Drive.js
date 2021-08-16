@@ -6,18 +6,17 @@ import $ from 'jquery';
 export default function Drive() {
 
   $(document).ready(function () {
+    window.scrollTo(0, 0);
+  })
+
+  $(document).ready(function () {
     $(".drive-btn").click(function () {
       let drive = $(this).data("drive");
       console.log(drive);
       localStorage.setItem('drive', drive);
       $(".drive").removeClass("selected");
       $(this).parent().addClass("selected");
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
-       });
-      // window.location.reload();
+      window.location.reload();
     })
   })
 

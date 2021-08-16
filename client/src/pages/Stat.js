@@ -4,6 +4,10 @@ import $ from 'jquery';
 export default function Stat() {
 
   $(document).ready(function () {
+    window.scrollTo(0, 0);
+  })
+
+  $(document).ready(function () {
     $(".stat-btn").click(function () {
       let str = $(".str").val();
       let dex = $(".dex").val();
@@ -18,12 +22,7 @@ export default function Stat() {
         localStorage.setItem('wis', wis);
         localStorage.setItem('con', con);
         localStorage.setItem('cha', cha);
-        window.scroll({
-          top: 0, 
-          left: 0, 
-          behavior: 'smooth' 
-        });
-        // window.location.reload();
+        window.location.reload();
       } else {
         alert("Please choose a number for all of your stats!");
       }

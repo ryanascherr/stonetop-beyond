@@ -82,7 +82,7 @@ body {
 
 .content {
     margin: 0 15px;
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
 }
 
 .header {
@@ -161,6 +161,10 @@ body {
 }
 
 /* Homepage */
+
+.homepage-description h2 {
+    margin-bottom: 30px;
+}
 
 .login-signup-container {
     display: flex;

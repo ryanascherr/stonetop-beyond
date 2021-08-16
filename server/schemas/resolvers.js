@@ -50,10 +50,10 @@ const resolvers = {
 
             return { token, user };
         },
-        addCharacter: async (parent, { playbook, background, drive, origin, name, str, dex, int, wis, con, cha }) => {
-            const character = await Character.create({ playbook, background, drive, origin, name, str, dex, int, wis, con, cha });
-            return { user };
-        }
+        // addCharacter: async (parent, { playbook, background, drive, origin, name, str, dex, int, wis, con, cha }) => {
+        //     const character = await Character.create({ playbook, background, drive, origin, name, str, dex, int, wis, con, cha });
+        //     return { user };
+        // }
     }
 };
 

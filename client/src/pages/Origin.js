@@ -6,6 +6,10 @@ import $ from 'jquery';
 export default function Origin() {
 
   $(document).ready(function () {
+    window.scrollTo(0, 0);
+  })
+
+  $(document).ready(function () {
     $(".origin-btn").click(function () {
       let origin = $(".origin-select").val();
       let name = $(".origin-name").val().trim();
@@ -14,12 +18,7 @@ export default function Origin() {
       } else {
         localStorage.setItem('origin', origin);
         localStorage.setItem('name', name);
-        window.scroll({
-          top: 0, 
-          left: 0, 
-          behavior: 'smooth' 
-         });
-        // window.location.reload();
+        window.location.reload();
       }
     })
   })
