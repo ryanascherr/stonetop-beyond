@@ -13,8 +13,9 @@ const CharacterSheet = () => {
 
     $(document).ready(function () {
         $(".damage-btn").click(function () {
-            let damage = $(this).data("damage");
+            damage = $(this).data("damage");
             damageRoll(damage);
+            $(".success-level").text("");
             $(".roll-result").text(`Damage: ${result}`);
             window.scrollTo({
                 top: 1000,
@@ -28,7 +29,7 @@ const CharacterSheet = () => {
     }
 
     $(document).ready(function () {
-        $(".stat-number").click(function () {
+        $(".stat-btn").click(function () {
             let number = $(this).data("number");
             let stat = $(this).data("stat");
             statRoll(number);
@@ -82,7 +83,7 @@ const CharacterSheet = () => {
                     </div>
                     <div className="character-sheet-stat">
                         <h2>18</h2>
-                        <h3 className="stat-lower">HP (max 18)</h3>
+                        <h3 className="stat-lower wider">HP (max 18)</h3>
                     </div>
                 </div>
                 <div className="three-stats">
@@ -102,7 +103,7 @@ const CharacterSheet = () => {
                 <div className="two-stats">
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Strength</h3>
-                        <h2 className="stat-number" data-number={character.str} data-stat="STR">{character.str}</h2>
+                        <h2 className="stat-number stat-btn" data-number={character.str} data-stat="STR">{character.str}</h2>
                         <h3 className="stat-lower">(STR)</h3>
                     </div>
                     <div className="condition-container">
@@ -111,14 +112,14 @@ const CharacterSheet = () => {
                     </div>
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Dexterity</h3>
-                        <h2 className="stat-number">{character.dex}</h2>
+                        <h2 className="stat-number stat-btn" data-number={character.dex} data-stat="DEX">{character.dex}</h2>
                         <h3 className="stat-lower">(DEX)</h3>
                     </div>
                 </div>
                 <div className="two-stats">
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Intelligence</h3>
-                        <h2 className="stat-number">{character.int}</h2>
+                        <h2 className="stat-number stat-btn" data-number={character.int} data-stat="INT">{character.int}</h2>
                         <h3 className="stat-lower">(INT)</h3>
                     </div>
                     <div className="condition-container">
@@ -127,14 +128,14 @@ const CharacterSheet = () => {
                     </div>
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Wisdom</h3>
-                        <h2 className="stat-number">{character.wis}</h2>
+                        <h2 className="stat-number stat-btn" data-number={character.wis} data-stat="WIS">{character.wis}</h2>
                         <h3 className="stat-lower">(WIS)</h3>
                     </div>
                 </div>
                 <div className="two-stats">
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Constitution</h3>
-                        <h2 className="stat-number">{character.con}</h2>
+                        <h2 className="stat-number stat-btn" data-number={character.con} data-stat="CON">{character.con}</h2>
                         <h3 className="stat-lower">(CON)</h3>
                     </div>
                     <div className="condition-container">
@@ -143,7 +144,7 @@ const CharacterSheet = () => {
                     </div>
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Charisma</h3>
-                        <h2 className="stat-number">{character.cha}</h2>
+                        <h2 className="stat-number stat-btn" data-number={character.cha} data-stat="CHA">{character.cha}</h2>
                         <h3 className="stat-lower">(CHA)</h3>
                     </div>
                 </div>
