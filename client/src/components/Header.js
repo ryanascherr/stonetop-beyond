@@ -1,5 +1,6 @@
 import React from 'react';
 import Auth from '../utils/auth';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -18,6 +19,12 @@ function Header() {
     return (
         <header className="header">
             <h1>Stonetop Character Creator</h1>
+            <Link to="/sheet">
+                <button>Character Sheet</button>
+            </Link>
+            <Link to="/make">
+                <button>Make Character</button>
+            </Link>
             {logoutBtn}
         </header>
     )

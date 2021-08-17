@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { setContext } from '@apollo/client/link/context';
 import StonetopContainer from "./components/StonetopContainer";
 
@@ -35,7 +31,9 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <StonetopContainer />
+      <Router>
+        <StonetopContainer />
+      </Router>
     </ApolloProvider>
   )
 };

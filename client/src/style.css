@@ -633,13 +633,13 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
 
 .green {
-    color: green;
+    color: #16A085;
 }
 
 .blue {
@@ -647,7 +647,11 @@ body {
 }
 
 .red {
-    color: red;
+    color: #E74C3C;
+}
+
+.red-background {
+    background-color: #E74C3C;
 }
 
 /* Media Queries */

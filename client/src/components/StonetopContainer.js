@@ -12,6 +12,7 @@ import Finalize from '../pages/Finalize';
 import CharacterSheet from './CharacterSheet';
 import "../style.css";
 import Auth from '../utils/auth';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export default function StonetopContainer() {
 
@@ -62,7 +63,16 @@ export default function StonetopContainer() {
         <Header />
         {/* {landingPage}
         {render} */}
-        <CharacterSheet />
+        {/* <CharacterSheet /> */}
+        <div className="">
+            <Route exact path="/sheet">
+              <CharacterSheet />
+            </Route>
+            <Route exact path="/make">
+              {landingPage}
+              {render}
+            </Route>
+        </div>
         <Footer />
     </div>
   );
