@@ -621,6 +621,27 @@ body {
     margin: 0;
 }
 
+.roll-container {
+    border: 5px solid var(--darkest-blue);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: var(--darkest-blue);
+}
+
+.red {
+    color: red;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 650px) {

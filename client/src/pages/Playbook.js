@@ -1,7 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_PLAYBOOKS } from '../utils/queries';
-import blessedIcon from '../img/icon-blessed.png';
 import $ from 'jquery';
 
 export default function Playbook() {
