@@ -19,6 +19,12 @@ function Header() {
     return (
         <header className="header">
             <h1>Stonetop Character Creator</h1>
+            <Link to="/">
+                <button>Info</button>
+            </Link>
+            <Link to="/homepage">
+                <button>Homepage</button>
+            </Link>
             <Link to="/sheet">
                 <button>Character Sheet</button>
             </Link>

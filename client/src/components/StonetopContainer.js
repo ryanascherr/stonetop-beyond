@@ -12,6 +12,7 @@ import Finalize from '../pages/Finalize';
 import CharacterSheet from './CharacterSheet';
 import "../style.css";
 import Auth from '../utils/auth';
+import Info from '../components/Info';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export default function StonetopContainer() {
@@ -65,6 +66,12 @@ export default function StonetopContainer() {
         {render} */}
         {/* <CharacterSheet /> */}
         <div className="">
+        <Route exact path="/">
+              <Info />
+            </Route>
+            <Route exact path="/homepage">
+              <Homepage />
+            </Route>
             <Route exact path="/sheet">
               <CharacterSheet />
             </Route>
