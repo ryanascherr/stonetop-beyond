@@ -7,6 +7,7 @@ const typeDefs = gql`
         username: String
         email: String
         password: String
+        characters: [Character]
     }
 
     type Playbook {
@@ -52,6 +53,7 @@ const typeDefs = gql`
         wis: String
         con: String
         cha: String
+        characterCreator: String
     }
 
     type Auth {

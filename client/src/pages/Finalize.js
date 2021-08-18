@@ -3,6 +3,8 @@ import $ from 'jquery';
 import QueryPlaybook from '../components/QueryPlaybook';
 import QueryBackground from '../components/QueryBackground';
 import QueryDrive from '../components/QueryDrive';
+import { ADD_CHARACTER } from '../utils/mutations';
+import { useMutation } from '@apollo/client';
 
 export default function Finalize() {
 
@@ -26,6 +28,33 @@ export default function Finalize() {
       $(".finalize-container").removeClass("hidden");
     }
   })
+
+  const [addCharacter] = useMutation(ADD_CHARACTER);
+
+  const handleCreateCharacter = async () => {
+    console.log("hey");
+    try {
+      const { data } = await addCharacter({
+        variables: {
+          playbook: playbook,
+          background: background,
+          drive: drive,
+          origin: origin,
+          name: name,
+          str: str,
+          dex: dex,
+          int: int,
+          wis: wis,
+          con: con,
+          cha: cha
+          // characterCreator: Auth.getProfile().data.username,
+        },
+      });
+
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   return (
     <div className="content">
@@ -76,7 +105,7 @@ export default function Finalize() {
             </div>
           </div>
           <div className="btn-container">
-            <button className="finalize-btn">Create Your Character</button>
+            <button className="finalize-btn" onClick={handleCreateCharacter}>Create Your Character</button>
           </div>
         </div>
       </div>

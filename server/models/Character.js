@@ -1,9 +1,6 @@
 const { Schema, model } = require('mongoose');
 
 const characterSchema = new Schema({
-    userId: {
-        type: String,
-    },
     playbook: {
         type: String,
     },
@@ -36,6 +33,10 @@ const characterSchema = new Schema({
     },
     cha: {
         type: String,
+    },
+    characterCreator: {
+        type: String,
+        trim: true,
     },
 });
 
