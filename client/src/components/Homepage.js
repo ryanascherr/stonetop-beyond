@@ -1,157 +1,47 @@
-import React, { useState } from 'react';
-import { useMutation } from '@apollo/client';
-import { ADD_USER, LOGIN_USER } from '../utils/mutations';
+import React from 'react';
 import Auth from '../utils/auth';
-import village from '../img/stonetop-village.jpeg';
 
-const Homepage = () => {
+function Info() {
 
-  // SIGNUP
-
-  const [signupState, setSignupState] = useState({
-    username: '',
-    email: '',
-    password: '',
-  });
-  const [addUser] = useMutation(ADD_USER);
-
-  const handleSignupChange = (event) => {
-    event.preventDefault();
-    const { name, value } = event.target;
-
-    setSignupState({
-      ...signupState,
-      [name]: value,
-    });
-  };
-
-
-  const handleSignup = async (event) => {
-    event.preventDefault();
-    console.log(signupState);
-
-    try {
-      const { data } = await addUser({
-        variables: { ...signupState },
-      });
-
-      Auth.login(data.addUser.token);
-
-      window.localStorage.removeItem("playbook");
-      window.localStorage.removeItem("background");
-      window.localStorage.removeItem("drive");
-      window.localStorage.removeItem("origin");
-      window.localStorage.removeItem("name");
-      window.localStorage.removeItem("str");
-      window.localStorage.removeItem("dex");
-      window.localStorage.removeItem("int");
-      window.localStorage.removeItem("wis");
-      window.localStorage.removeItem("con");
-      window.localStorage.removeItem("cha");
-      window.location.reload();
-
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
-  // LOGIN
-
-  const [loginState, setLoginState] = useState({
-    email: '',
-    password: ''
-  });
-  const [login] = useMutation(LOGIN_USER);
-
-  // update state based on form input changes
-  const handleLoginChange = (event) => {
-
-    const { name, value } = event.target;
-
-    setLoginState({
-      ...loginState,
-      [name]: value,
-    });
-  };
-
-  // submit form
-  const handleLogin = async (event) => {
-    event.preventDefault();
-
-    try {
-      const { data } = await login({
-        variables: { ...loginState },
-      });
-
-      Auth.login(data.login.token);
-
-      window.localStorage.removeItem("playbook");
-      window.localStorage.removeItem("background");
-      window.localStorage.removeItem("drive");
-      window.localStorage.removeItem("origin");
-      window.localStorage.removeItem("name");
-      window.localStorage.removeItem("str");
-      window.localStorage.removeItem("dex");
-      window.localStorage.removeItem("int");
-      window.localStorage.removeItem("wis");
-      window.localStorage.removeItem("con");
-      window.localStorage.removeItem("cha");
-      window.location.reload();
-
-    } catch (e) {
-      console.error(e);
-    }
-
-    // clear form values
-    setLoginState({
-      email: '',
-      password: '',
-    });
-  };
-
-  return (
-    <div className="content">
-      <div className="homepage-description">
-        <h2>With Stonetop Character Creator, create and edit characters in the fantastical world of Stonetop!</h2>
-        <h3 className="title">Sign up or login below to get started!</h3>
-      </div>
-      <div className="login-signup-container">
-        <div className="login-container">
-          <h2>Login</h2>
-          <div className="descriptors-inputs-container">
-            <div className="descriptors">
-              <h3>Email:</h3>
-              <h3>Password:</h3>
+    return (
+        <div className="content">
+            <h2>About Stonetop</h2>
+            <div className="info-container">
+                <div className="container">
+                    <h3>The premise</h3>
+                    <p>You play the heroes of <strong>Stonetop</strong>, an isolated village near the edge of the known world. Adventures focus on dealing with threats to the village, seizing opportunities for the village, or pursuing personal goals. Months or years might pass between adventures.</p>
+                </div>
+                <div className="container">
+                    <h3>The village itself...</h3>
+                    <p><strong>…is home to around 300 folks.</strong> It’s a nice place, though poor. People look out for each other, here.</p>
+                    <p><strong>…is built around a massive standing stone of unknown origin</strong>, carved with faint runes. Lightning strikes the Stone often.</p>
+                    <p><strong>…stands at the edge of the Great Wood.</strong> Villagers hunt and trap but—per a compact with the Forest Folk—never fell a living tree.</p>
+                </div>
+                <div className="container">
+                    <h3>Neighbors</h3>
+                    <p><strong>The Forest Folk</strong> disappeared ten years ago, and no one knows why.</p>
+                    <p>Horrid little <strong>crinwin</strong> lurk in the Great Wood. They’ve grown bolder and more numerous since the Forest Folk left.</p>
+                    <p><strong>Gordin's Delve</strong> is a rugged mining village a few days to the west.</p>
+                    <p><strong>The Hillfolk</strong> are nomads of the Steplands to the south and the Flats to the west; they have beef with Gordin's Delve.</p>
+                    <p><strong>Marshedge</strong> is a sizable town about 10 days's march south and west.</p>
+                    <p><strong>Barrier Pass</strong> is a few days north in the mountains; stoic, grim, unwelcoming.</p>
+                    <p>There’s no empire, no kings or nobles—at least not around here. More “civilized” towns and cities lie farther to the south.</p>
+                </div>
+                <div className="container">
+                    <h3>The Makers</h3>
+                    <p>The Makers are long gone, but their ruins (many sized for giants) remain. <strong>Stonetop is built on Maker-ruins:</strong> an ancient cistern, the crumbling Old Wall, some old foundations. <strong>The Ruined Tower</strong> is about a day from town. <strong>The West Road</strong> stretches from Stonetop to Gordin’s Delve. <strong>The Highway</strong> crosses the West Road a few miles from town, stretching from Barrier Pass to Marshedge and beyond.</p>
+                </div>
+                <div className="container">
+                    <h3>Other things of note</h3>
+                    <p><strong>The PCs are all human.</strong> Strange peoples (like the <strong>Forest Folk</strong> or <strong>the fae</strong> or the mask-wearing <strong>Ustrina</strong> from beyond Gordin's Delve) are known of but poorly understood.</p>
+                    <p>Sages whisper of the <strong>Things Below</strong>, primeval entities of darkness, corruption, and ruin. Their power taints all that it touches.</p>
+                    <p><strong>People are terrified of deep water.</strong> Evil dwells there. Evil that will drag you to your doom. Everyone knows this.</p>
+                    <p><strong>Magic is not common, nor easy, nor safe.</strong> It can be borrowed from spirits or gods or Things Below or wrested from the forgotten lore of the Makers. But it is not to be trifled with.</p>
+                    <p><strong>Iron</strong> is the most commin metal. Good steel is hard to find. <strong>Bronze</strong> tools and weapons are common enough, but old-fashioned and dripping with superstition.</p>
+                </div>
             </div>
-            <div className="inputs">
-              <input type="email" name="email" id='login-email' defaultValue={loginState.email} onChange={handleLoginChange}></input>
-              <input type="password" name="password" defaultValue={loginState.password} onChange={handleLoginChange}></input>
-            </div>
-          </div>
-          <button onClick={handleLogin}>Login</button>
         </div>
-        <div className="signup-container">
-          <h2>Signup</h2>
-          <div className="descriptors-inputs-container">
-            <div className="descriptors">
-              <h3>Username:</h3>
-              <h3>Email:</h3>
-              <h3>Password:</h3>
-            </div>
-            <div className="inputs">
-              <input type="text" name="username" defaultValue={signupState.username} onChange={handleSignupChange}></input>
-              <input type="email" name="email" id='signup-email' defaultValue={signupState.email} onChange={handleSignupChange}></input>
-              <input type="password" name="password" defaultValue={signupState.password} onChange={handleSignupChange}></input>
-            </div>
-          </div>
-          <button onClick={handleSignup}>Signup</button>
-        </div>
-      </div>
-      <div className="village-pic-container">
-        <img src={village} className="village-pic" alt="The village of Stonetop"></img>
-      </div>
-    </div>
-  )
+    )
 }
 
-export default Homepage;
+export default Info;

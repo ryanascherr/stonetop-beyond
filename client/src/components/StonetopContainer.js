@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import NavTabs from './NavTabs';
 import Footer from './Footer';
 import Header from './Header';
-import Homepage from './Homepage';
+import Login from './Login';
 import Playbook from '../pages/Playbook';
 import Background from '../pages/Background';
 import Drive from '../pages/Drive';
@@ -12,7 +12,7 @@ import Finalize from '../pages/Finalize';
 import CharacterSheet from './CharacterSheet';
 import "../style.css";
 import Auth from '../utils/auth';
-import Info from '../components/Info';
+import Homepage from './Homepage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export default function StonetopContainer() {
@@ -56,7 +56,7 @@ export default function StonetopContainer() {
     render = renderPage();
 
   } else {
-    landingPage = <Homepage />
+    landingPage = <Login />
   }
 
   return (
@@ -67,10 +67,10 @@ export default function StonetopContainer() {
         {/* <CharacterSheet /> */}
         <div className="">
         <Route exact path="/">
-              <Info />
-            </Route>
-            <Route exact path="/homepage">
               <Homepage />
+            </Route>
+            <Route exact path="/login">
+              <Login />
             </Route>
             <Route exact path="/sheet">
               <CharacterSheet />

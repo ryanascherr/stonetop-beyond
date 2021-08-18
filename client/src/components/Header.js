@@ -5,11 +5,26 @@ import { Link } from 'react-router-dom';
 function Header() {
 
     let logoutBtn;
+    let loginBtn;
+    let myCharactersBtn;
+    let makeCharacterBtn;
 
     if (Auth.loggedIn()) {
-        logoutBtn = <button className="logout" onClick={logMeOut}>Logout</button>
+        logoutBtn = <button className="logout" onClick={logMeOut}>Logout</button>;
+
+        loginBtn = <div></div>;
+
+        myCharactersBtn = <Link to="/sheet">
+        <button className="header-link">My Characters</button></Link>;
+
+        makeCharacterBtn = <Link to="/make">
+        <button className="header-link">Make Character</button></Link>;
     } else {
-        logoutBtn = <div></div>
+        logoutBtn = <div></div>;
+        loginBtn = <Link to="/login">
+        <button className="header-link">Login</button></Link>;
+        myCharactersBtn = <div></div>;
+        makeCharacterBtn = <div></div>;
     }
 
     function logMeOut() {
@@ -19,18 +34,14 @@ function Header() {
     return (
         <header className="header">
             <h1>Stonetop Character Creator</h1>
-            <Link to="/">
-                <button>Info</button>
-            </Link>
-            <Link to="/homepage">
-                <button>Homepage</button>
-            </Link>
-            <Link to="/sheet">
-                <button>Character Sheet</button>
-            </Link>
-            <Link to="/make">
-                <button>Make Character</button>
-            </Link>
+            <div className="header-links">
+                <Link to="/">
+                    <button className="header-link">Homepage</button>
+                </Link>
+                {loginBtn}
+                {makeCharacterBtn}
+                {myCharactersBtn}
+            </div>
             {logoutBtn}
         </header>
     )
