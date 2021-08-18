@@ -54,7 +54,6 @@ export default function StonetopContainer() {
   let render;
 
   if (Auth.loggedIn()) {
-    console.log({currentPage});
     landingPage = <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
     render = renderPage();
 
@@ -68,12 +67,8 @@ export default function StonetopContainer() {
     variables: { username: userParam },
   });
 
-  console.log(data);
-
   const user = data?.me || data?.user || {};
   // redirect to personal profile page if username is yours
-
-  console.log(user.username);
 
   localStorage.setItem('username', user.username);
 

@@ -33,6 +33,7 @@ export default function Finalize() {
   const [addCharacter] = useMutation(ADD_CHARACTER);
 
   const handleCreateCharacter = async () => {
+    
     try {
       const { data } = await addCharacter({
         variables: {

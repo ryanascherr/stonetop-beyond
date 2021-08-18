@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_CHARACTER } from '../utils/queries';
 import $ from 'jquery';
-import icon from '../img/icon-heavy.png';
+// import icon from '../img/icon-heavy.png';
 
 const CharacterSheet = () => {
 
@@ -95,13 +95,9 @@ const CharacterSheet = () => {
 
     let username = localStorage.getItem('username');
 
-    console.log(username);
-
     let { data } = useQuery(QUERY_CHARACTER, {
         variables: { characterCreator: username }
     });
-
-    console.log(data);
 
     const currentCharacter = data?.getCharacter || [];
 
