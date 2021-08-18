@@ -41,6 +41,9 @@ function Header() {
                 {loginBtn}
                 {makeCharacterBtn}
                 {myCharactersBtn}
+                <Link to="/test">
+                    <button className="header-link">Test</button>
+                </Link>
             </div>
             {logoutBtn}
         </header>

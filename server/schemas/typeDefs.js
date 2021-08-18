@@ -71,7 +71,8 @@ const typeDefs = gql`
         getDrive(name: String!, playbook: String!): [Drive]
         getDrives(playbook: String!): [Drive]
         getOrigin(playbook: String!): [Origin]
-        getCharacter(name: String!): [Character]
+        getCharacter(characterCreator: String!): [Character]
+        me: User
     }
 
     type Mutation {

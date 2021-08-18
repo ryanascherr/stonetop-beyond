@@ -13,8 +13,8 @@ export const QUERY_PLAYBOOK = gql`
 `;
 
 export const QUERY_CHARACTER = gql`
-  query getCharacter($name: String!) {
-    getCharacter(name: $name) {
+  query getCharacter($characterCreator: String!) {
+    getCharacter(characterCreator: $characterCreator) {
       _id
       name
       playbook
@@ -94,6 +94,39 @@ export const QUERY_ORIGIN = gql`
       playbook
       location
       names
+    }
+  }
+`;
+
+export const QUERY_USER = gql`
+  query getUser($username: String!) {
+    getUser(username: $username) {
+      _id
+      username
+      email
+      characters {
+        _id
+        playbook
+        background
+        name
+      }
+    }
+  }
+`;
+
+
+export const QUERY_ME = gql`
+  query me {
+    me {
+      _id
+      username
+      email
+      characters {
+        _id
+        playbook
+        background
+        name
+      }
     }
   }
 `;

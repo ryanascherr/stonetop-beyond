@@ -49,7 +49,7 @@ const Homepage = () => {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
-      window.location.reload();
+      return <Redirect to='/' />;
 
     } catch (e) {
       console.error(e);

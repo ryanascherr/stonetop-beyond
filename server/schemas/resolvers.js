@@ -29,8 +29,14 @@ const resolvers = {
         getOrigin: async (parent, { playbook }) => {
             return Origin.find({ playbook })
         },
-        getCharacter: async (parent, { name }) => {
-            return Character.find({ name })
+        getCharacter: async (parent, { characterCreator }) => {
+            return Character.find({ characterCreator })
+        },
+        me: async (parent, args, context) => {
+            if (context.user) {
+              return User.findOne({ _id: context.user._id }).populate('characters');
+            }
+            throw new AuthenticationError('You need to be logged in!');
         },
     },
     Mutation: {

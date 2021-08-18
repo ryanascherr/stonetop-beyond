@@ -93,9 +93,15 @@ const CharacterSheet = () => {
         }
     });
 
+    let username = localStorage.getItem('username');
+
+    console.log(username);
+
     let { data } = useQuery(QUERY_CHARACTER, {
-        variables: { name: "Murdoc" }
+        variables: { characterCreator: username }
     });
+
+    console.log(data);
 
     const currentCharacter = data?.getCharacter || [];
 

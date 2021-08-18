@@ -13,7 +13,11 @@ import CharacterSheet from './CharacterSheet';
 import "../style.css";
 import Auth from '../utils/auth';
 import Homepage from './Homepage';
+import Test from './Test';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { QUERY_USER, QUERY_ME, QUERY_CHARACTER } from '../utils/queries';
+import { Redirect, useParams } from 'react-router-dom';
 
 export default function StonetopContainer() {
 
@@ -59,6 +63,21 @@ export default function StonetopContainer() {
     landingPage = <Login />
   }
 
+  const { username: userParam } = useParams();
+
+  let { data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
+    variables: { username: userParam },
+  });
+
+  console.log(data);
+
+  const user = data?.me || data?.user || {};
+  // redirect to personal profile page if username is yours
+
+  console.log(user.username);
+
+  localStorage.setItem('username', user.username);
+
   return (
     <div>
         <Header />
@@ -71,6 +90,9 @@ export default function StonetopContainer() {
             </Route>
             <Route exact path="/sheet">
               <CharacterSheet />
+            </Route>
+            <Route exact path="/test">
+              <Test />
             </Route>
             <Route exact path="/make">
               {landingPage}
