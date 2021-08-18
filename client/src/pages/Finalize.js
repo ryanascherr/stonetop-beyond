@@ -5,6 +5,7 @@ import QueryBackground from '../components/QueryBackground';
 import QueryDrive from '../components/QueryDrive';
 import { ADD_CHARACTER } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
+import  { Redirect } from 'react-router-dom';
 
 export default function Finalize() {
 
@@ -32,7 +33,6 @@ export default function Finalize() {
   const [addCharacter] = useMutation(ADD_CHARACTER);
 
   const handleCreateCharacter = async () => {
-    console.log("hey");
     try {
       const { data } = await addCharacter({
         variables: {
@@ -49,7 +49,20 @@ export default function Finalize() {
           cha: cha
           // characterCreator: Auth.getProfile().data.username,
         },
+        
       });
+      window.localStorage.removeItem("playbook");
+      window.localStorage.removeItem("background");
+      window.localStorage.removeItem("drive");
+      window.localStorage.removeItem("origin");
+      window.localStorage.removeItem("name");
+      window.localStorage.removeItem("str");
+      window.localStorage.removeItem("dex");
+      window.localStorage.removeItem("int");
+      window.localStorage.removeItem("wis");
+      window.localStorage.removeItem("con");
+      window.localStorage.removeItem("cha");
+      return <Redirect to='/' />;
 
     } catch (err) {
       console.error(err);

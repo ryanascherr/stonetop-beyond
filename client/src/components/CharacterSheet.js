@@ -107,7 +107,8 @@ const CharacterSheet = () => {
 
     const listOfCharacters = currentCharacter.map(character => {
         return <div className="" key={character._id}>
-            <h1 className="character-sheet-title">{character.name} {character.playbook}</h1>
+            <button>{character.name}</button>
+            {/* <h1 className="character-sheet-title">{character.name} {character.playbook}</h1>
             <div className="character-sheet-stat-container">
                 <div className="two-stats">
                     <div className="character-sheet-stat">
@@ -184,7 +185,7 @@ const CharacterSheet = () => {
                         <h3 className="stat-lower">(CHA)</h3>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     })
 
