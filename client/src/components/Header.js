@@ -10,7 +10,7 @@ function Header() {
     let makeCharacterBtn;
 
     if (Auth.loggedIn()) {
-        logoutBtn = <button className="logout" onClick={logMeOut}>Logout</button>;
+        logoutBtn = <button className="logout" onClick={logMeOut}>Log Out</button>;
 
         loginBtn = <div></div>;
 
@@ -22,7 +22,7 @@ function Header() {
     } else {
         logoutBtn = <div></div>;
         loginBtn = <Link to="/login">
-        <button className="header-link">Login</button></Link>;
+        <button className="header-link">Log In</button></Link>;
         myCharactersBtn = <div></div>;
         makeCharacterBtn = <div></div>;
     }

@@ -113,8 +113,7 @@ const Homepage = () => {
   return (
     <div className="content">
       <div className="homepage-description">
-        {/* <h2>With Stonetop Character Creator, create and edit characters in the fantastical world of Stonetop!</h2> */}
-        <h2 className="title">Sign up or login below to get started!</h2>
+        <h2 className="title">Sign up or log in below to get started!</h2>
       </div>
       <div className="login-signup-container">
         <div className="login-container">

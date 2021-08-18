@@ -62,9 +62,6 @@ export default function StonetopContainer() {
   return (
     <div>
         <Header />
-        {/* {landingPage}
-        {render} */}
-        {/* <CharacterSheet /> */}
         <div className="">
         <Route exact path="/">
               <Homepage />

@@ -1,24 +1,24 @@
 import React from 'react';
-import Auth from '../utils/auth';
 
-function Info() {
+function Homepage() {
 
     return (
-        <div className="content">
-            <h2>About Stonetop</h2>
+        <div className="content info-page">
+            <h2>Welcome to the Stonetop Character Creator!</h2>
+            <h2>Read below to find out more about the game, or create a character after you've logged in!</h2>
             <div className="info-container">
-                <div className="container">
-                    <h3>The premise</h3>
+                <div className="info">
+                    <h2>The Premise</h2>
                     <p>You play the heroes of <strong>Stonetop</strong>, an isolated village near the edge of the known world. Adventures focus on dealing with threats to the village, seizing opportunities for the village, or pursuing personal goals. Months or years might pass between adventures.</p>
                 </div>
-                <div className="container">
-                    <h3>The village itself...</h3>
+                <div className="info">
+                    <h2>The Village Itself...</h2>
                     <p><strong>…is home to around 300 folks.</strong> It’s a nice place, though poor. People look out for each other, here.</p>
                     <p><strong>…is built around a massive standing stone of unknown origin</strong>, carved with faint runes. Lightning strikes the Stone often.</p>
                     <p><strong>…stands at the edge of the Great Wood.</strong> Villagers hunt and trap but—per a compact with the Forest Folk—never fell a living tree.</p>
                 </div>
-                <div className="container">
-                    <h3>Neighbors</h3>
+                <div className="info">
+                    <h2>Neighbors</h2>
                     <p><strong>The Forest Folk</strong> disappeared ten years ago, and no one knows why.</p>
                     <p>Horrid little <strong>crinwin</strong> lurk in the Great Wood. They’ve grown bolder and more numerous since the Forest Folk left.</p>
                     <p><strong>Gordin's Delve</strong> is a rugged mining village a few days to the west.</p>
@@ -27,12 +27,12 @@ function Info() {
                     <p><strong>Barrier Pass</strong> is a few days north in the mountains; stoic, grim, unwelcoming.</p>
                     <p>There’s no empire, no kings or nobles—at least not around here. More “civilized” towns and cities lie farther to the south.</p>
                 </div>
-                <div className="container">
-                    <h3>The Makers</h3>
+                <div className="info">
+                    <h2>The Makers</h2>
                     <p>The Makers are long gone, but their ruins (many sized for giants) remain. <strong>Stonetop is built on Maker-ruins:</strong> an ancient cistern, the crumbling Old Wall, some old foundations. <strong>The Ruined Tower</strong> is about a day from town. <strong>The West Road</strong> stretches from Stonetop to Gordin’s Delve. <strong>The Highway</strong> crosses the West Road a few miles from town, stretching from Barrier Pass to Marshedge and beyond.</p>
                 </div>
-                <div className="container">
-                    <h3>Other things of note</h3>
+                <div className="info">
+                    <h2>Other Things of Note</h2>
                     <p><strong>The PCs are all human.</strong> Strange peoples (like the <strong>Forest Folk</strong> or <strong>the fae</strong> or the mask-wearing <strong>Ustrina</strong> from beyond Gordin's Delve) are known of but poorly understood.</p>
                     <p>Sages whisper of the <strong>Things Below</strong>, primeval entities of darkness, corruption, and ruin. Their power taints all that it touches.</p>
                     <p><strong>People are terrified of deep water.</strong> Evil dwells there. Evil that will drag you to your doom. Everyone knows this.</p>
@@ -44,4 +44,4 @@ function Info() {
     )
 }
 
-export default Info;
+export default Homepage;
