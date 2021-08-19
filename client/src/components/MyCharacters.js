@@ -24,8 +24,11 @@ function MyCharacters() {
     })
 
     return (
-        <div className="content character-card-container">
-            {listOfCharacters}
+        <div className="content">
+            <h2>My Characters</h2>
+            <div className="character-card-container">
+                {listOfCharacters}
+            </div>
         </div>
     )
 }

@@ -5,7 +5,6 @@ import QueryBackground from '../components/QueryBackground';
 import QueryDrive from '../components/QueryDrive';
 import { ADD_CHARACTER } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
-import  { Redirect } from 'react-router-dom';
 
 export default function Finalize() {
 
@@ -63,7 +62,7 @@ export default function Finalize() {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
-      return <Redirect to='/' />;
+      window.location.assign('/characters');
 
     } catch (err) {
       console.error(err);

@@ -3,7 +3,6 @@ import { useMutation } from '@apollo/client';
 import { ADD_USER, LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 import village from '../img/stonetop-village.jpeg';
-import  { Redirect } from 'react-router-dom';
 
 const Homepage = () => {
 
@@ -49,7 +48,7 @@ const Homepage = () => {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
-      return <Redirect to='/' />;
+      window.location.assign('/');
 
     } catch (e) {
       console.error(e);
@@ -97,7 +96,7 @@ const Homepage = () => {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
-      return <Redirect to='/' />;
+      window.location.assign('/');
 
     } catch (e) {
       console.error(e);

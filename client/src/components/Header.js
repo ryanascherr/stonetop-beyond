@@ -1,7 +1,6 @@
 import React from 'react';
 import Auth from '../utils/auth';
 import { Link } from 'react-router-dom';
-import  { Redirect } from 'react-router-dom';
 
 function Header() {
 
@@ -30,7 +29,6 @@ function Header() {
 
     function logMeOut() {
         Auth.logout();
-        return <Redirect to='/' />;
     }
 
     return (
