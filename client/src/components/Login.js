@@ -4,7 +4,7 @@ import { ADD_USER, LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 import village from '../img/stonetop-village.jpeg';
 
-const Homepage = () => {
+const Login = () => {
 
   // SIGNUP
 
@@ -48,6 +48,7 @@ const Homepage = () => {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
+      window.localStorage.removeItem("id");
       window.location.assign('/');
 
     } catch (e) {
@@ -96,6 +97,7 @@ const Homepage = () => {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
+      window.localStorage.removeItem("id");
       window.location.assign('/');
 
     } catch (e) {
@@ -153,4 +155,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage;
+export default Login;

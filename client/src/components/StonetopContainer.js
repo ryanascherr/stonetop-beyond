@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Footer from './Footer';
 import Header from './Header';
@@ -11,8 +11,11 @@ import Stat from '../pages/Stat';
 import Finalize from '../pages/Finalize';
 import CharacterSheet from './CharacterSheet';
 import MyCharacters from './MyCharacters';
+import Misc from '../pages/Misc';
+import Moves from '../pages/Moves';
+import BasicMoves from '../pages/BasicMoves';
+import CharacterStats from '../pages/CharacterStats';
 import "../style.css";
-import Auth from '../utils/auth';
 import Homepage from './Homepage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
@@ -22,6 +25,8 @@ import { useParams } from 'react-router-dom';
 export default function StonetopContainer() {
 
   let [currentPage, setCurrentPage] = useState('');
+
+  let [currentCharacterPage, setCharacterCurrentPage] = useState('');
 
   if (currentPage === "" && window.location.hash) {
     currentPage = window.location.hash;
@@ -51,16 +56,28 @@ export default function StonetopContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
-  let landingPage = "";
-  let render;
+  const renderCharacterSheet = () => {
+    if (currentCharacterPage === 'Misc') {
+      return <Misc />;
+    }
+    if (currentCharacterPage === 'Moves') {
+      return <Moves />;
+    }
+    if (currentCharacterPage === 'BasicMoves') {
+      return <BasicMoves />;
+    }
+    return <CharacterStats />;
+  };
 
-  if (Auth.loggedIn()) {
-    landingPage = <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-    render = renderPage();
+  const handleCharacterPageChange = (page) => setCharacterCurrentPage(page);
 
-  } else {
-    landingPage = <Login />
-  }
+  // if (Auth.loggedIn()) {
+  //   landingPage = <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+  //   render = renderPage();
+
+  // } else {
+  //   landingPage = <Login />
+  // }
 
   const { username: userParam } = useParams();
 
@@ -69,32 +86,32 @@ export default function StonetopContainer() {
   });
 
   const user = data?.me || data?.user || {};
-  // redirect to personal profile page if username is yours
 
   localStorage.setItem('username', user.username);
 
   return (
     <div>
-        <Header />
-        <div className="">
+      <Header />
+      <div className="">
         <Route exact path="/">
-              <Homepage />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/my-characters">
-              <MyCharacters />
-            </Route>
-            <Route exact path="/sheet">
-              <CharacterSheet />
-            </Route>
-            <Route exact path="/make">
-              {landingPage}
-              {render}
-            </Route>
-        </div>
-        <Footer />
+          <Homepage />
+        </Route>
+        <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route exact path="/my-characters">
+          <MyCharacters />
+        </Route>
+        <Route exact path="/sheet">
+          <CharacterSheet currentPage={currentCharacterPage} handleCharacterPageChange={handleCharacterPageChange}/>
+          {renderCharacterSheet()}
+        </Route>
+        <Route exact path="/make">
+          <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+          {renderPage()}
+        </Route>
+      </div>
+      <Footer />
     </div>
   );
 }
