@@ -10,6 +10,7 @@ import Origin from '../pages/Origin';
 import Stat from '../pages/Stat';
 import Finalize from '../pages/Finalize';
 import CharacterSheet from './CharacterSheet';
+import MyCharacters from './MyCharacters';
 import "../style.css";
 import Auth from '../utils/auth';
 import Homepage from './Homepage';
@@ -82,8 +83,8 @@ export default function StonetopContainer() {
             <Route exact path="/login">
               <Login />
             </Route>
-            <Route exact path="/sheet">
-              <CharacterSheet />
+            <Route exact path="/characters">
+              <MyCharacters />
             </Route>
             <Route exact path="/make">
               {landingPage}

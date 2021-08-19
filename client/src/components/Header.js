@@ -15,7 +15,7 @@ function Header() {
 
         loginBtn = <div></div>;
 
-        myCharactersBtn = <Link to="/sheet">
+        myCharactersBtn = <Link to="/characters">
         <button className="header-link">My Characters</button></Link>;
 
         makeCharacterBtn = <Link to="/make">

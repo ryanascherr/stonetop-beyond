@@ -3,9 +3,9 @@ import React from 'react';
 function Footer() {
 
     return (
-        <header className="footer">
+        <footer className="footer">
             <h3>Made with love by <a href="https://github.com/ryanascherr" target="_blank" rel="noreferrer">Ryan Scherr</a></h3>
-        </header>
+        </footer>
     )
 }
 
