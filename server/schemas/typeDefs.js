@@ -71,7 +71,8 @@ const typeDefs = gql`
         getDrive(name: String!, playbook: String!): [Drive]
         getDrives(playbook: String!): [Drive]
         getOrigin(playbook: String!): [Origin]
-        getCharacter(characterCreator: String!): [Character]
+        getCharacters(characterCreator: String!): [Character]
+        getCharacter(_id: ID!): Character
         me: User
     }
 

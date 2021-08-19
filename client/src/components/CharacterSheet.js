@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_CHARACTER } from '../utils/queries';
 import $ from 'jquery';
-// import icon from '../img/icon-heavy.png';
+import icon from '../img/icon-heavy.png';
 
 const CharacterSheet = () => {
 
@@ -30,7 +30,7 @@ const CharacterSheet = () => {
 
     $(document).ready(function () {
         $(".stat-btn").click(function () {
-            let number = $(this).data("number");
+            let number = parseInt($(this).data("number"));
             let stat = $(this).data("stat");
             statRoll(number);
             if (result > 9) {
@@ -93,18 +93,17 @@ const CharacterSheet = () => {
         }
     });
 
-    let username = localStorage.getItem('username');
+    let id = localStorage.getItem('id');
 
     let { data } = useQuery(QUERY_CHARACTER, {
-        variables: { characterCreator: username }
+        variables: { _id: id }
     });
 
-    const currentCharacter = data?.getCharacter || [];
+    const character = data?.getCharacter || [];
 
-    const listOfCharacters = currentCharacter.map(character => {
-        return <div className="" key={character._id}>
-            <button>{character.name}</button>
-            {/* <h1 className="character-sheet-title">{character.name} {character.playbook}</h1>
+    return (
+        <div className="content">
+            <h1 className="character-sheet-title">{character.name} {character.playbook}</h1>
             <div className="character-sheet-stat-container">
                 <div className="two-stats">
                     <div className="character-sheet-stat">
@@ -181,13 +180,7 @@ const CharacterSheet = () => {
                         <h3 className="stat-lower">(CHA)</h3>
                     </div>
                 </div>
-            </div> */}
-        </div>
-    })
-
-    return (
-        <div className="content">
-            {listOfCharacters}
+            </div>
             <div className="roll-container">
                 <h2 className="roll-result"> </h2>
                 <h2 className="success-level"> </h2>

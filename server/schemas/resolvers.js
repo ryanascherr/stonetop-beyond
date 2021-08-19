@@ -29,7 +29,10 @@ const resolvers = {
         getOrigin: async (parent, { playbook }) => {
             return Origin.find({ playbook })
         },
-        getCharacter: async (parent, { characterCreator }) => {
+        getCharacter: async (parent, { _id }) => {
+            return Character.findOne({ _id }).populate('characters');
+          }, 
+        getCharacters: async (parent, { characterCreator }) => {
             return Character.find({ characterCreator })
         },
         me: async (parent, args, context) => {

@@ -13,8 +13,27 @@ export const QUERY_PLAYBOOK = gql`
 `;
 
 export const QUERY_CHARACTER = gql`
-  query getCharacter($characterCreator: String!) {
-    getCharacter(characterCreator: $characterCreator) {
+  query getCharacter($_id: ID!) {
+    getCharacter(_id: $_id) {
+      _id
+      name
+      playbook
+      background
+      drive
+      origin
+      str
+      dex
+      int
+      wis
+      con
+      cha
+    }
+  }
+`;
+
+export const QUERY_CHARACTERS = gql`
+  query getCharacters($characterCreator: String!) {
+    getCharacters(characterCreator: $characterCreator) {
       _id
       name
       playbook

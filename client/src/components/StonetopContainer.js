@@ -83,8 +83,11 @@ export default function StonetopContainer() {
             <Route exact path="/login">
               <Login />
             </Route>
-            <Route exact path="/characters">
+            <Route exact path="/my-characters">
               <MyCharacters />
+            </Route>
+            <Route exact path="/sheet">
+              <CharacterSheet />
             </Route>
             <Route exact path="/make">
               {landingPage}
