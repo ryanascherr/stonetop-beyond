@@ -553,6 +553,10 @@ body {
 
 /* My Characters */
 
+.my-characters-title {
+    margin-bottom: 25px;
+}
+
 .character-card-container {
     display: flex;
     justify-content: center;
