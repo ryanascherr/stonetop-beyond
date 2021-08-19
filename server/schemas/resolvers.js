@@ -1,7 +1,7 @@
 const { signToken } = require('../utils/auth');
 const { AuthenticationError } = require('apollo-server-express');
 
-const { Playbook, User, Background, Drive, Origin, Character } = require('../models');
+const { Playbook, User, Background, Drive, Origin, Character, Move } = require('../models');
 
 const resolvers = {
     Query: {
@@ -34,6 +34,9 @@ const resolvers = {
           }, 
         getCharacters: async (parent, { characterCreator }) => {
             return Character.find({ characterCreator })
+        },
+        getMoves: async (parent, { playbook }) => {
+            return Move.find({ playbook })
         },
         me: async (parent, args, context) => {
             if (context.user) {

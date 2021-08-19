@@ -117,6 +117,17 @@ export const QUERY_ORIGIN = gql`
   }
 `;
 
+export const QUERY_MOVES = gql`
+  query getMoves($playbook: String!) {
+    getMoves(playbook: $playbook) {
+      _id
+      playbook
+      name
+      description
+    }
+  }
+`;
+
 export const QUERY_USER = gql`
   query getUser($username: String!) {
     getUser(username: $username) {

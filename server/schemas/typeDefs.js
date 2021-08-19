@@ -56,6 +56,13 @@ const typeDefs = gql`
         characterCreator: String
     }
 
+    type Move {
+        _id: ID
+        playbook: String
+        name: String
+        description: String
+    }
+
     type Auth {
         token: ID!
         user: User
@@ -73,6 +80,7 @@ const typeDefs = gql`
         getOrigin(playbook: String!): [Origin]
         getCharacters(characterCreator: String!): [Character]
         getCharacter(_id: ID!): Character
+        getMoves(playbook: String!): [Move]
         me: User
     }
 

@@ -32,7 +32,12 @@ export default function StonetopContainer() {
     currentPage = window.location.hash;
     currentPage = currentPage.slice(1);
     currentPage = currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
-    console.log(currentPage);
+  }
+
+  if (currentCharacterPage === "" && window.location.hash) {
+    currentCharacterPage = window.location.hash;
+    currentCharacterPage = currentCharacterPage.slice(1);
+    currentCharacterPage = currentCharacterPage.charAt(0).toUpperCase() + currentCharacterPage.slice(1);
   }
 
   const renderPage = () => {

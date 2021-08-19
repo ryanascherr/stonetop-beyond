@@ -1,11 +1,10 @@
 import React from 'react';
-import $ from 'jquery';
 
 function CharacterSheet({ currentCharacterPage, handleCharacterPageChange })
 {
 
 return (
-    <div className="character-tabs">
+    <div className="nav-tabs">
         <a
             href="#stats"
             onClick={() => handleCharacterPageChange('Stats')}

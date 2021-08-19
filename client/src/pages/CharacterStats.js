@@ -99,11 +99,16 @@ const CharacterStats = () => {
         window.location.assign('/');
     }
 
+
     let { data } = useQuery(QUERY_CHARACTER, {
         variables: { _id: id }
     });
 
     const character = data?.getCharacter || [];
+
+    // let playbook = character.playbook;
+
+    // localStorage.setItem()
 
     return (
         <div className="content">
