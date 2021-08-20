@@ -27,6 +27,9 @@ export const QUERY_CHARACTER = gql`
       wis
       con
       cha
+      maxHP
+      currentHP
+      damage
     }
   }
 `;
@@ -46,6 +49,9 @@ export const QUERY_CHARACTERS = gql`
       wis
       con
       cha
+      maxHP
+      currentHP
+      damage
     }
   }
 `;

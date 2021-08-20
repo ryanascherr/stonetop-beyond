@@ -51,9 +51,9 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
           },
-        addCharacter: async (parent, { playbook, background, drive, origin, name, str, dex, int, wis, con, cha }, context) => {
+        addCharacter: async (parent, { playbook, background, drive, origin, name, str, dex, int, wis, con, cha, maxHP, currentHP, damage }, context) => {
             if (context.user) {
-                const character = await Character.create({ playbook, background, drive, origin, name, str, dex, int, wis, con, cha, characterCreator: context.user.username });
+                const character = await Character.create({ playbook, background, drive, origin, name, str, dex, int, wis, con, cha, maxHP, currentHP, damage, characterCreator: context.user.username });
                 return character;
             }
         },

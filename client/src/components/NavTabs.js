@@ -1,7 +1,13 @@
 import React from 'react';
 import $ from 'jquery';
+import Auth from '../utils/auth';
+import { Redirect } from 'react-router-dom';
 
 function NavTabs({ currentPage, handlePageChange }) {
+
+    if (!Auth.loggedIn) {
+        window.location.assign('/');
+    }
 
     let checked = `&#9989;`;
     let unchecked = `&#10060;`;

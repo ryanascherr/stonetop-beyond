@@ -8,6 +8,8 @@ import { useMutation } from '@apollo/client';
 
 export default function Finalize() {
 
+  let hp = localStorage.getItem('maxHP');
+  let damage = localStorage.getItem('damage');
   let playbook = localStorage.getItem('playbook');
   let background = localStorage.getItem('background');
   let drive = localStorage.getItem('drive');
@@ -46,11 +48,17 @@ export default function Finalize() {
           int: int,
           wis: wis,
           con: con,
-          cha: cha
+          cha: cha,
+          maxHP: hp,
+          currentHP: hp,
+          damage: damage
           // characterCreator: Auth.getProfile().data.username,
         },
         
       });
+      window.localStorage.removeItem("maxHP");
+      window.localStorage.removeItem("currentHP");
+      window.localStorage.removeItem("damage");
       window.localStorage.removeItem("playbook");
       window.localStorage.removeItem("background");
       window.localStorage.removeItem("drive");
@@ -62,7 +70,7 @@ export default function Finalize() {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
-      window.location.assign('/characters');
+      window.location.assign('/my-characters');
 
     } catch (err) {
       console.error(err);

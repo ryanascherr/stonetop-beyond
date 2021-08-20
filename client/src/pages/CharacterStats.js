@@ -116,15 +116,15 @@ const CharacterStats = () => {
             <div className="character-sheet-stat-container">
                 <div className="two-stats">
                     <div className="character-sheet-stat">
-                        <h2 className="stat-number damage-btn" data-damage="6">d6</h2>
+                        <h2 className="stat-number damage-btn" data-damage="6">d{character.damage}</h2>
                         <h3 className="stat-lower">Damage</h3>
                     </div>
                     <div className="playbook-image-container">
                             <img src={icon} className="playbook-image" alt="Icon"></img>
                     </div>
                     <div className="character-sheet-stat">
-                        <h2>18</h2>
-                        <h3 className="stat-lower wider">HP (max 18)</h3>
+                        <h2>{character.currentHP}</h2>
+                        <h3 className="stat-lower wider">HP (max {character.maxHP})</h3>
                     </div>
                 </div>
                 <div className="three-stats">

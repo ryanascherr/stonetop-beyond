@@ -37,6 +37,9 @@ const Login = () => {
 
       Auth.login(data.addUser.token);
 
+      window.localStorage.removeItem("maxHP");
+      window.localStorage.removeItem("currentHP");
+      window.localStorage.removeItem("damage");
       window.localStorage.removeItem("playbook");
       window.localStorage.removeItem("background");
       window.localStorage.removeItem("drive");
@@ -86,6 +89,9 @@ const Login = () => {
 
       Auth.login(data.login.token);
 
+      window.localStorage.removeItem("maxHP");
+      window.localStorage.removeItem("currentHP");
+      window.localStorage.removeItem("damage");
       window.localStorage.removeItem("playbook");
       window.localStorage.removeItem("background");
       window.localStorage.removeItem("drive");

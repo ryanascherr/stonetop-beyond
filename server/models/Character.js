@@ -34,6 +34,15 @@ const characterSchema = new Schema({
     cha: {
         type: String,
     },
+    maxHP: {
+        type: String,
+    },
+    currentHP: {
+        type: String,
+    },
+    damage: {
+        type: String,
+    },
     characterCreator: {
         type: String,
         trim: true,
