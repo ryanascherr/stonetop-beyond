@@ -641,16 +641,6 @@ body {
     flex-wrap: wrap;
 }
 
-.move {
-    /* background-color: var(--darkest-blue);
-    color: var(--off-white);
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px gray;
-    width: 100%; */
-}
-
 .move h2 {
     margin-bottom: 15px;
 }

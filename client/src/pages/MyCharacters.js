@@ -10,7 +10,6 @@ function MyCharacters() {
     $(document).ready(function () {
         $(".character-btn").click(function () {
           let id = $(this).data("id");
-          console.log(id);
           localStorage.setItem('id', id);
         })
       })
