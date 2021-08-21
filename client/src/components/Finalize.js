@@ -21,6 +21,8 @@ export default function Finalize() {
   let wis = localStorage.getItem('wis');
   let con = localStorage.getItem('con');
   let cha = localStorage.getItem('cha');
+  let level = "1";
+  let exp = "0";
 
   $(document).ready(function () {
     if (!playbook || !background || !drive || !origin || !str) {
@@ -51,12 +53,15 @@ export default function Finalize() {
           cha: cha,
           maxHP: hp,
           currentHP: hp,
-          damage: damage
+          damage: damage,
+          level: level,
+          exp: exp
           // characterCreator: Auth.getProfile().data.username,
         },
         
       });
-      window.localStorage.removeItem("maxHP");
+      window.localStorage.removeItem("level");
+      window.localStorage.removeItem("exp");
       window.localStorage.removeItem("currentHP");
       window.localStorage.removeItem("damage");
       window.localStorage.removeItem("playbook");

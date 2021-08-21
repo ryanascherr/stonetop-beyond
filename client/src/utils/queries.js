@@ -30,6 +30,8 @@ export const QUERY_CHARACTER = gql`
       maxHP
       currentHP
       damage
+      level
+      exp
     }
   }
 `;

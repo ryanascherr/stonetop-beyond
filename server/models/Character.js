@@ -43,6 +43,12 @@ const characterSchema = new Schema({
     damage: {
         type: String,
     },
+    level: {
+        type: String,
+    },
+    exp: {
+        type: String,
+    },
     characterCreator: {
         type: String,
         trim: true,

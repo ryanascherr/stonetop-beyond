@@ -105,6 +105,9 @@ const CharacterStats = () => {
 
     const character = data?.getCharacter || [];
 
+    console.log(character.exp);
+    console.log(character.exp);
+
     return (
         <div className="content">
             <h1 className="character-sheet-title">{character.name} {character.playbook}</h1>
@@ -128,11 +131,11 @@ const CharacterStats = () => {
                         <h3 className="stat-lower">Armor</h3>
                     </div>
                     <div className="character-sheet-stat">
-                        <h2>7</h2>
+                        <h2>{character.exp}</h2>
                         <h3 className="stat-lower">XP</h3>
                     </div>
                     <div className="character-sheet-stat">
-                        <h2>2</h2>
+                        <h2>{character.level}</h2>
                         <h3 className="stat-lower">Level</h3>
                     </div>
                 </div>
