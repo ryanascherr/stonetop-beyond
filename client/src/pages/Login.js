@@ -13,6 +13,7 @@ const Login = () => {
     email: '',
     password: '',
   });
+
   const [addUser] = useMutation(ADD_USER);
 
   const handleSignupChange = (event) => {
@@ -65,6 +66,7 @@ const Login = () => {
     email: '',
     password: ''
   });
+  
   const [login] = useMutation(LOGIN_USER);
 
   // update state based on form input changes

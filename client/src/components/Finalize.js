@@ -1,8 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
-import QueryPlaybook from '../components/QueryPlaybook';
-import QueryBackground from '../components/QueryBackground';
-import QueryDrive from '../components/QueryDrive';
+import QueryPlaybook from './QueryPlaybook';
+import QueryBackground from './QueryBackground';
+import QueryDrive from './QueryDrive';
 import { ADD_CHARACTER } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
 

@@ -99,16 +99,11 @@ const CharacterStats = () => {
         window.location.assign('/');
     }
 
-
     let { data } = useQuery(QUERY_CHARACTER, {
         variables: { _id: id }
     });
 
     const character = data?.getCharacter || [];
-
-    // let playbook = character.playbook;
-
-    // localStorage.setItem()
 
     return (
         <div className="content">
@@ -116,7 +111,7 @@ const CharacterStats = () => {
             <div className="character-sheet-stat-container">
                 <div className="two-stats">
                     <div className="character-sheet-stat">
-                        <h2 className="stat-number damage-btn" data-damage="6">d{character.damage}</h2>
+                        <h2 className="stat-number stat-btn" data-damage="6">d{character.damage}</h2>
                         <h3 className="stat-lower">Damage</h3>
                     </div>
                     <div className="playbook-image-container">

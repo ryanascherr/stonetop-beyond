@@ -83,7 +83,7 @@ export default function Playbook() {
   const playbooks = data?.getPlaybooks || [];
 
   const listOfPlaybooks = playbooks.map(playbook => {
-    return <div className="playbook" id={playbook.name} key={playbook._id}>
+    return <div className="playbook card" id={playbook.name} key={playbook._id}>
       <h2>{playbook.name}</h2>
       <h3>{playbook.complexity}</h3>
       <div className="playbook-image-container">

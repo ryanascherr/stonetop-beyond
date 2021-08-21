@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
+import MakeCharacters from '../pages/MakeCharacter';
 import Footer from './Footer';
 import Header from './Header';
-import Login from './Login';
-import Playbook from '../pages/Playbook';
-import Background from '../pages/Background';
-import Drive from '../pages/Drive';
-import Origin from '../pages/Origin';
-import Stat from '../pages/Stat';
-import Finalize from '../pages/Finalize';
-import CharacterSheet from './CharacterSheet';
-import MyCharacters from './MyCharacters';
-import Misc from '../pages/Misc';
-import Moves from '../pages/Moves';
-import BasicMoves from '../pages/BasicMoves';
-import CharacterStats from '../pages/CharacterStats';
+import Login from '../pages/Login';
+import Playbook from './Playbook';
+import Background from './Background';
+import Drive from './Drive';
+import Origin from './Origin';
+import Stat from './Stat';
+import Finalize from './Finalize';
+import CharacterSheet from '../pages/CharacterSheet';
+import MyCharacters from '../pages/MyCharacters';
+import Misc from './Misc';
+import Moves from './Moves';
+import BasicMoves from './BasicMoves';
+import CharacterStats from './CharacterStats';
 import "../style.css";
-import Homepage from './Homepage';
+import Homepage from '../pages/Homepage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
@@ -76,14 +76,6 @@ export default function StonetopContainer() {
 
   const handleCharacterPageChange = (page) => setCharacterCurrentPage(page);
 
-  // if (Auth.loggedIn()) {
-  //   landingPage = <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-  //   render = renderPage();
-
-  // } else {
-  //   landingPage = <Login />
-  // }
-
   const { username: userParam } = useParams();
 
   let { data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
@@ -112,7 +104,7 @@ export default function StonetopContainer() {
           {renderCharacterSheet()}
         </Route>
         <Route exact path="/make">
-          <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+          <MakeCharacters currentPage={currentPage} handlePageChange={handlePageChange} />
           {renderPage()}
         </Route>
       </div>

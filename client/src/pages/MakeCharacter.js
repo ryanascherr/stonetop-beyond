@@ -3,7 +3,7 @@ import $ from 'jquery';
 import Auth from '../utils/auth';
 import { Redirect } from 'react-router-dom';
 
-function NavTabs({ currentPage, handlePageChange }) {
+function MakeCharacter({ currentPage, handlePageChange }) {
 
     if (!Auth.loggedIn) {
         window.location.assign('/');
@@ -109,4 +109,4 @@ function NavTabs({ currentPage, handlePageChange }) {
     );
 }
 
-export default NavTabs;
+export default MakeCharacter;

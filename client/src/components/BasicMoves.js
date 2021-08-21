@@ -11,7 +11,7 @@ export default function BasicMoves() {
   const basicMoves = data?.getMoves || [];
 
   const listOfMoves = basicMoves.map(move => {
-    return <div className="move" key={move._id}>
+    return <div className="move card" key={move._id}>
       <h2>{move.name}</h2>
       <div dangerouslySetInnerHTML={{ __html: move.description }}></div>
     </div>

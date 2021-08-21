@@ -37,7 +37,7 @@ export default function Drive() {
   const drives = data?.getDrives || [];
 
   const listOfDrives = drives.map(drive => {
-    return <div className="drive" key={drive._id}>
+    return <div className="drive card" key={drive._id}>
       <h2>{drive.name}</h2>
       <p>{drive.description}</p>
       <button className="drive-btn" data-drive={drive.name}>Select</button>

@@ -7,19 +7,11 @@ import { Link } from 'react-router-dom';
 
 function MyCharacters() {
 
-    // function goToCharacter() {
-    //     let id = $(this).data("id");
-    //     console.log(id);
-    // }
-
     $(document).ready(function () {
         $(".character-btn").click(function () {
           let id = $(this).data("id");
           console.log(id);
           localStorage.setItem('id', id);
-        //   $(".playbook").removeClass("selected");
-        //   $(this).parent().addClass("selected");
-        //   window.location.reload();
         })
       })
 
@@ -37,7 +29,7 @@ function MyCharacters() {
         listOfCharacters = <h2>You don't have any character yet!</h2>
     } else {
         listOfCharacters = currentCharacter.map(character => {
-            return <div className="character-card" key={character._id}>
+            return <div className="character-card card" key={character._id}>
                 <h2>{character.name} {character.playbook}</h2>
                 <div className="playbook-image-container">
                     <img src={icon} className="playbook-image" alt="Icon"></img>

@@ -45,7 +45,7 @@ export default function Origin() {
   })
 
   const listOfOrigins = origins.map(origin => {
-    return <div className="origin" key={origin._id}>
+    return <div className="origin card" key={origin._id}>
       <h2>{origin.location}:</h2>
       <p>{origin.names}</p>
     </div>
