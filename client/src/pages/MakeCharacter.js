@@ -1,7 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 import Auth from '../utils/auth';
-import { Redirect } from 'react-router-dom';
 
 function MakeCharacter({ currentPage, handlePageChange }) {
 

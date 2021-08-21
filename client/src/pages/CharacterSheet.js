@@ -1,14 +1,18 @@
 import React from 'react';
+import Auth from '../utils/auth';
 
 function CharacterSheet({ currentCharacterPage, handleCharacterPageChange })
 {
+
+    if (!Auth.loggedIn) {
+        window.location.assign('/');
+    }
 
 return (
     <div className="nav-tabs">
         <a
             href="#stats"
             onClick={() => handleCharacterPageChange('Stats')}
-            id="playbook-nav"
             className={currentCharacterPage === 'Stats' ? 'nav-link active' : 'nav-link'}
         >
             Stats

@@ -388,7 +388,6 @@ body {
 .stat-btn:hover {
     background-color: var(--off-white);
     color: var(--darkest-blue);
-    border: 2px solid var(--darkest-blue);
 }
 
 .btn-container {
@@ -592,6 +591,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
+    border: 2px solid var(--darkest-blue);
 }
 
 .condition-container {

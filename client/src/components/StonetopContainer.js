@@ -26,18 +26,10 @@ export default function StonetopContainer() {
 
   let [currentPage, setCurrentPage] = useState('');
 
-  let [currentCharacterPage, setCharacterCurrentPage] = useState('');
-
   if (currentPage === "" && window.location.hash) {
     currentPage = window.location.hash;
     currentPage = currentPage.slice(1);
     currentPage = currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
-  }
-
-  if (currentCharacterPage === "" && window.location.hash) {
-    currentCharacterPage = window.location.hash;
-    currentCharacterPage = currentCharacterPage.slice(1);
-    currentCharacterPage = currentCharacterPage.charAt(0).toUpperCase() + currentCharacterPage.slice(1);
   }
 
   const renderPage = () => {
@@ -60,6 +52,14 @@ export default function StonetopContainer() {
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
+
+  let [currentCharacterPage, setCharacterCurrentPage] = useState('');
+
+  if (currentCharacterPage === "" && window.location.hash) {
+    currentCharacterPage = window.location.hash;
+    currentCharacterPage = currentCharacterPage.slice(1);
+    currentCharacterPage = currentCharacterPage.charAt(0).toUpperCase() + currentCharacterPage.slice(1);
+  }
 
   const renderCharacterSheet = () => {
     if (currentCharacterPage === 'Misc') {
