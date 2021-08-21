@@ -121,7 +121,7 @@ const Login = () => {
 
   return (
     <div className="content">
-      <div className="homepage-description">
+      <div className="login-description">
         <h2 className="title">Sign up or log in below to get started!</h2>
       </div>
       <div className="login-signup-container">
