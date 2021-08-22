@@ -390,11 +390,11 @@ body {
     color: var(--darkest-blue);
 }
 
-/* .stat-btn {
+.stat-btn {
     background-color: var(--darkest-blue);
     color: var(--off-white);
     border: 2px solid var(--darkest-blue);
-} */
+}
 
 .stat-btn:active, .damage-btn:active {
     transform: scale(0.9);

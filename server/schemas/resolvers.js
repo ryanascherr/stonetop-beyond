@@ -57,6 +57,12 @@ const resolvers = {
         addCharacter: async (parent, { playbook, background, drive, origin, name, str, dex, int, wis, con, cha, maxHP, currentHP, damage, level, exp, armor }, context) => {
             if (context.user) {
                 const character = await Character.create({ playbook, background, drive, origin, name, str, dex, int, wis, con, cha, maxHP, currentHP, damage, level, exp, armor, characterCreator: context.user.username });
+                
+                await User.findOneAndUpdate(
+                    { _id: context.user._id},
+                    { $addToSet: { characters: character._id} },
+                )
+
                 return character;
             }
         },

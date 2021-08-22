@@ -1,33 +1,63 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { QUERY_CHARACTERS } from '../utils/queries';
+import { QUERY_CHARACTERS, QUERY_USER, QUERY_ME } from '../utils/queries';
+import { Redirect, useParams } from 'react-router-dom';
 import icon from '../img/icon-blessed.png';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
 function MyCharacters() {
 
-    $(document).ready(function () {
-        $(".character-btn").click(function () {
-          let id = $(this).data("id");
-          localStorage.setItem('id', id);
-        })
-      })
+    // $(document).ready(function () {
+    //     $(".character-btn").click(function () {
+    //       let id = $(this).data("id");
+    //       localStorage.setItem('id', id);
+    //     })
+    //   })
+
+    // let listOfCharacters;
+
+    // let username = localStorage.getItem('username');
+
+    // let { data } = useQuery(QUERY_CHARACTERS, {
+    //     variables: { characterCreator: username }
+    // });
+
+    // const currentCharacter = data?.getCharacters || [];
+
+    // if (currentCharacter.length === 0) {
+    //     listOfCharacters = <h2>You don't have any character yet!</h2>
+    // } else {
+    //     listOfCharacters = currentCharacter.map(character => {
+    //         return <div className="character-card card" key={character._id}>
+    //             <h2>{character.name} {character.playbook}</h2>
+    //             <h2>Level {character.level}</h2>
+    //             <div className="playbook-image-container">
+    //                 <img src={icon} className="playbook-image" alt="Icon"></img>
+    //             </div>
+    //             <Link to={`/sheet`}>
+    //                 <button data-id={character._id} className="character-btn">Select</button>
+    //             </Link>
+    //         </div>
+    //     })
+    // }
+
+    const { username: userParam } = useParams();
+
+    const { data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
+      variables: { username: userParam },
+    });
+  
+    const user = data?.me || data?.user || {};
+  
+    const characters = user.characters;
 
     let listOfCharacters;
 
-    let username = localStorage.getItem('username');
-
-    let { data } = useQuery(QUERY_CHARACTERS, {
-        variables: { characterCreator: username }
-    });
-
-    const currentCharacter = data?.getCharacters || [];
-
-    if (currentCharacter.length === 0) {
-        listOfCharacters = <h2>You don't have any character yet!</h2>
+    if (characters.length === 0) {
+        listOfCharacters = <h2>You don't have any characters yet!</h2>
     } else {
-        listOfCharacters = currentCharacter.map(character => {
+        listOfCharacters = characters.map(character => {
             return <div className="character-card card" key={character._id}>
                 <h2>{character.name} {character.playbook}</h2>
                 <h2>Level {character.level}</h2>
