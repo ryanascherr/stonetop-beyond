@@ -57,6 +57,10 @@ const resolvers = {
                 return character;
             }
         },
+        // deleteCharacter: async (parent, { _id }) => {
+        //     const character = await Character.deleteOne({ _id });
+        //     return { character };
+        // },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 

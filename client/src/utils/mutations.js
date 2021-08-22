@@ -32,3 +32,14 @@ export const ADD_CHARACTER = gql`
     }
   }
 `;
+
+// export const DELETE_CHARACTER = gql`
+//   mutation deleteCharacter($_id: ID!) {
+//     deleteCharacter(_id: $_id) {
+//       character {
+//         _id
+//         name
+//       }
+//     }
+//   }
+// `;

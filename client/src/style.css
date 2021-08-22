@@ -620,14 +620,20 @@ body {
 
 .roll-container {
     border: 5px solid var(--darkest-blue);
+    background-color: var(--off-white);
     height: 100px;
     max-width: 750px;
+    min-width: 250px;
+    padding: 15px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    /* position: fixed;
+    bottom: 80px;
+    left: 0; */
 }
 
 .green {
@@ -656,6 +662,10 @@ body {
 
 .move h2 {
     margin-bottom: 15px;
+}
+
+.no-bullet {
+    list-style-type: none;
 }
 
 /* Media Queries */
