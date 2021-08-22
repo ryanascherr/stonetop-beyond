@@ -30,6 +30,7 @@ function MyCharacters() {
         listOfCharacters = currentCharacter.map(character => {
             return <div className="character-card card" key={character._id}>
                 <h2>{character.name} {character.playbook}</h2>
+                <h2>Level {character.level}</h2>
                 <div className="playbook-image-container">
                     <img src={icon} className="playbook-image" alt="Icon"></img>
                 </div>

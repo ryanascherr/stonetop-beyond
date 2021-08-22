@@ -391,12 +391,16 @@ body {
 }
 
 .stat-btn {
-    background-color: var(--darkest-blue);
+    /* background-color: var(--darkest-blue);
     color: var(--off-white);
-    border: 2px solid var(--darkest-blue);
+    border: 2px solid var(--darkest-blue); */
 }
 
-.stat-btn:hover {
+.stat-btn:active, .damage-btn:active {
+    transform: scale(0.9);
+}
+
+.stat-btn:hover, .damage-btn:hover {
     background-color: var(--off-white);
     color: var(--darkest-blue);
 }
