@@ -49,6 +49,9 @@ const characterSchema = new Schema({
     exp: {
         type: String,
     },
+    armor: {
+        type: String,
+    },
     characterCreator: {
         type: String,
         trim: true,

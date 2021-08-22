@@ -127,7 +127,7 @@ const CharacterStats = () => {
                 </div>
                 <div className="three-stats">
                     <div className="character-sheet-stat">
-                        <h2>1</h2>
+                        <h2>{character.armor}</h2>
                         <h3 className="stat-lower">Armor</h3>
                     </div>
                     <div className="character-sheet-stat">

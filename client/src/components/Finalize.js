@@ -23,6 +23,7 @@ export default function Finalize() {
   let cha = localStorage.getItem('cha');
   let level = "1";
   let exp = "0";
+  let armor = "0";
 
   $(document).ready(function () {
     if (!playbook || !background || !drive || !origin || !str) {
@@ -55,11 +56,13 @@ export default function Finalize() {
           currentHP: hp,
           damage: damage,
           level: level,
-          exp: exp
+          exp: exp,
+          armor: armor,
           // characterCreator: Auth.getProfile().data.username,
         },
         
       });
+      window.localStorage.removeItem("armor");
       window.localStorage.removeItem("level");
       window.localStorage.removeItem("exp");
       window.localStorage.removeItem("currentHP");
@@ -110,22 +113,22 @@ export default function Finalize() {
           <div>
             <h2>Stats:</h2>
             <div className="stat-container">
-              <div className="stat">
+              <div className="stat card">
                 <h2>Strength: {str}</h2>
               </div>
-              <div className="stat">
+              <div className="stat card">
                 <h2>Dexterity: {dex}</h2>
               </div>
-              <div className="stat">
+              <div className="stat card">
                 <h2>Intelligence: {int}</h2>
               </div>
-              <div className="stat">
+              <div className="stat card">
                 <h2>Wisdom: {wis}</h2>
               </div>
-              <div className="stat">
+              <div className="stat card">
                 <h2>Constitution: {con}</h2>
               </div>
-              <div className="stat">
+              <div className="stat card">
                 <h2>Charisma: {cha}</h2>
               </div>
             </div>

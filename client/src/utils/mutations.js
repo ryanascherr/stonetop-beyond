@@ -25,8 +25,8 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_CHARACTER = gql`
-  mutation addCharacter($playbook: String!, $background: String!, $drive: String!, $origin: String!, $name: String!, $str: String!, $dex: String!, $int: String!, $wis: String!, $con: String!, $cha: String!, $maxHP: String!, $currentHP: String!, $damage: String!, $level: String!, $exp: String! ) {
-    addCharacter(playbook: $playbook, background: $background, drive: $drive, origin: $origin, name: $name, str: $str, dex: $dex, int: $int, wis: $wis, con: $con, cha: $cha, maxHP: $maxHP, currentHP: $currentHP, damage: $damage, level: $level, exp: $exp ) {
+  mutation addCharacter($playbook: String!, $background: String!, $drive: String!, $origin: String!, $name: String!, $str: String!, $dex: String!, $int: String!, $wis: String!, $con: String!, $cha: String!, $maxHP: String!, $currentHP: String!, $damage: String!, $level: String!, $exp: String!, $armor: String!) {
+    addCharacter(playbook: $playbook, background: $background, drive: $drive, origin: $origin, name: $name, str: $str, dex: $dex, int: $int, wis: $wis, con: $con, cha: $cha, maxHP: $maxHP, currentHP: $currentHP, damage: $damage, level: $level, exp: $exp, armor: $armor) {
         _id
         playbook
     }

@@ -32,6 +32,7 @@ export const QUERY_CHARACTER = gql`
       damage
       level
       exp
+      armor
     }
   }
 `;
