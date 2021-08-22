@@ -3,6 +3,8 @@ const { Schema, model } = require('mongoose');
 const characterSchema = new Schema({
     playbook: {
         type: String,
+        // type: Schema.Types.ObjectId,
+        // ref: 'Playbook',
     },
     background: {
         type: String,

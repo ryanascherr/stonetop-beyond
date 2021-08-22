@@ -27,9 +27,9 @@ function MyCharacters() {
 
     let listOfCharacters;
 
-    if (characters.length === 0) {
-        listOfCharacters = <h2>You don't have any characters yet!</h2>
-    } else {
+    // if (characters.length === 0) {
+    //     listOfCharacters = <h2>You don't have any characters yet!</h2>
+    // } else {
         listOfCharacters = characters.map(character => {
             return <div className="character-card card" key={character._id}>
                 <h2>{character.name} {character.playbook}</h2>
@@ -42,7 +42,7 @@ function MyCharacters() {
                 </Link>
             </div>
         })
-    }
+    // }
 
     return (
         <div className="content">
