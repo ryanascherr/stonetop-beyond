@@ -38,6 +38,9 @@ const resolvers = {
         getMoves: async (parent, { playbook }) => {
             return Move.find({ playbook })
         },
+        getPlaybookMoves: async (parent, { name }) => {
+            return Move.find({ name })
+        },
         me: async (parent, args, context) => {
             if (context.user) {
               return User.findOne({ _id: context.user._id }).populate('characters');

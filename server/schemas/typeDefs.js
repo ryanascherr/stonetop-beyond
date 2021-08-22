@@ -87,6 +87,7 @@ const typeDefs = gql`
         getCharacters(characterCreator: String!): [Character]
         getCharacter(_id: ID!): Character
         getMoves(playbook: String!): [Move]
+        getPlaybookMoves(name: String!): [Move]
         me: User
     }
 

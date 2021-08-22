@@ -37,6 +37,11 @@ export default function Finalize() {
   const [addCharacter] = useMutation(ADD_CHARACTER);
 
   const handleCreateCharacter = async () => {
+
+    if (playbook === "The Blessed") {
+        let starterMoves = ["Spirit Tongue", "Call the Spirits"];
+        localStorage.setItem("starterMoves", starterMoves);
+    }
     
     try {
       const { data } = await addCharacter({
