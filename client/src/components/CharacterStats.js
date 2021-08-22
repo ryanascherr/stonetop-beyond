@@ -106,6 +106,12 @@ const CharacterStats = () => {
 
     const character = data?.getCharacter || [];
 
+    if (parseInt(character.exp) >= 6 + 2 * (parseInt(character.level))) {
+        console.log("Can level up!");
+    } else {
+        console.log("Can't level up!");
+    }
+
     return (
         <div className="content">
             <h1 className="character-sheet-title">{character.name} {character.playbook}</h1>

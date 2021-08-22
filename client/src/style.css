@@ -390,11 +390,11 @@ body {
     color: var(--darkest-blue);
 }
 
-.stat-btn {
-    /* background-color: var(--darkest-blue);
+/* .stat-btn {
+    background-color: var(--darkest-blue);
     color: var(--off-white);
-    border: 2px solid var(--darkest-blue); */
-}
+    border: 2px solid var(--darkest-blue);
+} */
 
 .stat-btn:active, .damage-btn:active {
     transform: scale(0.9);
@@ -654,6 +654,19 @@ body {
 
 .red-background {
     background-color: #E74C3C;
+}
+
+/* Misc */
+
+.misc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.misc-container h2 {
+    margin-bottom: 15px;
 }
 
 /* Basic Moves */
