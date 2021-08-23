@@ -168,5 +168,125 @@
         "playbook": "The Blessed",
         "name": "Voice of the Earth Mother",
         "description": "<p style='text-align: center;'>(Requires level 6+ and Spirit Tongue)</p><p>When you <b><i>speak on behalf of Danu</i></b>, natural beasts and spirits of the wild respect your authority. All but the most headstrong will do as you command, even against their instincts.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "All in the Wrist",
+        "description": "<p>Any knife or dagger gets the <em>thrown</em> tag in your hands. Also, you keep a number of iron throwing blades (<em>near</em>) on you; they don’t take up space in your inventory. Your ammo replenishes whenever you Outfit.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Ambush",
+        "description": "<p>When you <strong><em>Attack someone up close and they don't see it coming,</em></strong> deal your damage or roll +DEX: <strong>on a 10+</strong>, deal your damage and pick 2; <strong>on a 7-9</strong>, deal your damage and pick 1.</p><ul><li>Deal +1d4 damage</li><li>Stop them from making noise/raising an alarm</li><li>Slip way before they can react</li><li>Create an opportunity; you or an ally gains advantage on the next move to act on it</li></ul>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Burgle",
+        "description": "<p>When you <strong><em>break into a place or thing</em></strong>, roll +INT: <strong>On a 10+,</strong> you do it but pick 1; <strong>on a 7-9,</strong> you do it but pick 2.</p><ul><li>It takes a fair bit of time/effort</li><li>You draw unwanted attention</li><li>You break something important and/or leave clear evidence of your intrusion</li></ul>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Catlike",
+        "description": "<p>When you <strong><em>carry a light load and move with care,</em></strong> you make no noise</p><p>When you <strong><em>keep still in shadows or darkness,</em></strong> you remain unseen until you draw attention to yourself, move positions, or attack.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Dabbler",
+        "description": "<p style='text-align: center;'>(Requires level 2+ and the Fox)</p><p>Each time you take this move, choose a move from the Heavy, Marshal, Ranger, or Seeker playbooks for which you otherwise qualify (you can’t take Improved Stat or Superior Stat).</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Danger Sense",
+        "description": "<p>You can always ask the GM, 'Is there an ambush or trap here?' If they say 'yes,' roll +INT: <strong>on a 10+,</strong> ask the GM both of the questions below; <strong>on a 7-9,</strong> ask 1; <strong>either way</strong>, gain advantage on your next roll to act on the answer(s).</p><ul><li>What will trigger the ambush or trap?</li><li>What will happen once it's triggered?</li></ul><p><strong>On a 6-,</strong> don't mark XP but nothing bad happens just yet.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Free Running",
+        "description": "<p>When you <strong><em>carry a light load and move with speed and grace</em></strong>, gain advantage on any move to surmount or bypass a physical obstacle.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Improved Stat",
+        "description": "<p>Each time you take this move, increase one of your stats by 1 (to a max of +2).</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Irresistible",
+        "description": "<p>When you <strong><em>interact with someone</em></strong>, you can ask their player if they find you attractive and get an honest answer (usually 'yes').</p><p>When you <strong><em>Persuade by using your considerable charms as leverage,</em></strong> you have advantage.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Laugh at Danger",
+        "description": "<p>When you <strong><em>make a joke in the face of adversity</em></strong>, you may roll +CHA in place of +CON.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Light Fingers",
+        "description": "<p>When you <strong><em>perform sleight of hand on an unwary mark,</em></strong> you succeed and no one’s the wiser. If you’re being watched, roll +DEX: <strong>on a 10+,</strong> you succeed and no one’s the wiser; <strong>on a 7-9,</strong> you succeed OR no one’s the wiser (your choice).</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Perceptive",
+        "description": "<p>When you <strong><em>Seek Insight</em></strong>, you may ask 1 additional question. Even on a 6-, you can ask 1 question (though you might not like how you learn the answer).</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Rapier Wit",
+        "description": "<p>When you <strong><em>pierce a NPC's pride with a well-paced quip,</em></strong> they must do 1 (their choice):</p><ul><li>Attack, doing +1d4 damage if they hit but giving you advantage on your next roll against them</li><li>Stoop to your level and respond in kind</li><li>Spend a few moments fuming, sputtering, or controlling their temper</li></ul>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Skill at Arms",
+        "description": "<p>When you <strong><em>wield a spear, sword, or staff,</em></strong> it has the <em>precise</em> tag (you can Clash with DEX).</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Parry & Riposte",
+        "description": "<p style='text-align: center;'>(Requires Skill at Arms)</p><p>When you <strong><em>Defend with a </em>precise<em> weapon,</em></strong> you can spend 1 Readiness to both halve an attack’s effects/damage and strike back at the attacker (deal your damage with disadvantage), instead of spending 1 Readiness for each.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Silver Tongued",
+        "description": "<p>When you <strong><em>use words to avoid suspicion or trouble,</em></strong> roll +CHA: <strong>on a 10+,</strong> hold 3 Nerve; <strong>on a 7-9</strong>, hold 1 Nerve. You may spend Nerve, 1-for-1, to:</p><ul><li>Move about or maneuver unchallenged</li><li>Withstand direct scrutiny or questioning</li><li>Direct suspicion or attention elsewhere</li></ul>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Under Your Skin",
+        "description": "<p>When you <strong><em>engage an NPC in conversation,</em></strong> you can ask the GM 1 of these and get an honest answer:</p><ul><li>What are they expecting me to you?</li><li>What, in general, are they trying to hide?</li><li>What do they want to happen?</li></ul>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Battle Dancer",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Skill at Arms)</p><p>When you <strong><em>Clash using a </em>precise<em> weapon,</em> on a 12+</strong> you deal your damage, avoid your enemy’s attack, and impress/embarrass/overawe your foes.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Cheap Shot",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Ambush)</p><p>When you <strong><em>Ambush with a </em>hand <em>or</em> precise<em> weapon,</em> you have advantage on your damage roll.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Eye on the Door",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>When <strong><em>you and your allies need to get out of here,</em></strong> name your escape route and roll +INT: <strong>on a 10+,</strong> you’re gone; <strong>on a 7-9,</strong> you can stay or go but if you go, it costs you—the GM will tell you what (or who) you leave behind or take with you.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Pants on Fire",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>When you <strong><em>Defy Danger, Persuade, or Interfere by being deceitful,</em></strong> you have advantage.</p><p>When another move (like Seek Insight) allows a player to ask you a question, you can opt not to answer.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Second Intent",
+        "description": "<p style='text-align: center;'>(Requires level 6+, Parry & Riposte, and Ambush)</p><p>When you <strong><em>Defend and spend 1 Readiness to Parry & Riposte,</em></strong> also pick 1 option from the Ambush list.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Slippery",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>When you <strong><em>roll to escape being caught or controlled,</em></strong> treat a 6- as a 7-9. <strong>On a 12+,</strong> say how you turn the tables or use the circumstances to your advantage.</p>"
+    },
+    {
+        "playbook": "The Fox",
+        "name": "Superior Stat",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>Increase one of your stats by +1 (to a max of +3).</p>"
     }
 ]
