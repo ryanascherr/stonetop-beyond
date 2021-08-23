@@ -97,6 +97,9 @@ const typeDefs = gql`
         addCharacter(playbook: String, background: String, drive: String, origin: String, name: String, str: String, dex: String, int: String, wis: String, con: String, cha: String, maxHP: String, currentHP: String, damage: String, level: String, exp: String, armor: String): Character
         updateCharacterName(_id: ID!, name: String!): Character
         updateCharacterCurrentHP(_id: ID!, currentHP: String!): Character
+        updateCharacterArmor(_id: ID!, armor: String!): Character
+        updateCharacterExp(_id: ID!, exp: String!): Character
+        updateCharacterLevel(_id: ID!, level: String!): Character
         deleteCharacter(_id: ID!): Character
     }
 `;

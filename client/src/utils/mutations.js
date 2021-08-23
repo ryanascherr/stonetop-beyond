@@ -54,6 +54,39 @@ export const UPDATE_CHARACTER_CURRENT_HP = gql`
   }
 `;
 
+export const UPDATE_CHARACTER_ARMOR = gql`
+  mutation updateCharacterArmor($_id: ID!, $armor: String!) {
+    updateCharacterArmor(_id: $_id, armor: $armor) {
+      _id
+      playbook
+      name
+      armor
+    }
+  }
+`;
+
+export const UPDATE_CHARACTER_EXP = gql`
+  mutation updateCharacterExp($_id: ID!, $exp: String!) {
+    updateCharacterExp(_id: $_id, exp: $exp) {
+      _id
+      playbook
+      name
+      exp
+    }
+  }
+`;
+
+export const UPDATE_CHARACTER_LEVEL = gql`
+  mutation updateCharacterLevel($_id: ID!, $level: String!) {
+    updateCharacterLevel(_id: $_id, level: $level) {
+      _id
+      playbook
+      name
+      level
+    }
+  }
+`;
+
 export const DELETE_CHARACTER = gql`
   mutation deleteCharacter($_id: ID!) {
     deleteCharacter(_id: $_id) {

@@ -80,6 +80,27 @@ const resolvers = {
               { new: true }
             );
         },
+        updateCharacterArmor: async (parent, { _id, armor }) => {
+            return await Character.findOneAndUpdate(
+              { _id: _id }, 
+              { armor: armor },
+              { new: true }
+            );
+        },
+        updateCharacterExp: async (parent, { _id, exp }) => {
+            return await Character.findOneAndUpdate(
+              { _id: _id }, 
+              { exp: exp },
+              { new: true }
+            );
+        },
+        updateCharacterLevel: async (parent, { _id, level }) => {
+            return await Character.findOneAndUpdate(
+              { _id: _id }, 
+              { level: level },
+              { new: true }
+            );
+        },
         deleteCharacter: async (parent, { _id }) => {
             return Character.findOneAndDelete({ _id: _id });
         },
