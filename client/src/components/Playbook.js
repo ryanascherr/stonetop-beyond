@@ -90,9 +90,7 @@ export default function Playbook() {
         <img src={playbook.image} className="playbook-image" alt="Icon"></img>
       </div>
       <p>{playbook.description}</p>
-      {/* <a href="#background"> */}
       <button data-playbook={playbook.name} className="playbook-btn">Select</button>
-      {/* </a> */}
     </div>
   })
 

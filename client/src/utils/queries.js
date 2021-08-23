@@ -55,6 +55,8 @@ export const QUERY_CHARACTERS = gql`
       maxHP
       currentHP
       damage
+      level
+      exp
     }
   }
 `;
@@ -158,7 +160,21 @@ export const QUERY_USER = gql`
         _id
         playbook
         background
+        drive
+        origin
         name
+        str
+        dex
+        int
+        wis
+        con
+        cha
+        maxHP
+        currentHP
+        damage
+        level
+        exp
+        armor
       }
     }
   }
@@ -175,7 +191,21 @@ export const QUERY_ME = gql`
         _id
         playbook
         background
+        drive
+        origin
         name
+        str
+        dex
+        int
+        wis
+        con
+        cha
+        maxHP
+        currentHP
+        damage
+        level
+        exp
+        armor
       }
     }
   }
