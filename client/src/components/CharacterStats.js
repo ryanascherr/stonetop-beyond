@@ -176,13 +176,13 @@ const CharacterStats = () => {
         })
     });
 
+    const [updateCharacterArmor] = useMutation(UPDATE_CHARACTER_ARMOR);
+
     $(document).ready(function () {
         $("#edit-armor").click(function () {
             $(".edit-armor-container-container").removeClass("hidden");
         })
     });
-
-    const [updateCharacterArmor] = useMutation(UPDATE_CHARACTER_ARMOR);
 
     $(document).ready(function () {
         $(".edit-armor-select").click(function () {
@@ -204,6 +204,37 @@ const CharacterStats = () => {
     $(document).ready(function () {
         $(".close-edit-armor").click(function () {
             $(".edit-armor-container-container").addClass("hidden");
+        })
+    });
+
+    const [updateCharacterExp] = useMutation(UPDATE_CHARACTER_EXP);
+
+    $(document).ready(function () {
+        $("#edit-exp").click(function () {
+            $(".edit-exp-container-container").removeClass("hidden");
+        })
+    });
+
+    $(document).ready(function () {
+        $(".edit-exp-select").click(function () {
+            let exp = $(".new-exp").val();
+            let _id = $(this).data("id");
+
+            try {
+                const { data } = updateCharacterExp({
+                    variables: { _id, exp }
+                })
+            } catch (e) {
+                console.error(e);
+            }
+            $(".edit-exp-container-container").addClass("hidden");
+            window.location.reload();
+        })
+    });
+
+    $(document).ready(function () {
+        $(".close-edit-exp").click(function () {
+            $(".edit-exp-container-container").addClass("hidden");
         })
     });
 
@@ -282,6 +313,16 @@ const CharacterStats = () => {
                         <div className="armor-btn-container">
                             <button className="edit-armor-select btn-inverse" data-id={character._id} >Select</button>
                             <button className="close-edit-armor btn-inverse">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="hidden edit-exp-container-container">
+                    <div className="edit-exp-container">
+                        <h2>New Armor:</h2>
+                        <input className="new-exp"></input>
+                        <div className="exp-btn-container">
+                            <button className="edit-exp-select btn-inverse" data-id={character._id} >Select</button>
+                            <button className="close-edit-exp btn-inverse">Close</button>
                         </div>
                     </div>
                 </div>
