@@ -4,8 +4,13 @@ import { useQuery } from '@apollo/client';
 import CurrentBackground from './QueryBackground';
 import CurrentDrive from './QueryDrive';
 import { useParams } from 'react-router-dom';
+import Auth from '../utils/auth';
 
 export default function Misc() {
+
+  if (!Auth.loggedIn) {
+    window.location.assign('/');
+  }
 
   const { characterId } = useParams();
 

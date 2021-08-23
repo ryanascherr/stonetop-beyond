@@ -4,8 +4,13 @@ import { QUERY_CHARACTER } from '../utils/queries';
 import { useParams } from 'react-router-dom';
 import $ from 'jquery';
 import icon from '../img/icon-heavy.png';
+import Auth from '../utils/auth';
 
 const CharacterStats = () => {
+
+    if (!Auth.loggedIn) {
+        window.location.assign('/');
+    }
 
     let result;
     let damage;

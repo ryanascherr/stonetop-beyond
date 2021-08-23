@@ -1,8 +1,13 @@
 import React from 'react';
 import { QUERY_PLAYBOOK_MOVES } from '../utils/queries';
 import { useQuery } from '@apollo/client';
+import Auth from '../utils/auth';
 
 export default function Moves() {
+
+  if (!Auth.loggedIn) {
+    window.location.assign('/');
+  }
 
   let move1 = localStorage.getItem('starterMoves');
 
