@@ -73,6 +73,7 @@ body {
 .content {
     margin: 0 15px;
     padding: 50px 0 100px 0;
+
 }
 
 .card {
@@ -541,10 +542,43 @@ body {
 
 /* Character Stats */
 
+.character-sheet-page {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 .character-sheet-title {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin: 0 0 25px 50px;
+}
+
+.edit-name-container-container {
+    align-self: center;
+}
+
+.edit-name-container {
+    border: 5px solid var(--darkest-blue);
+    background-color: var(--off-white);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.new-name {
+    padding: 5px;
+}
+
+.name-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.character-sheet-title span {
+    font-size: 48px;
 }
 
 .edit-image-container {
@@ -669,18 +703,6 @@ body {
 
 .red-background {
     background-color: #E74C3C;
-}
-
-.edit-name-container {
-    height: 100px;
-    border: 5px solid var(--darkest-blue);
-    background-color: var(--off-white);
-    border-radius: 10px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 200px;
-    z-index: 2;
 }
 
 /* Misc */

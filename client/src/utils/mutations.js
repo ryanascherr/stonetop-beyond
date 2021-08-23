@@ -33,12 +33,23 @@ export const ADD_CHARACTER = gql`
   }
 `;
 
-export const UPDATE_CHARACTER = gql`
+export const UPDATE_CHARACTER_NAME = gql`
   mutation updateCharacterName($_id: ID!, $name: String!) {
     updateCharacterName(_id: $_id, name: $name) {
       _id
       playbook
       name
+    }
+  }
+`;
+
+export const UPDATE_CHARACTER_CURRENT_HP = gql`
+  mutation updateCharacterCurrentHP($_id: ID!, $currentHP: String!) {
+    updateCharacterCurrentHP(_id: $_id, currentHP: $currentHP) {
+      _id
+      playbook
+      name
+      currentHP
     }
   }
 `;

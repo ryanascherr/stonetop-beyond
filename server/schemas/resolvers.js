@@ -73,6 +73,13 @@ const resolvers = {
               { new: true }
             );
         },
+        updateCharacterCurrentHP: async (parent, { _id, currentHP }) => {
+            return await Character.findOneAndUpdate(
+              { _id: _id }, 
+              { currentHP: currentHP },
+              { new: true }
+            );
+        },
         deleteCharacter: async (parent, { _id }) => {
             return Character.findOneAndDelete({ _id: _id });
         },
