@@ -95,8 +95,7 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
         addCharacter(playbook: String, background: String, drive: String, origin: String, name: String, str: String, dex: String, int: String, wis: String, con: String, cha: String, maxHP: String, currentHP: String, damage: String, level: String, exp: String, armor: String): Character
-        updateCharacterHP(_id: ID!, currentHP: String!): Character
-        updateCharacter(_id: ID!, name: String!): Character
+        updateCharacterName(_id: ID!, name: String!): Character
         deleteCharacter(_id: ID!): Character
     }
 `;

@@ -66,7 +66,7 @@ const resolvers = {
                 return character;
             }
         },
-        updateCharacter: async (parent, { _id, name }) => {
+        updateCharacterName: async (parent, { _id, name }) => {
             return await Character.findOneAndUpdate(
               { _id: _id }, 
               { name },
@@ -93,11 +93,6 @@ const resolvers = {
 
             return { token, user };
         },
-        updateCharacterHP: async (parent, { _id }) => {
-            const character = await Character.updateOne({ _id });
-
-            return { character };
-        }
     }
 };
 

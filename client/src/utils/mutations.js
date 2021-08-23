@@ -34,8 +34,8 @@ export const ADD_CHARACTER = gql`
 `;
 
 export const UPDATE_CHARACTER = gql`
-  mutation updateCharacter($_id: ID!, $name: String!) {
-    updateCharacter(_id: $_id, name: $name) {
+  mutation updateCharacterName($_id: ID!, $name: String!) {
+    updateCharacterName(_id: $_id, name: $name) {
       _id
       playbook
       name
