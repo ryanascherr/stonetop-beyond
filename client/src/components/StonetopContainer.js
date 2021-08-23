@@ -99,7 +99,7 @@ export default function StonetopContainer() {
         <Route exact path="/my-characters">
           <MyCharacters />
         </Route>
-        <Route exact path="/sheet">
+        <Route exact path="/characters/:characterId">
           <CharacterSheet currentPage={currentCharacterPage} handleCharacterPageChange={handleCharacterPageChange}/>
           {renderCharacterSheet()}
         </Route>

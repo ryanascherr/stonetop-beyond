@@ -37,7 +37,7 @@ function MyCharacters() {
                 <div className="playbook-image-container">
                     <img src={icon} className="playbook-image" alt="Icon"></img>
                 </div>
-                <Link to={`/sheet`}>
+                <Link to={`/characters/${character._id}`}>
                     <button data-id={character._id} className="character-btn">Select</button>
                 </Link>
             </div>

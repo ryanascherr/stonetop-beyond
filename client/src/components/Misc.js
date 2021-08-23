@@ -3,20 +3,17 @@ import { QUERY_CHARACTER } from '../utils/queries';
 import { useQuery } from '@apollo/client';
 import CurrentBackground from './QueryBackground';
 import CurrentDrive from './QueryDrive';
+import { useParams } from 'react-router-dom';
 
 export default function Misc() {
 
-  let id = localStorage.getItem('id');
+  const { characterId } = useParams();
 
-  if (!id) {
-    window.location.assign('/');
-  }
-
-  let { data } = useQuery(QUERY_CHARACTER, {
-    variables: { _id: id }
+  const { data } = useQuery(QUERY_CHARACTER, {
+    variables: { _id: characterId },
   });
 
-  const character = data?.getCharacter || [];
+  const character = data?.getCharacter || {};
 
   localStorage.setItem('drive', character.drive);
 

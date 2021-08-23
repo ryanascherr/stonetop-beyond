@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_CHARACTER } from '../utils/queries';
+import { useParams } from 'react-router-dom';
 import $ from 'jquery';
 import icon from '../img/icon-heavy.png';
 
@@ -94,17 +95,13 @@ const CharacterStats = () => {
         }
     });
 
-    let id = localStorage.getItem('id');
+    const { characterId } = useParams();
 
-    if (!id) {
-        window.location.assign('/');
-    }
-
-    let { data } = useQuery(QUERY_CHARACTER, {
-        variables: { _id: id }
+    const { data } = useQuery(QUERY_CHARACTER, {
+        variables: { _id: characterId },
     });
 
-    const character = data?.getCharacter || [];
+    const character = data?.getCharacter || {};
 
     if (parseInt(character.exp) >= 6 + 2 * (parseInt(character.level))) {
         console.log("Can level up!");
