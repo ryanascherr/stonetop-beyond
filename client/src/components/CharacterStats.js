@@ -1,9 +1,11 @@
-import React from 'react';
-import { useQuery } from '@apollo/client';
+import React, { useState } from 'react';
+import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_CHARACTER } from '../utils/queries';
+import { UPDATE_CHARACTER } from '../utils/mutations';
 import { useParams } from 'react-router-dom';
 import $ from 'jquery';
 import icon from '../img/icon-heavy.png';
+import editIcon from '../img/edit-icon.png'
 import Auth from '../utils/auth';
 
 const CharacterStats = () => {
@@ -100,22 +102,46 @@ const CharacterStats = () => {
     });
 
     const { characterId } = useParams();
-    
+
     const { data } = useQuery(QUERY_CHARACTER, {
         variables: { _id: characterId },
     });
 
     const character = data?.getCharacter || {};
 
-    // if (parseInt(character.exp) >= 6 + 2 * (parseInt(character.level))) {
-    //     console.log("Can level up!");
-    // } else {
-    //     console.log("Can't level up!");
-    // }
+    const [updateCharacter, { error }] = useMutation(UPDATE_CHARACTER);
+
+    $(document).ready(function () {
+        $(".edit-name-select").click(function () {
+            let name = $(".new-name").val();
+            console.log(name);
+            let _id = $(this).data("id");
+        try {
+            const { data } = updateCharacter({
+                variables: { _id, name }
+            })
+        } catch (e) {
+            console.error(e);
+        }
+        window.location.reload();
+        })
+    });
+
+    $(".edit-image-container").click(function () {
+        console.log("hi");
+        let id = $(this).data("id");
+        console.log(id);
+        $(".hidden").removeClass("hidden");
+    })
 
     return (
         <div className="content">
-            <h1 className="character-sheet-title">{character.name} {character.playbook}</h1>
+            <div className="character-sheet-title">
+                <h1>{character.name} {character.playbook}</h1>
+                <div className="edit-image-container" data-id={character._id}>
+                    <img src={editIcon} className="edit-image"></img>
+                </div>
+            </div>
             <div className="character-sheet-stat-container">
                 <div className="two-stats">
                     <div className="character-sheet-stat">
@@ -196,6 +222,13 @@ const CharacterStats = () => {
             <div className="roll-container">
                 <h2 className="roll-result"> </h2>
                 <h2 className="success-level"> </h2>
+            </div>
+            <div className="hidden test">
+                <div className="edit-name-container">
+                    <h2>New Name:</h2>
+                    <input className="new-name"></input>
+                    <button className="edit-name-select" data-id={character._id}>Select</button>
+                </div>
             </div>
         </div>
     )

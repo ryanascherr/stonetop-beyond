@@ -69,7 +69,7 @@ const resolvers = {
         updateCharacterName: async (parent, { _id, name }) => {
             return await Character.findOneAndUpdate(
               { _id: _id }, 
-              { name },
+              { name: name },
               { new: true }
             );
         },
