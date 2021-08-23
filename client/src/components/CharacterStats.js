@@ -158,15 +158,19 @@ const CharacterStats = () => {
             let currentHP = $(".new-hp").val();
             let _id = $(this).data("id");
 
-            try {
-                const { data } = updateCharacterCurrentHP({
-                    variables: { _id, currentHP }
-                })
-            } catch (e) {
-                console.error(e);
+            if (!currentHP) {
+                return alert("Please enter a number");
+            } else {
+                try {
+                    const { data } = updateCharacterCurrentHP({
+                        variables: { _id, currentHP }
+                    })
+                } catch (e) {
+                    console.error(e);
+                }
+                $(".edit-hp-container-container").addClass("hidden");
+                window.location.reload();
             }
-            $(".edit-hp-container-container").addClass("hidden");
-            window.location.reload();
         })
     });
 
@@ -189,15 +193,19 @@ const CharacterStats = () => {
             let armor = $(".new-armor").val();
             let _id = $(this).data("id");
 
-            try {
-                const { data } = updateCharacterArmor({
-                    variables: { _id, armor }
-                })
-            } catch (e) {
-                console.error(e);
+            if (!armor) {
+                return alert("Please enter a number");
+            } else {
+                try {
+                    const { data } = updateCharacterArmor({
+                        variables: { _id, armor }
+                    })
+                } catch (e) {
+                    console.error(e);
+                }
+                $(".edit-armor-container-container").addClass("hidden");
+                window.location.reload();
             }
-            $(".edit-armor-container-container").addClass("hidden");
-            window.location.reload();
         })
     });
 
@@ -220,15 +228,19 @@ const CharacterStats = () => {
             let exp = $(".new-exp").val();
             let _id = $(this).data("id");
 
-            try {
-                const { data } = updateCharacterExp({
-                    variables: { _id, exp }
-                })
-            } catch (e) {
-                console.error(e);
+            if(!exp) {
+                return alert("Please enter a number");
+            } else {
+                try {
+                    const { data } = updateCharacterExp({
+                        variables: { _id, exp }
+                    })
+                } catch (e) {
+                    console.error(e);
+                }
+                $(".edit-exp-container-container").addClass("hidden");
+                window.location.reload();
             }
-            $(".edit-exp-container-container").addClass("hidden");
-            window.location.reload();
         })
     });
 
@@ -251,15 +263,19 @@ const CharacterStats = () => {
             let level = $(".new-level").val();
             let _id = $(this).data("id");
 
-            try {
-                const { data } = updateCharacterLevel({
-                    variables: { _id, level }
-                })
-            } catch (e) {
-                console.error(e);
+            if (!level) {
+                return alert("Please enter a number");
+            } else {
+                try {
+                    const { data } = updateCharacterLevel({
+                        variables: { _id, level }
+                    })
+                } catch (e) {
+                    console.error(e);
+                }
+                $(".edit-level-container-container").addClass("hidden");
+                window.location.reload();
             }
-            $(".edit-level-container-container").addClass("hidden");
-            window.location.reload();
         })
     });
 

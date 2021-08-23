@@ -560,11 +560,11 @@ body {
     margin: 0 0 25px 50px;
 }
 
-.edit-name-container-container, .edit-hp-container-container {
+.edit-name-container-container, .edit-hp-container-container, .edit-armor-container-container, .edit-exp-container-container, .edit-level-container-container {
     align-self: center;
 }
 
-.edit-name-container, .edit-hp-container {
+.edit-name-container, .edit-hp-container, .edit-armor-container, .edit-exp-container, .edit-level-container {
     border: 5px solid var(--darkest-blue);
     background-color: var(--off-white);
     border-radius: 10px;
@@ -574,21 +574,21 @@ body {
     align-self: center;
 }
 
-.edit-name-container h2, .edit-hp-container h2 {
+.edit-name-container h2, .edit-hp-container h2, .edit-armor-container h2, .edit-exp-container h2, .edit-level-container h2 {
     margin-bottom: 15px;
 }
 
-.new-name, .new-hp {
+.new-name, .new-hp, .new-armor, .new-exp, .new-level {
     padding: 5px;
 }
 
-.name-btn-container, .hp-btn-container {
+.name-btn-container, .hp-btn-container, .armor-btn-container, .exp-btn-container, .level-btn-container {
     display: flex;
     justify-content: center;
     margin-top: 15px
 }
 
-.name-btn-container button, .hp-btn-container button {
+.name-btn-container button, .hp-btn-container button, .armor-btn-container button, .exp-btn-container button, .level-btn-container button {
     margin: 0 5px;
 }
 
@@ -626,7 +626,7 @@ body {
     /* height: 100px; */
 }
 
-#edit-hp {
+#edit-hp, #edit-armor, #edit-exp, #edit-level {
     position: absolute;
     top: 10px;
     right: 10px;
