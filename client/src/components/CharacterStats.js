@@ -28,7 +28,7 @@ const CharacterStats = () => {
                 behavior: 'smooth',
             })
         })
-    })
+    });
 
     function damageRoll(damage) {
         result = Math.floor(Math.random() * damage) + 1;
@@ -55,7 +55,6 @@ const CharacterStats = () => {
                 $(".success-level").addClass("red");
                 $(".success-level").text("Failure...Mark Experience!");
             }
-            // $("#roll-container").slideToggle("");
             $(".roll-result").text(`${roll1} + ${roll2} + ${stat}(${number}) = ${result}`);
             window.scrollTo({
                 top: 1000,
@@ -101,18 +100,18 @@ const CharacterStats = () => {
     });
 
     const { characterId } = useParams();
-
+    
     const { data } = useQuery(QUERY_CHARACTER, {
         variables: { _id: characterId },
     });
 
     const character = data?.getCharacter || {};
 
-    if (parseInt(character.exp) >= 6 + 2 * (parseInt(character.level))) {
-        console.log("Can level up!");
-    } else {
-        console.log("Can't level up!");
-    }
+    // if (parseInt(character.exp) >= 6 + 2 * (parseInt(character.level))) {
+    //     console.log("Can level up!");
+    // } else {
+    //     console.log("Can't level up!");
+    // }
 
     return (
         <div className="content">

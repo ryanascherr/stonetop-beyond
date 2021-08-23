@@ -20,6 +20,8 @@ export default function Misc() {
 
   const character = data?.getCharacter || {};
 
+  console.log(character);
+
   localStorage.setItem('drive', character.drive);
 
   localStorage.setItem('playbook', character.playbook);

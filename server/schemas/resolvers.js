@@ -66,10 +66,14 @@ const resolvers = {
                 return character;
             }
         },
-        // deleteCharacter: async (parent, { _id }) => {
-        //     const character = await Character.deleteOne({ _id });
-        //     return { character };
-        // },
+        updateCharacter: async (parent, { _id, name }) => {
+            return await Character.findOneAndUpdate(
+              { _id: _id }, 
+              { name },
+              { new: true }
+            );
+        },
+      
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 

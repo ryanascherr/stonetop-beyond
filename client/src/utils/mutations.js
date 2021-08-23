@@ -33,13 +33,12 @@ export const ADD_CHARACTER = gql`
   }
 `;
 
-// export const DELETE_CHARACTER = gql`
-//   mutation deleteCharacter($_id: ID!) {
-//     deleteCharacter(_id: $_id) {
-//       character {
-//         _id
-//         name
-//       }
-//     }
-//   }
-// `;
+export const UPDATE_CHARACTER = gql`
+  mutation updateCharacter($_id: ID!, $name: String!) {
+    updateCharacter(_id: $_id, name: $name) {
+      _id
+      playbook
+      name
+    }
+  }
+`
