@@ -1,26 +1,31 @@
 import React from 'react';
-import Auth from '../utils/auth';
+import { QUERY_CHARACTER, QUERY_MOVES } from '../utils/queries';
+import { useQuery } from '@apollo/client';
+import { useParams } from 'react-router-dom';
 
 export default function Moves() {
 
-  if (!Auth.loggedIn) {
-    window.location.assign('/');
-  }
+    let playbook = localStorage.getItem("playbook");
 
-  let move1 = localStorage.getItem('starterMoves');
-
-  move1 = JSON.stringify(move1).split(",")
-
-  console.log(move1);
-
-  const listOfMoves = move1.forEach(move => {
-    <div>move</div>;
+    let { data } = useQuery(QUERY_MOVES, {
+      variables: { playbook: playbook }
   });
 
+    const moves = data?.getMoves || [];
+
+    const listOfMoves = moves.map(move => {
+      return <div className="move card" key={move._id}>
+        <h2>{move.name}</h2>
+        <div dangerouslySetInnerHTML={{ __html: move.description }}></div>
+      </div>
+    })
+
   return (
-    <div className="content">
-      <h1>Moves</h1>
-      {listOfMoves}
-    </div>
-  );
+      <div className="content">
+        <h1>{playbook} Moves</h1>
+        <div className="move-container">
+          {listOfMoves}
+        </div>
+      </div>
+  )
 }
