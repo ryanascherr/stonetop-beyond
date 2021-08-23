@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_CHARACTER } from '../utils/queries';
-import { UPDATE_CHARACTER_NAME, UPDATE_CHARACTER_CURRENT_HP } from '../utils/mutations';
+import { UPDATE_CHARACTER_NAME, UPDATE_CHARACTER_CURRENT_HP, UPDATE_CHARACTER_ARMOR, UPDATE_CHARACTER_EXP, UPDATE_CHARACTER_LEVEL } from '../utils/mutations';
 import { useParams } from 'react-router-dom';
 import $ from 'jquery';
 import icon from '../img/icon-heavy.png';
@@ -176,6 +176,37 @@ const CharacterStats = () => {
         })
     });
 
+    $(document).ready(function () {
+        $("#edit-armor").click(function () {
+            $(".edit-armor-container-container").removeClass("hidden");
+        })
+    });
+
+    const [updateCharacterArmor] = useMutation(UPDATE_CHARACTER_ARMOR);
+
+    $(document).ready(function () {
+        $(".edit-armor-select").click(function () {
+            let armor = $(".new-armor").val();
+            let _id = $(this).data("id");
+
+            try {
+                const { data } = updateCharacterArmor({
+                    variables: { _id, armor }
+                })
+            } catch (e) {
+                console.error(e);
+            }
+            $(".edit-armor-container-container").addClass("hidden");
+            window.location.reload();
+        })
+    });
+
+    $(document).ready(function () {
+        $(".close-edit-armor").click(function () {
+            $(".edit-armor-container-container").addClass("hidden");
+        })
+    });
+
     return (
         <div className="content character-sheet-page">
             <div className="character-sheet-title">
@@ -224,15 +255,34 @@ const CharacterStats = () => {
                 <div className="three-stats">
                     <div className="character-sheet-stat">
                         <h2>{character.armor}</h2>
+                        <div className="edit-image-container" id="edit-armor" data-id={character._id}>
+                            <img src={editIcon} className="edit-image" alt=""></img>
+                        </div>
                         <h3 className="stat-lower">Armor</h3>
                     </div>
                     <div className="character-sheet-stat">
                         <h2>{character.exp}</h2>
+                        <div className="edit-image-container" id="edit-exp" data-id={character._id}>
+                            <img src={editIcon} className="edit-image" alt=""></img>
+                        </div>
                         <h3 className="stat-lower">XP</h3>
                     </div>
                     <div className="character-sheet-stat">
                         <h2>{character.level}</h2>
+                        <div className="edit-image-container" id="edit-level" data-id={character._id}>
+                            <img src={editIcon} className="edit-image" alt=""></img>
+                        </div>
                         <h3 className="stat-lower">Level</h3>
+                    </div>
+                </div>
+                <div className="hidden edit-armor-container-container">
+                    <div className="edit-armor-container">
+                        <h2>New Armor:</h2>
+                        <input className="new-armor"></input>
+                        <div className="armor-btn-container">
+                            <button className="edit-armor-select btn-inverse" data-id={character._id} >Select</button>
+                            <button className="close-edit-armor btn-inverse">Close</button>
+                        </div>
                     </div>
                 </div>
                 <div className="two-stats">
