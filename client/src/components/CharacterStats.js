@@ -238,6 +238,37 @@ const CharacterStats = () => {
         })
     });
 
+    const [updateCharacterLevel] = useMutation(UPDATE_CHARACTER_LEVEL);
+
+    $(document).ready(function () {
+        $("#edit-level").click(function () {
+            $(".edit-level-container-container").removeClass("hidden");
+        })
+    });
+
+    $(document).ready(function () {
+        $(".edit-level-select").click(function () {
+            let level = $(".new-level").val();
+            let _id = $(this).data("id");
+
+            try {
+                const { data } = updateCharacterLevel({
+                    variables: { _id, level }
+                })
+            } catch (e) {
+                console.error(e);
+            }
+            $(".edit-level-container-container").addClass("hidden");
+            window.location.reload();
+        })
+    });
+
+    $(document).ready(function () {
+        $(".close-edit-level").click(function () {
+            $(".edit-level-container-container").addClass("hidden");
+        })
+    });
+
     return (
         <div className="content character-sheet-page">
             <div className="character-sheet-title">
@@ -318,11 +349,21 @@ const CharacterStats = () => {
                 </div>
                 <div className="hidden edit-exp-container-container">
                     <div className="edit-exp-container">
-                        <h2>New Armor:</h2>
+                        <h2>New Exp:</h2>
                         <input className="new-exp"></input>
                         <div className="exp-btn-container">
                             <button className="edit-exp-select btn-inverse" data-id={character._id} >Select</button>
                             <button className="close-edit-exp btn-inverse">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="hidden edit-level-container-container">
+                    <div className="edit-level-container">
+                        <h2>New Level:</h2>
+                        <input className="new-level"></input>
+                        <div className="level-btn-container">
+                            <button className="edit-level-select btn-inverse" data-id={character._id} >Select</button>
+                            <button className="close-edit-level btn-inverse">Close</button>
                         </div>
                     </div>
                 </div>
