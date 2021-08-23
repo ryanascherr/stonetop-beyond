@@ -112,6 +112,12 @@ const CharacterStats = () => {
     const [updateCharacterName] = useMutation(UPDATE_CHARACTER_NAME);
 
     $(document).ready(function () {
+        $("#edit-name").click(function () {
+            $(".edit-name-container-container").removeClass("hidden");
+        })
+    });
+
+    $(document).ready(function () {
         $(".edit-name-select").click(function () {
             let name = $(".new-name").val().trim();
             console.log(name);
@@ -142,6 +148,12 @@ const CharacterStats = () => {
     const [updateCharacterCurrentHP] = useMutation(UPDATE_CHARACTER_CURRENT_HP);
 
     $(document).ready(function () {
+        $("#edit-hp").click(function () {
+            $(".edit-hp-container-container").removeClass("hidden");
+        })
+    });
+
+    $(document).ready(function () {
         $(".edit-hp-select").click(function () {
             let currentHP = $(".new-hp").val();
             let _id = $(this).data("id");
@@ -158,14 +170,6 @@ const CharacterStats = () => {
         })
     });
 
-    $("#edit-name").click(function () {
-        $(".edit-name-container-container").removeClass("hidden");
-    })
-
-    $("#edit-hp").click(function () {
-        $(".edit-hp-container-container").removeClass("hidden");
-    })
-
     $(document).ready(function () {
         $(".close-edit-hp").click(function () {
             $(".edit-hp-container-container").addClass("hidden");
@@ -177,7 +181,7 @@ const CharacterStats = () => {
             <div className="character-sheet-title">
                 <h1>{character.name} {character.playbook}</h1>
                 <div className="edit-image-container" id="edit-name" data-id={character._id}>
-                    <img src={editIcon} className="edit-image"></img>
+                    <img src={editIcon} className="edit-image" alt=""></img>
                 </div>
             </div>
             <div className="hidden edit-name-container-container">
@@ -185,8 +189,8 @@ const CharacterStats = () => {
                     <h2>New Name:</h2>
                     <input className="new-name"></input>
                     <div className="name-btn-container">
-                        <button className="edit-name-select" data-id={character._id}>Select</button>
-                        <button className="close-edit-name">Close</button>
+                        <button className="edit-name-select btn-inverse" data-id={character._id}>Select</button>
+                        <button className="close-edit-name btn-inverse">Close</button>
                     </div>
                 </div>
             </div>
@@ -202,19 +206,19 @@ const CharacterStats = () => {
                     <div className="character-sheet-stat">
                         <h2>{character.currentHP}</h2>
                         <div className="edit-image-container" id="edit-hp" data-id={character._id}>
-                            <img src={editIcon} className="edit-image"></img>
-                        </div>
-                        <div className="hidden edit-hp-container-container">
-                            <div className="edit-hp-container">
-                                <h2>New HP:</h2>
-                                <input className="new-hp"></input>
-                                <div className="hp-btn-container">
-                                    <button className="edit-hp-select" data-id={character._id}>Select</button>
-                                    <button className="close-edit-hp">Close</button>
-                                </div>
-                            </div>
+                            <img src={editIcon} className="edit-image" alt=""></img>
                         </div>
                         <h3 className="stat-lower wider">HP (max {character.maxHP})</h3>
+                    </div>
+                </div>
+                <div className="hidden edit-hp-container-container">
+                    <div className="edit-hp-container">
+                        <h2>New HP:</h2>
+                        <input className="new-hp"></input>
+                        <div className="hp-btn-container">
+                            <button className="edit-hp-select btn-inverse" data-id={character._id} >Select</button>
+                            <button className="close-edit-hp btn-inverse">Close</button>
+                        </div>
                     </div>
                 </div>
                 <div className="three-stats">

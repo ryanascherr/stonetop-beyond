@@ -66,6 +66,12 @@ body {
     color: var(--darkest-blue);
 }
 
+.btn-inverse {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    border: 2px solid var(--darkest-blue);
+}
+
 .hidden {
     display: none;
 }
@@ -545,7 +551,7 @@ body {
 .character-sheet-page {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-items: center;
 }
 
 .character-sheet-title {
@@ -554,11 +560,11 @@ body {
     margin: 0 0 25px 50px;
 }
 
-.edit-name-container-container {
+.edit-name-container-container, .edit-hp-container-container {
     align-self: center;
 }
 
-.edit-name-container {
+.edit-name-container, .edit-hp-container {
     border: 5px solid var(--darkest-blue);
     background-color: var(--off-white);
     border-radius: 10px;
@@ -568,13 +574,22 @@ body {
     align-self: center;
 }
 
-.new-name {
+.edit-name-container h2, .edit-hp-container h2 {
+    margin-bottom: 15px;
+}
+
+.new-name, .new-hp {
     padding: 5px;
 }
 
-.name-btn-container {
+.name-btn-container, .hp-btn-container {
     display: flex;
     justify-content: center;
+    margin-top: 15px
+}
+
+.name-btn-container button, .hp-btn-container button {
+    margin: 0 5px;
 }
 
 .character-sheet-title span {
@@ -582,17 +597,39 @@ body {
 }
 
 .edit-image-container {
-    width: 50px;
+    width: 25px;
     cursor: pointer;
 }
 
 .edit-image {
-    width: 25px;
+    width: 100%;
 }
 
 .character-sheet-stat-container {
     display: flex;
     flex-direction: column;
+}
+
+.character-sheet-stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--darkest-blue);
+    color: var(--darkest-blue);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 300px;
+    width: 50%;
+    position: relative;
+    /* height: 100px; */
+}
+
+#edit-hp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .two-stats {
@@ -611,22 +648,6 @@ body {
     width: 33%;
     min-width: 100px;
     max-width: 220px;
-}
-
-.character-sheet-stat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid var(--darkest-blue);
-    color: var(--darkest-blue);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    min-width: 150px;
-    max-width: 300px;
-    width: 50%;
-    position: relative;
-    height: 100px;
 }
 
 .stat-higher {
@@ -681,7 +702,7 @@ body {
     max-width: 750px;
     min-width: 250px;
     padding: 15px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
