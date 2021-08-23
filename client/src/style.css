@@ -530,6 +530,13 @@ body {
     margin-bottom: 10px;
 }
 
+.delete-btn {
+    background-color: #E74C3C;
+    color: var(--off-white);
+    margin-top: 15px;
+    align-self: flex-end;
+}
+
 /* Character Sheet */
 
 /* Character Stats */

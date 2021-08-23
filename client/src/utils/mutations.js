@@ -41,4 +41,14 @@ export const UPDATE_CHARACTER = gql`
       name
     }
   }
-`
+`;
+
+export const DELETE_CHARACTER = gql`
+  mutation deleteCharacter($_id: ID!) {
+    deleteCharacter(_id: $_id) {
+      _id
+      playbook
+      name
+    }
+  }
+`;

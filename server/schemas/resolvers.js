@@ -73,7 +73,9 @@ const resolvers = {
               { new: true }
             );
         },
-      
+        deleteCharacter: async (parent, { _id }) => {
+            return Character.findOneAndDelete({ _id: _id });
+        },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 

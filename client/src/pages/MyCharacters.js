@@ -1,11 +1,27 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
+import { DELETE_CHARACTER } from '../utils/mutations';
 import { useParams, Link } from 'react-router-dom';
 import icon from '../img/icon-blessed.png';
 import Auth from '../utils/auth';
 
 export default function MyCharacters() {
+
+    const [removeCharacter, { error }] = useMutation(DELETE_CHARACTER);
+    
+
+    const handleRemoveCharacter = async (_id) => {
+        try {
+          const { data } = await removeCharacter({
+            variables: { _id },
+          });
+        } catch (err) {
+          console.error(err);
+        }
+        window.location.assign('/my-characters');
+      };
+    
 
     if (!Auth.loggedIn) {
         window.location.assign('/');
@@ -37,6 +53,7 @@ export default function MyCharacters() {
                 <Link to={`/characters/${character._id}`}>
                     <button data-id={character._id} className="character-btn">Select</button>
                 </Link>
+                <button onClick={() => handleRemoveCharacter(character._id)} className="delete-btn">Delete</button>
             </div>
         })
     }
