@@ -14,8 +14,8 @@ export default function Drive() {
       let drive = $(this).data("drive");
       console.log(drive);
       localStorage.setItem('drive', drive);
-      $(".drive").removeClass("selected");
-      $(this).parent().addClass("selected");
+      // $(".drive").removeClass("selected");
+      // $(this).parent().addClass("selected");
       window.location.reload();
     })
   })

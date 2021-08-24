@@ -14,8 +14,8 @@ export default function Background() {
       let background = $(this).data("background");
       console.log(background);
       localStorage.setItem('background', background);
-      $(".background").removeClass("selected");
-      $(this).parent().addClass("selected");
+      // $(".background").removeClass("selected");
+      // $(this).parent().addClass("selected");
       window.location.reload();
     })
   })

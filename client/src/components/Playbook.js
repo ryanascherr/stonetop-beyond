@@ -16,8 +16,8 @@ export default function Playbook() {
       setHP(playbook);
       setDamage(playbook);
       localStorage.setItem('playbook', playbook);
-      $(".playbook").removeClass("selected");
-      $(this).parent().addClass("selected");
+      // $(".playbook").removeClass("selected");
+      // $(this).parent().addClass("selected");
       window.location.reload();
     })
   })

@@ -2,6 +2,10 @@ import React from 'react';
 
 function Homepage() {
 
+    window.localStorage.removeItem("playbook");
+    window.localStorage.removeItem("background");
+    window.localStorage.removeItem("drive");
+
     return (
         <div className="content info-page">
             <h2>Welcome to the Stonetop Character Creator!</h2>

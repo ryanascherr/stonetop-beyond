@@ -8,6 +8,10 @@ import Auth from '../utils/auth';
 
 export default function MyCharacters() {
 
+    window.localStorage.removeItem("playbook");
+    window.localStorage.removeItem("background");
+    window.localStorage.removeItem("drive");
+
     const [removeCharacter, { error }] = useMutation(DELETE_CHARACTER);
     
 

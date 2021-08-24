@@ -6,6 +6,10 @@ import village from '../img/stonetop-village.jpeg';
 
 const Login = () => {
 
+  window.localStorage.removeItem("playbook");
+  window.localStorage.removeItem("background");
+  window.localStorage.removeItem("drive");
+
   // SIGNUP
 
   const [signupState, setSignupState] = useState({
