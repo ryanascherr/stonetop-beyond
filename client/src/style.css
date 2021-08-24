@@ -546,6 +546,31 @@ body {
 
 /* Character Sheet */
 
+.character-info-tabs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.info-link {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 10px;
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+    font-weight: bold;
+}
+
+.info-link:hover {
+    color:var(--light-blue);
+}
+
+.active {
+    width: 125px;
+}
+
 /* Character Stats */
 
 .character-sheet-page {
@@ -759,7 +784,7 @@ body {
 
 @media only screen and (min-width: 650px) {
     
-    .nav-tabs {
+    .nav-tabs, .character-info-tabs {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -768,7 +793,7 @@ body {
         margin: 0;
     }
     
-    .nav-link {
+    .nav-link, .info-link {
         margin: 0 10px;
         border-bottom: 5px solid var(--darkest-blue);
         border-radius: 10px 10px 0 0;
@@ -780,7 +805,7 @@ body {
         text-align: center;
     }
 
-    .nav-link:hover {
+    .nav-link:hover, .info-link:hover {
         color:var(--kinda-dark-blue);
     }
     

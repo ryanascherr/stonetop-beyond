@@ -22,32 +22,32 @@ function CharacterSheet({ currentCharacterPage, handleCharacterPageChange })
     localStorage.setItem("playbook", character.playbook);
 
 return (
-    <div className="nav-tabs">
+    <div className="character-info-tabs">
         <a
             href="#stats"
             onClick={() => handleCharacterPageChange('Stats')}
-            className={currentCharacterPage === 'Stats' ? 'nav-link active' : 'nav-link'}
+            className={currentCharacterPage === 'Stats' ? 'info-link active' : 'info-link'}
         >
             Stats
         </a>
         <a
             href="#misc"
             onClick={() => handleCharacterPageChange('Misc')}
-            className={currentCharacterPage === 'Misc' ? 'nav-link active' : 'nav-link'}
+            className={currentCharacterPage === 'Misc' ? 'info-link active' : 'info-link'}
         >
             Misc
         </a>
         <a
             href="#moves"
             onClick={() => handleCharacterPageChange('Moves')}
-            className={currentCharacterPage === 'Moves' ? 'nav-link active' : 'nav-link'}
+            className={currentCharacterPage === 'Moves' ? 'info-link active' : 'info-link'}
         >
             Moves
         </a>
         <a
             href="#basic-moves"
             onClick={() => handleCharacterPageChange('BasicMoves')}
-            className={currentCharacterPage === 'BasicMoves' ? 'nav-link active' : 'nav-link'}
+            className={currentCharacterPage === 'BasicMoves' ? 'info-link active' : 'info-link'}
         >
             Basic Moves
         </a>

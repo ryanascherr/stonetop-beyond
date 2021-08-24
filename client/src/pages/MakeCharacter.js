@@ -8,6 +8,10 @@ function MakeCharacter({ currentPage, handlePageChange }) {
         window.location.assign('/');
     }
 
+    // window.localStorage.removeItem("playbook");
+    // window.localStorage.removeItem("background");
+    // window.localStorage.removeItem("drive");
+
     let checked = `&#9989;`;
     let unchecked = `&#10060;`;
 
@@ -23,25 +27,25 @@ function MakeCharacter({ currentPage, handlePageChange }) {
         } else {
             $(".playbook-check").html(unchecked);
         }
-    
+
         if (background) {
             $(".background-check").html(checked);
         } else {
             $(".background-check").html(unchecked);
         }
-    
+
         if (drive) {
             $(".drive-check").html(checked);
         } else {
             $(".drive-check").html(unchecked);
         }
-    
+
         if (origin) {
             $(".origin-check").html(checked);
         } else {
             $(".origin-check").html(unchecked);
         }
-    
+
         if (str) {
             $(".stat-check").html(checked);
         } else {

@@ -74,7 +74,7 @@ export default function StonetopContainer() {
     return <CharacterStats />;
   };
 
-  const handleCharacterPageChange = (page) => setCharacterCurrentPage(page);
+  const handleCharacterPageChange = (page2) => setCharacterCurrentPage(page2);
 
   return (
     <div>

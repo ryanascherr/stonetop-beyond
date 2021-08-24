@@ -18,6 +18,7 @@ const CharacterStats = () => {
     let damage;
     let roll1;
     let roll2;
+    let roll3;
 
     $(document).ready(function () {
         $(".damage-btn").click(function () {
@@ -55,7 +56,7 @@ const CharacterStats = () => {
                 $(".success-level").removeClass("green");
                 $(".success-level").removeClass("blue");
                 $(".success-level").addClass("red");
-                $(".success-level").text("Failure...Mark Experience!");
+                $(".success-level").text("Failure...Mark XP!");
             }
             $(".roll-result").text(`${roll1} + ${roll2} + ${stat}(${number}) = ${result}`);
             window.scrollTo({
@@ -71,6 +72,22 @@ const CharacterStats = () => {
         result = roll1 + roll2 + number;
     }
 
+    function statRollDisadvantage(number) {
+        roll1 = Math.floor(Math.random() * 6) + 1;
+        roll2 = Math.floor(Math.random() * 6) + 1;
+        roll3 = Math.floor(Math.random() * 6) + 1;
+
+        if (roll1 <= roll3 && roll2 <= roll3) {
+        result = roll1 + roll2 + number;
+        } 
+        if (roll1 <= roll2 && roll3 <= roll2) {
+        result = roll1 + roll3 + number;
+        }
+        if (roll2 <= roll1 && roll3 <= roll1) {
+        result = roll2 + roll3 + number;
+        }
+    }
+ 
     $('input[name=weakened]').change(function () {
         if ($(this).is(':checked')) {
             $("#str").addClass("red-background");
@@ -391,7 +408,7 @@ const CharacterStats = () => {
                     </div>
                     <div className="condition-container">
                         <h3>Weakened</h3>
-                        <input type="checkbox" name="weakened" value=""></input>
+                        <input type="checkbox" name="weakened" value="" id="weakened"></input>
                     </div>
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Dexterity</h3>
