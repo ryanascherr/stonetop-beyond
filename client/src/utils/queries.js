@@ -8,6 +8,8 @@ export const QUERY_PLAYBOOK = gql`
       complexity
       image
       description
+      hp
+      damage
     }
   }
 `;
@@ -69,6 +71,8 @@ export const QUERY_PLAYBOOKS = gql`
         complexity
         image
         description
+        hp
+        damage
     }
   }
 `;

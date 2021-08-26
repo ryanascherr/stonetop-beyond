@@ -16,6 +16,8 @@ const typeDefs = gql`
         complexity: String
         image: String
         description: String
+        hp: String
+        damage: String
     }
 
     type Background {

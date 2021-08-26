@@ -86,6 +86,8 @@ export default function Playbook() {
     return <div className="playbook card" id={playbook.name} key={playbook._id}>
       <h2>{playbook.name}</h2>
       <h3>{playbook.complexity}</h3>
+      <h3>HP: {playbook.hp}</h3>
+      <h3>Damage: d{playbook.damage}</h3>
       <div className="playbook-image-container">
         <img src={playbook.image} className="playbook-image" alt="Icon"></img>
       </div>

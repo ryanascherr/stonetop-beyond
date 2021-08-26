@@ -13,6 +13,12 @@ const playbookSchema = new Schema({
   description: {
     type: String,
   },
+  hp: {
+    type: String
+  },
+  damage: {
+    type: String,
+  }
 });
 
 const Playbook = model('Playbook', playbookSchema);
