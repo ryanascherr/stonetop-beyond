@@ -25,8 +25,10 @@ export default function Drive() {
   $(document).ready(function () {
   if (!playbook) {
     $(".drive-title").text("Pick a playbook first!");
+    $(".drive-title2").text("");
   } else {
     $(".drive-title").text("Choose one of the drives below!");
+    $(".drive-title2").text("Following your drive grants you XP!");
   }
   })
 
@@ -47,6 +49,7 @@ export default function Drive() {
   return (
     <div className="content">
       <h2 className="drive-title"> </h2>
+      <h2 className="drive-title2"> </h2>
       <div className="drive-container">
         {listOfDrives}
       </div>

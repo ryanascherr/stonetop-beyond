@@ -310,6 +310,10 @@ body {
     margin-bottom: 50px;
 }
 
+.background-title {
+    margin-bottom: 15px;
+}
+
 .background h2 {
     margin-bottom: 10px;
 }
@@ -328,6 +332,10 @@ body {
     margin-bottom: 50px;
 }
 
+.drive-title {
+    margin-bottom: 15px;
+}
+
 .drive h2 {
     margin-bottom: 10px;
 }
@@ -344,6 +352,10 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+}
+
+.origin-title, .origin-title2 {
+    margin-bottom: 20px;
 }
 
 .origin h2 {
@@ -386,6 +398,10 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.stat-title, .stat-title2 {
+    margin-bottom: 15px;
 }
 
 .stat h2, .stat select {

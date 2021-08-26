@@ -25,8 +25,10 @@ export default function Background() {
   $(document).ready(function () {
   if (!playbook) {
     $(".background-title").text("Pick a playbook first!");
+    $(".background-title2").text("");
   } else {
     $(".background-title").text("Choose one of the backgrounds below!");
+    $(".background-title2").text("Backgrounds grant you unique abilities and/or moves!");
   }
   })
 
@@ -47,6 +49,7 @@ export default function Background() {
   return (
     <div className="content">
       <h2 className="background-title"> </h2>
+      <h2 className="background-title2"> </h2>
       <div className="background-container">
         {listOfBackgrounds}
       </div>

@@ -28,8 +28,10 @@ export default function Origin() {
   $(document).ready(function () {
     if (!playbook) {
       $(".origin-title").text("Pick a playbook first!");
+      $(".origin-title2").text("");
     } else {
-      $(".origin-title").text("Pick one origin and a name to match (or make up something similar)!");
+      $(".origin-title").text("Stonetop is your home, or close enough, but where are you (or your family) from originally?");
+      $(".origin-title2").text("Pick one origin and a name to match (or make up something similar)!");
       $(".test").removeClass("hidden");
     }
   })
@@ -54,6 +56,7 @@ export default function Origin() {
   return (
     <div className="content">
       <h2 className="origin-title"> </h2>
+      <h2 className="origin-title2"> </h2>
       <div className="test hidden">
         <div className="origin-options">
           <h3>Choose a place of origin:</h3>

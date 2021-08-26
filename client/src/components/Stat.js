@@ -34,11 +34,14 @@ export default function Stat() {
   $(document).ready(function () {
   if (!playbook) {
     $(".stat-title").text("Pick a playbook first!");
+    $(".stat-title2").text("");
   } else if (playbook === "The Would-Be-Hero") {
     $(".stat-title").text("Apply each of the following numbers to one of the stats below: +1, +0, +0, +0, +0, -1");
+    $(".stat-title2").text("The number picked is added to your roll!");
     $(".stat-container-container").removeClass("hidden");
   } else {
     $(".stat-title").text("Apply each of the following numbers to one of the stats below: +2, +1, +1, +0, +0, -1");
+    $(".stat-title2").text("The number picked is added to your roll!");
     $(".stat-container-container").removeClass("hidden");
   }
   })
@@ -46,6 +49,7 @@ export default function Stat() {
   return (
     <div className="content">
         <h2 className="stat-title"> </h2>
+        <h2 className="stat-title2"> </h2>
         <div className="stat-container-container hidden">
         <div className="stat-container">
           <div className="stat card">
