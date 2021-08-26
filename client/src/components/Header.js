@@ -9,16 +9,19 @@ function Header() {
     let myCharactersBtn;
     let makeCharacterBtn;
 
+    const removeInfo = () => {
+        window.localStorage.removeItem("playbook");
+        window.localStorage.removeItem("background");
+        window.localStorage.removeItem("drive");
+    }
+
     if (Auth.loggedIn()) {
         logoutBtn = <button className="logout" onClick={logMeOut}>Log Out</button>;
-
         loginBtn = <div></div>;
-
         myCharactersBtn = <Link to="/my-characters">
             <button className="header-link">My Characters</button></Link>;
-
         makeCharacterBtn = <Link to="/make">
-            <button className="header-link">Make Character</button></Link>;
+            <button className="header-link" onClick={removeInfo}>Make Character</button></Link>;
     } else {
         logoutBtn = <div></div>;
         loginBtn = <Link to="/login">

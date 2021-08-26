@@ -8,10 +8,6 @@ function MakeCharacter({ currentPage, handlePageChange }) {
         window.location.assign('/');
     }
 
-    // window.localStorage.removeItem("playbook");
-    // window.localStorage.removeItem("background");
-    // window.localStorage.removeItem("drive");
-
     let checked = `&#9989;`;
     let unchecked = `&#10060;`;
 
