@@ -292,7 +292,7 @@
     {
         "playbook": "The Heavy",
         "name": "Armored",
-        "description": "<p>When you <strong><em>wear armor or carry a shield,</em></strong> mark only O for each (instead of OO), and ignore the <em>clumsy</em> tag (you don’t suffer disadvantage for wearing it).</p><p>If you take this move at the start of play, add an iron hauberk, bronze cuirass, or scale coat to your inventory (all are 2 armor, <em>warm</em>, <em>clumsy</em>).</p>"
+        "description": "<p>When you <strong><em>wear armor or carry a shield,</em></strong> mark only O for each (instead of OO), and ignore the <em>clumsy</em> tag (you don’t suffer disadvantage for wearing it).</p><p>If you take this move at the start of play, add an O iron hauberk, O bronze cuirass, or O scale coat to your inventory (all are 2 armor, <em>warm</em>, <em>clumsy</em>).</p>"
     },
     {
         "playbook": "The Heavy",
@@ -428,5 +428,135 @@
         "playbook": "The Judge",
         "name": "Aegis of Faith",
         "description": "<p>When you bear a shield, it can turn away spells, magical effects, and insubstantial attacks as if they were physical blows.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Armored",
+        "description": "<p>When you <strong><em>wear armor or carry a shield,</em></strong> mark only O for each (instead of OO), and ignore the <em>clumsy</em> tag (you don’t suffer disadvantage for wearing it).</p><p>If you take this move at the start of play, add an O iron hauberk, O bronze cuirass, or O scale coat to your inventory (all are 2 armor, <em>warm</em>, <em>clumsy</em>).</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Bear Witness",
+        "description": "<p>When you <strong><em>speak the truth with conviction and candor</em></strong>, none can doubt you. They might deny what you say, but in their hearts they recognize the truth.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Break Bread",
+        "description": "<p>When you <strong><em>share a proper meal with someone and each of you eats their fill</em></strong>, each of you recovers 1d8 (extra) hit points.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Bulwark",
+        "description": "<p>When you <strong><em>Defend</em></strong>, you can spend 1 Readiness to stand fast, holding your position despite what befalls you.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Censure",
+        "description": "<p>When you <strong><em>first denounce someone (or thing) as an agent of chaos or anathema to civilization</em></strong>, pick 1:</p><ul><li>You/your allies deal +1 damage against them</li><li>They deal -1 damage</li><li>They recoil and might be momentarily stunned</li></ul><p>The bonus/penalty ends if you use this move again.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Castigate",
+        "description": "<p style='text-align: center;'>(Requires level 2+, Censure)</p><p>When you <strong><em>Censure someone (or thing)</em></strong>, pick 2 effects instead of 1.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Chronicler of Stonetop",
+        "description": "<p>When you <strong><em>write up detailed session notes and share them with the other players</em></strong>, hold +1 Diligence.</p><p>You can spend 1 Diligence at any time to add +1 to a roll that you or a fellow player just made.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "For the Greater Good",
+        "description": "<p>When you <strong><em>Order Followers in defense of civilization</em></strong>, treat a result of 6- as a 7-9. In addition, your followers always accept 'thwarting a threat to civilization' as payment of their cost.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Hound of Aratis",
+        "description": "<p>When you <strong><em>Seek Insight</em></strong>, you can always ask 'What here is tainted by chaos?' for free, even on a 6-.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Like a Dog with a Bone",
+        "description": "<p style='text-align: center;'>(Requires Hound of Aratis)</p><p>When you <strong><em>attack something you know to be tainted by chaos</em></strong>, deal +1d6 damage.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Improved Stat",
+        "description": "<p>Each time you take this move, increase one of your stats by 1 (to a max of +2).</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Knowledge is Power",
+        "description": "<p>When you <strong><em>roll 10+ to Know Things</em></strong>, you or an ally gain advantage on the next roll to act on what you learn.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Many Hands Make Light Work",
+        "description": "<p>When you jump in to help another character who just rolled, tell us how and ask the GM what else is required or what the consequences will be. If you accept, increase your ally’s roll by +1.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "A Bundle of Sticks Unbroken",
+        "description": "<p style='text-align: center;'>(Requires Many Hands Make Light Work)</p><p>When you <strong><em>Struggle as One</em></strong>, you and one ally of your choice have advantage.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "The Hammer and the Book",
+        "description": "<p>When you <strong><em>strike a thing of supernatural chaos</em></strong>, roll +WIS: <strong>on a 10+</strong>, deal your damage and choose 1 from the list below; <strong>on a 7-9</strong>, deal damage and choose 1, but you also expose yourself to harm or unwanted attention.</p><ul><li>Deal +1d6 damage</li><li>Ignore the thing's armor or other defenses</li><li>Suppress one of its unnatural powers</li><li>Force it from its host</li></ul>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Truth or Consequences",
+        "description": "<p>When you <strong><em>look into someone’s eyes and gaze upon their soul</em></strong>, roll +WIS: <strong>on a 10+</strong>, hold 3 Insight; <strong>on a 7-9</strong>, hold 2; <strong>on a 6-</strong>, hold 1 anyway, but you can never use this move on them again.</p><p>While in their presence, spend 1 Insight to ask their player 1 of the following and get an honest answer:</p><ul><li>Are you lying?</li><li>Are you hiding something from me?</li></ul><p>If they answer 'yes,' gain advantage on your next move against them.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Binding Arbitration",
+        "description": "<p style='text-align: center;'>(Requires Truth or Consequences)</p><p>When you <strong><em>bear witness to someone’s promise or oath</em></strong>, henceforth you may ask their player if they have kept their word. They must answer honestly. The character need not be present. <strong><em>If they have broken their word</em></strong>, you gain advantage on all rolls against them until they admit their wrong and suffer an appropriate consequence (your call).</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Vision Unclouded",
+        "description": "<p>When you <strong><em>Seek Insight</em></strong>, you can always ask 'What here is hidden by illusion or magic?' for free, even on a 6-.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Well-Read",
+        "description": "<p>When you <strong><em>name the source in which you read about the matter at hand</em></strong>, roll +WIS to Know Things instead of +INT.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "A Mighty Rampart",
+        "description": "<p style='text-align: center;'>(Requires level 6+; replaces Bulwark)</p><p>When you <strong><em>hold Readiness</em></strong> (from Defend), you cannot be forced from your position. Also, you can spend 1 Readiness to completely ignore the effects/damage of an attack that you suffer.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Armistice",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Bear Witness)</p><p>When you <strong><em>approach an enemy to negotiate in good faith</em></strong>, they will at least hear you out. Even the most debased and savage foe will delay violence until you’ve had your say.</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Condemn",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Censure)</p><p>When you <strong><em>Censure someone</em></strong>, they are marked with a mystical brand that cannot be removed or hidden until you dismiss it. Any intelligent creature who sees the mark recognizes the bearer as an agent of chaos and anathema to civilization."
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Proclamation",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Condemn)</p><p>When you <strong><em>Censure</em></strong>, you may denounce a group or faction as long as you can clearly identify them. Apply the effects of Censure to every member of that group, regardless of distance."
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Mirrorshield",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Aegis of Faith)</p><p>When you <strong><em>Defend with a shield</em></strong>, you can spend 1 Readiness to intercept a magical force and redirect it to a different target (or none)."
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Superior Stat",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>Increase one of your stats by +1 (to a max of +3).</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "The Tower Eternal",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>When you <strong><em>Defy Danger against magic</em></strong>, treat a result of 6- as a 7-9.</p>"
     }
 ]
