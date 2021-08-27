@@ -98,7 +98,7 @@ export default function Playbook() {
 
   return (
     <div className="content">
-      <h2>Get started by choosing a playbook below!</h2>
+      <h2 className="playbook-title">Get started by choosing a playbook below!</h2>
       <div className="playbook-container">
         {listOfPlaybooks}
       </div>

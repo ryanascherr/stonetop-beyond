@@ -32,7 +32,7 @@ export default function Origin() {
     } else {
       $(".origin-title").text("Stonetop is your home, or close enough, but where are you (or your family) from originally?");
       $(".origin-title2").text("Pick one origin and a name to match (or make up something similar)!");
-      $(".test").removeClass("hidden");
+      $(".origin-options-container").removeClass("hidden");
     }
   })
 
@@ -57,7 +57,7 @@ export default function Origin() {
     <div className="content">
       <h2 className="origin-title"> </h2>
       <h2 className="origin-title2"> </h2>
-      <div className="test hidden">
+      <div className="origin-options-container hidden">
         <div className="origin-options">
           <h3>Choose a place of origin:</h3>
           <select className="origin-select">

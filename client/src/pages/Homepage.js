@@ -8,8 +8,8 @@ function Homepage() {
 
     return (
         <div className="content info-page">
-            <h2>Welcome to the Stonetop Character Creator!</h2>
-            <h2>Read below to find out more about the game, or create a character after you've logged in!</h2>
+            <h2 className="homepage-title">Welcome to Stonetop Beyond!</h2>
+            <h2 className="homepage-title">Read below to find out more about the game, or create a character after you've logged in!</h2>
             <div className="info-container">
                 <div className="info card">
                     <h2>The Premise</h2>

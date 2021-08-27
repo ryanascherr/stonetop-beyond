@@ -78,7 +78,7 @@ body {
 
 .content {
     margin: 0 15px;
-    padding: 50px 0 100px 0;
+    padding: 30px 0 100px 0;
 
 }
 
@@ -101,17 +101,34 @@ body {
 .header {
     background-color: var(--darkest-blue);
     color: var(--off-white);
-    padding: 50px 0;
+    padding: 25px 0 0 0;
+}
+
+.header h1 {
+    padding-bottom: 25px;
 }
 
 .header-links {
     display: flex;
     justify-content: center;
-    margin: 25px 0 0 0;
+    margin: 0;
+    background-color: var(--light-blue);
 }
 
 .header-link {
-    margin: 0 15px;
+    /* margin: 0 15px; */
+    padding: 10px 0;
+    color: var(--darkest-blue);
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+
+.header-link:hover {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
 }
 
 .logout {
@@ -147,20 +164,20 @@ body {
 
 /* Homepage */
 
+.homepage-title {
+    margin-bottom: 15px;
+}
+
 .info-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.info-page h2 {
-    margin-bottom: 15px;
-}
-
 /* Login */
 
-.login-description h2 {
-    margin-bottom: 30px;
+.login-title {
+    margin-bottom: 15px;
 }
 
 .login-signup-container {
@@ -193,7 +210,7 @@ body {
     flex-direction: column;
     border: 2px solid var(--darkest-blue);
     padding: 20px;
-    margin: 10px;
+    margin: 15px;
 }
 
 .descriptors-inputs-container {
@@ -233,6 +250,7 @@ body {
     color: var(--off-white);
     justify-content: center;
     margin-bottom: 0;
+    padding-top: 25px;
 }
 
 .checks h2 {
@@ -277,11 +295,15 @@ body {
 /* Playbook */
 
 .playbook-container {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+}
+
+.playbook-title {
+    margin-bottom: 15px;
 }
 
 .playbook-image-container {
@@ -303,14 +325,14 @@ body {
 /* Background */
 
 .background-container {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
-.background-title {
+.background-title, .background-title2 {
     margin-bottom: 15px;
 }
 
@@ -325,14 +347,14 @@ body {
 /* Drive */
 
 .drive-container {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
-.drive-title {
+.drive-title, .drive-title2 {
     margin-bottom: 15px;
 }
 
@@ -347,15 +369,23 @@ body {
 /* Origin */
 
 .origin-container {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
-.origin-title, .origin-title2 {
-    margin-bottom: 20px;
+.origin-title {
+    margin-bottom: 15px;
+}
+
+.origin-title2 {
+    margin-bottom: 30px;
+}
+
+.origin-select, .origin-name {
+    margin-bottom: 30px;
 }
 
 .origin h2 {
@@ -370,7 +400,7 @@ body {
 }
 
 .origin-options select, .origin-options input {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 5px;
     color: var(--darkest-blue);
     text-align: center;
@@ -380,6 +410,7 @@ body {
     background-color: var(--darkest-blue);
     color: var(--off-white);
     border: 2px solid var(--darkest-blue);
+    margin-bottom: 15px;
 }
 
 .origin-btn:hover {
@@ -398,6 +429,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
 .stat-title, .stat-title2 {
@@ -431,7 +463,7 @@ body {
 .btn-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 15px 0 50px 0;
 }
 
 .stat p {
@@ -441,7 +473,7 @@ body {
 /* Finalize */
 
 .finalize-title {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .character-review {
@@ -452,7 +484,7 @@ body {
 }
 
 .character-review > * {
-    margin: 20px;
+    margin: 15px 0;
 }
 
 .finalize-btn {
@@ -527,6 +559,10 @@ body {
     margin-bottom: 10px;
 }
 
+.stat h2 {
+    margin: 0;
+}
+
 .finalize-card {
     background-color: var(--darkest-blue);
     color: var(--off-white);
@@ -540,7 +576,7 @@ body {
 /* My Characters */
 
 .my-characters-title {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .character-card-container {

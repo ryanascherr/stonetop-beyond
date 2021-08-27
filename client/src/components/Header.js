@@ -16,16 +16,24 @@ function Header() {
     }
 
     if (Auth.loggedIn()) {
+        // logoutBtn = <button className="logout" onClick={logMeOut}>Log Out</button>;
+        // loginBtn = <div></div>;
         logoutBtn = <button className="logout" onClick={logMeOut}>Log Out</button>;
         loginBtn = <div></div>;
-        myCharactersBtn = <Link to="/my-characters">
-            <button className="header-link">My Characters</button></Link>;
-        makeCharacterBtn = <Link to="/make">
-            <button className="header-link" onClick={removeInfo}>Make Character</button></Link>;
+        // myCharactersBtn = <Link to="/my-characters">
+        //     <button className="header-link">My Characters</button></Link>;
+        myCharactersBtn = <Link to="/my-characters" className="header-link">My Characters</Link>;
+        // makeCharacterBtn = <Link to="/make">
+        //     <button className="header-link" onClick={removeInfo}>Make Character</button></Link>;
+        makeCharacterBtn = <Link to="/make" className="header-link" onClick={removeInfo}>Make Character
+            </Link>;
     } else {
         logoutBtn = <div></div>;
-        loginBtn = <Link to="/login">
-            <button className="header-link">Log In</button></Link>;
+        // loginBtn = <Link to="/login">
+        //     <button className="header-link">Log In</button></Link>;
+        // loginBtn = <Link to="/login">
+        //     <a className="header-link">Log In</a></Link>;
+        loginBtn = <Link to="/login" className="header-link">Log In</Link>;
         myCharactersBtn = <div></div>;
         makeCharacterBtn = <div></div>;
     }
@@ -51,16 +59,19 @@ function Header() {
 
     return (
         <header className="header">
-            <h1>Stonetop Character Creator</h1>
+            <h1>Stonetop Beyond</h1>
             <div className="header-links">
-                <Link to="/">
+                {/* <Link to="/">
                     <button className="header-link">Homepage</button>
+                </Link> */}
+                <Link to="/" className="header-link">
+                Homepage
                 </Link>
                 {loginBtn}
                 {makeCharacterBtn}
                 {myCharactersBtn}
+                {logoutBtn}
             </div>
-            {logoutBtn}
         </header>
     )
 }
