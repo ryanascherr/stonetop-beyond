@@ -117,8 +117,8 @@ export default function Finalize() {
           </div>
           <div>
             <h2>Stats:</h2>
-            <div className="stat-container">
-              <div className="stat card">
+            <div className="stat-container fin-stat">
+              <div className="card">
                 <h2>Strength: {str}</h2>
               </div>
               <div className="stat card">

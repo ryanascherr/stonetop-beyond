@@ -14,13 +14,13 @@ let { data } = useQuery(QUERY_PLAYBOOK, {
 const selectedPlaybook = data?.getPlaybook || [];
 
 const listOfPlaybooks = selectedPlaybook.map(playbook => {
-  return <div className="finalize-playbook" id={playbook.name} key={playbook._id}>
+  return <div className="finalize-card" id={playbook.name} key={playbook._id}>
     <h2>{playbook.name}</h2>
     <h3>{playbook.complexity}</h3>
     <div className="playbook-image-container">
       <img src={blessedIcon} className="playbook-image" alt="Icon"></img>
     </div>
-    <p>{playbook.description}</p>
+    <p className="center-p">{playbook.description}</p>
   </div>
 })
 

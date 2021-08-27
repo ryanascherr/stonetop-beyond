@@ -14,9 +14,9 @@ const QueryBackground = () => {
     const selectedDrive = data?.getDrive || [];
 
     const listOfDrives = selectedDrive.map(drive => {
-        return <div className="finalize-drive" key={drive._id}>
+        return <div className="finalize-card" key={drive._id}>
             <h2>{drive.name}</h2>
-            <p>{drive.description}</p>
+            <p className="center-p">{drive.description}</p>
         </div>
     })
 

@@ -13,7 +13,7 @@ let { data } = useQuery(QUERY_BACKGROUND, {
 const selectedBackground = data?.getBackground || [];
 
 const listOfBackgrounds = selectedBackground.map(background => {
-    return <div className="finalize-background" key={background._id}>
+    return <div className="finalize-card" key={background._id}>
       <h2>{background.name}</h2>
       <div dangerouslySetInnerHTML={{ __html: background.description }}></div>
     </div>
