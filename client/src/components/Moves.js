@@ -22,7 +22,7 @@ export default function Moves() {
 
   return (
       <div className="content">
-        <h1>{playbook} Moves</h1>
+        <h1 className="moves-title">{playbook} Moves</h1>
         <div className="move-container">
           {listOfMoves}
         </div>

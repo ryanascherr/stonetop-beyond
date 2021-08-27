@@ -31,7 +31,7 @@ img {
 }
 
 li {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 ul {
@@ -727,18 +727,36 @@ body {
 
 /* Misc */
 
+.misc-title {
+    margin-bottom: 30px;
+}
+
+.misc-container div {
+    margin-bottom: 30px;
+}
+
 .misc-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .misc-container h2 {
     margin-bottom: 15px;
 }
 
+/* Moves */
+
+.moves-title {
+    margin-bottom: 15px;
+}
+
 /* Basic Moves */
+
+.basic-moves-title {
+    margin-bottom: 15px;
+}
 
 .move-container {
     display: flex;

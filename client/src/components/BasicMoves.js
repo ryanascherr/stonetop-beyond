@@ -24,7 +24,7 @@ export default function BasicMoves() {
 
   return (
     <div className="content">
-      <h1>Basic Moves</h1>
+      <h1 className="basic-moves-title">Basic Moves</h1>
         <div className="move-container">
           {listOfMoves}
         </div>

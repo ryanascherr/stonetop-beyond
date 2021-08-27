@@ -28,16 +28,20 @@ export default function Misc() {
 
   return (
     <div className="content">
-      <h1>Other Character Info</h1>
+      <h1 className="misc-title">Other Character Info</h1>
       <div className="misc-container">
         <div>
           <h2>Origin:</h2>
           <h2 className="finalize-card"><i>{character.origin}</i></h2>
         </div>
+        <div>
         <h2>Background:</h2>
         <CurrentBackground></CurrentBackground>
+        </div>
+        <div>
         <h2>Drive:</h2>
         <CurrentDrive></CurrentDrive>
+        </div>
       </div>
     </div>
   );
