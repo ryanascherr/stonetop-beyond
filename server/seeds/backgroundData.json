@@ -57,7 +57,7 @@
     {
       "playbook": "The Judge",
       "name": "Prophet",
-      "description": "<p>The line of Judges was broken long ago, the Chronicle lost or fallen into ruin. Aratis has called you personally to her service though dreams, omens, and visions. Some in town resent the authority you’ve assumed.</p>When you <b><i>spend a few days communing with Aratis about a threat facing Stonetop or civilization as a whole</i></b>, roll +WIS: <b>on a 7+</b>, Aratis reveals the course of action she would have you take; <b>on a 10+</b>, you also hold 2 Sanction. While <b><i>acting on her orders</i></b>, spend 1 Sanction to add +1 to a roll you just made.</p>"
+      "description": "<p>The line of Judges was broken long ago, the Chronicle lost or fallen into ruin. Aratis has called you personally to her service though dreams, omens, and visions. Some in town resent the authority you’ve assumed.</p><p>When you <b><i>spend a few days communing with Aratis about a threat facing Stonetop or civilization as a whole</i></b>, roll +WIS: <b>on a 7+</b>, Aratis reveals the course of action she would have you take; <b>on a 10+</b>, you also hold 2 Sanction. While <b><i>acting on her orders</i></b>, spend 1 Sanction to add +1 to a roll you just made.</p>"
     },
     {
       "playbook": "The Lightbearer",

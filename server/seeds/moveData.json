@@ -558,5 +558,125 @@
         "playbook": "The Judge",
         "name": "The Tower Eternal",
         "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>When you <strong><em>Defy Danger against magic</em></strong>, treat a result of 6- as a 7-9.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "A Candle Against the Dark",
+        "description": "<p>When you <strong><em>wield a holy light but go otherwise unarmed</em></strong>, you have 2 Armor.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Luminous Shield",
+        "description": "<p style='text-align: center;'>(Requires A Candle Against the Dark)</p><p>When you <strong><em>brandish a holy light to turn aside an attack against body, mind, or soul</em></strong>, roll +CHA: <strong>on a 10+</strong>, pick 2; <strong>on a 7-9</strong>, pick 1.</p><ul><li>The attack is deflected, doing no harm</li><li>The attacker, if in range of your light, is briefly blinded</li><li>Your holy light is not extinguished</li></ul>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "All is Illuminated",
+        "description": "<p>When you <strong><em>look closely on another and see their soul laid bare</em></strong>, roll +WIS: <strong>on a 10+</strong>, ask their player 1 question from the list below, plus 'And what would make them feel loved, beautiful, or worthy?'; <strong>on a 7-9</strong>, ask them 1 question from the list. In any case, they must answer truthfully.</p><ul><li>Of what are you most ashamed?</li><li>What do they most desire or covet?</li><li>What hope have they abandoned?</li><li>Who or what is most precious to them?</li></ul>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "And Behold a Pale Horse",
+        "description": "<p>When you <strong><em>spend the night gazing into a flame</em></strong>, ask the GM to reveal an impending doom or grim portent that will come to pass unless you intervene, and how you might yet do so.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Consecrated Flame",
+        "description": "<p>When you <strong><em>whisper words of consecration to a flame</em></strong>, the flame casts a holy light. Holy light is uncomfortable for creatures of darkness to look upon, but does no true harm. The holy light lasts until the flame goes out or until you consecrate another flame, whichever comes first.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Fire Within",
+        "description": "<p>When you <strong><em>are in darkness</em></strong>, you are able to see by the light of your inner fire. When you <strong><em>take damage from cold or fire</em></strong>, reduce that damage by 2.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Guiding Light",
+        "description": "<p>When you <strong><em>lead one or more NPCs through danger</em></strong>, roll +CHA: <strong>on a 10+</strong>, you all make it through (Helior be praised); <strong>on a 7-9</strong>, the GM will tell you what's required to get everyone through safely.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Helior's Unblinking Eye",
+        "description": "<p>When you <strong><em>stare into the sun long enough to lose your vision</em></strong>, name a person or place that you know and roll +WIS: <strong>on a 10+</strong>, you briefly glimpse your subject as if from a great height, and choose 2 from the list below; <strong>on a 7-9</strong>, you briefly glimpse your subject as if from a great height, and choose 1:</p><ul><li>The glimpse lasts as long as you wish.</li><li>Your point of view shifts to very close range</li><li>You recover your vision quickly</li></ul>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Improved Stat",
+        "description": "<p>Each time you take this move, increase one of your stats by 1 (to a max of +2).</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Invoke the Sun God",
+        "description": "<p>When you <strong><em>imbue a holy light with Helior’s power</em></strong>, choose an Invocation you know and roll +WIS: <strong>on a 10+</strong>, it works as described but you must choose 1 consequence from the list below; <strong>on a 7-9</strong>, it works as described, but you and the GM each choose 1.</p><ul><li>The Invocation has its <em>reduced</em> effect</li><li>The effor taxes you; mark a debility</li><li>The light is snuffed out when the Invocation is complete, its fuel consumed</li><li>You must bask in sunlight for an hour or so before using that Invocation again</ul><p>See the <strong>Invocations</strong> section for details.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Keep the Home-Fires Burning",
+        "description": "<p>When you <strong><em>build a camp fire and sprinkle it with ash from your own hearth</em></strong>, anyone who Makes Camp with you is free from nightmares or bad dreams and recovers (extra) HP equal to your CHA.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Lamplighter",
+        "description": "<p>When you <strong><em>whisper to a flammable object</em></strong> (torch, wick, kindling, etc.), it ignites in moments.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Piety",
+        "description": "<p>When you <strong><em>spend at least an hour in proper worship to Helior</em></strong>, hold 1 Blessing. Other faithful PCs who partake in this worship also hold 1 Blessing. At any time, you can spend 1 Blessing to add +1 to a roll you just made in pursuit of a righteous cause.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Purifying Flames",
+        "description": "<p>When you <strong><em>wield a holy light against creatures of darkness</em></strong>, you may roll +WIS to Clash. When you do so, your range is that of your light source, and your damage is d10 (ignores armor).</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Radiant Countenance",
+        "description": "<p>When you <strong><em>give your fond attention and affection to your followers</em></strong>, they accept it as payment regardless of their usual Cost and you gain advantage on your next roll to Order Followers.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Rise Like the Sun",
+        "description": "<p>When you <strong><em>draw attention to yourself by word or deed</em></strong>, roll +CHA: <strong>on a 10+</strong>, everyone turns and looks, and you hold their gaze as long as you keep giving them reason to look; <strong>on a 7-9</strong>, everyone turns and looks.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Spring's First Thaw",
+        "description": "<p>When you <strong><em>spend time (an hour at least, maybe more) seeking to stir hope, kindness, or mercy in an NPC</em></strong>, roll +CHA: <strong>on a 10+</strong>, you light a fire deep within them and affect a lasting change; <strong>on a 7-9</strong>, you kindle goodness in their heart for now, but they will eventually return to their old ways; <strong>on a 6-</strong>, their heart hardens and, whatever else the GM says, you can’t use this move on them again.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Burn Twice as Bright",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Invoke the Sun God)</p><p>When you <strong><em>Invoke the Sun God</em></strong>, you may mark a debility to use 2 Invocations at once. Roll once, and apply any consequences to both Invocations.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Empowered Invocations",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Invoke the Sun God)</p><p>When you <strong><em>Invoke the Sun God</em></strong>, you can choose an extra consequence before you roll. If you do, the invocation has its empowered effect.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Glorious Servant",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Invoke the Sun God)</p><p>When you <strong><em>Invoke the Sun God and roll a 10+</em></strong>, you need not choose a consequence; <strong>on a 7-9</strong>, you choose a consequence but the GM does not.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Hungry Flames",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Purifying Flames)</p><p>When you <strong><em>deal damage with a holy light</em></strong>, you deal +1d6 damage and your target is engulfed in holy light and flames.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Light, More Light",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Consecrated Flame)</p><p>When you <strong><em>consecrate a flame</em></strong>, it burns brighter than normal. A rushlight or candle illuminates to <em>reach</em> range, an oil lamp, lantern, or torch out to <em>near</em> range, and a bullseye lantern out to <em>far</em> range.</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Superior Stat",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>Increase one of your stats by +1 (to a max of +3).</p>"
+    },
+    {
+        "playbook": "The Lightbearer",
+        "name": "Wielder of the White Flame",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Invoke the Sun God)</p><p>When you <strong><em>channel Helior’s essence into an object you carry</em></strong>, roll +WIS: <strong>on a 10+</strong>, it ignites with a white flame that casts a holy light (<em>reach</em>, <em>area</em>) and burns neither you nor the object, and you may Invoke the Sun God right now as if you rolled a 10+; <strong>on a 7-9</strong>, it ignites with a white flame that casts a holy light (<em>reach</em>, <em>area</em>) and burns neither you nor the object.</p>"
     }
 ]

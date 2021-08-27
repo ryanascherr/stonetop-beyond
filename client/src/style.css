@@ -441,6 +441,7 @@ body {
 .stat-btn:hover, .damage-btn:hover {
     background-color: var(--off-white);
     color: var(--darkest-blue);
+    border: 2px solid var(--darkest-blue);
 }
 
 .btn-container {
