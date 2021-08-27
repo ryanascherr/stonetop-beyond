@@ -423,5 +423,10 @@
         "playbook": "The Heavy",
         "name": "Superior Stat",
         "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>Increase one of your stats by +1 (to a max of +3).</p>"
+    },
+    {
+        "playbook": "The Judge",
+        "name": "Aegis of Faith",
+        "description": "<p>When you bear a shield, it can turn away spells, magical effects, and insubstantial attacks as if they were physical blows.</p>"
     }
 ]

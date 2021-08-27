@@ -214,8 +214,13 @@ body {
     margin: 15px;
 }
 
+.login-container h2, .signup-container h2 {
+    margin-bottom: 10px;
+}
+
 .descriptors-inputs-container {
     display: flex;
+    margin-bottom: 15px;
 }
 
 .descriptors {
@@ -223,6 +228,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+}
+
+.descriptors h3 {
+    margin: 5px 0;
 }
 
 .descritpors, .inputs {
