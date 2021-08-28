@@ -51,7 +51,7 @@ export default function Playbook() {
       localStorage.setItem('maxHP', maxHP);
       localStorage.setItem('currentHP', currentHP);
     }
-    if (playbook === "The Heavy" || playbook === "The Judge" || playbook === "The Marshall") {
+    if (playbook === "The Heavy" || playbook === "The Judge" || playbook === "The Marshal") {
       let maxHP = 20;
       let currentHP = 20;
       localStorage.setItem('maxHP', maxHP);
