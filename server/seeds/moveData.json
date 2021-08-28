@@ -798,5 +798,140 @@
         "playbook": "The Marshal",
         "name": "Superior Stat",
         "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>Increase one of your stats by +1 (to a max of +3).</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "A Safe Place",
+        "description": "<p>When you <strong><em>select and prepare the party’s camp site</em></strong>, hold 1 Precaution, or 2 Precaution if you are wellversed with this area and its dangers.</p><p>If trouble finds your camp site, you can spend 1 Precaution to reveal a simple defense, warning, or trick that you prepared in advance. If you do, tell us how you knew to make that specific preparation.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Animal Companion",
+        "description": "<p>You are accompanied by a beast of uncommon loyalty and cleverness. See the Animal Companion insert for details.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Magnificent Specimen",
+        "description": "<p style='text-align: center;'>(Requires Animal Companion)</p><p>Each time you take this move, your companion gains 2 additional options of your choice.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Big Game Hunter",
+        "description": "<p>When you <strong><em>strike at the weak spot of a large or huge creature</em></strong>, you deal +2 damage.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Blot Out the Sun",
+        "description": "<p>When you <strong><em>Let Fly with a bow</em></strong>, you can deplete your ammunition (mark the next ammo status after your weapon) before you roll. If you do, choose 1:</p><ul><li>Gain advantage on your damage roll</li><li>Add the <em>area</em> tag to your attack; roll damage separately for each target</li></ul>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Call the Shot",
+        "description": "<p>When you <strong><em>take your time and calmly line up the perfect shot</em></strong>, either deal your damage or roll +DEX: <strong>on a 10+</strong>, deal your damage and pick 2; <strong>on a 7-9</strong>, deal your damage and pick 1.</p><ul><li>Ignore armor or deal +1d4 damage (your call)</li><li>Stun, hobble, or hinder them</li><li>Make them trip or drop what they're holding</li><li>Do no harm; don't deal your damage after all</li></ul>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Expert Tracker",
+        "description": "<p>When you <strong><em>Seek Insight by searching for tracks or studying the signs left by passing creatures</em></strong>, you can ask 'What happened here recently?' for free, even on a 6-.</p><p>When you <strong>follow a creature’s trail</strong>, roll +WIS: <strong>on a 7+</strong> you follow the trail to a significant change in direction, terrain, or mode of transport; <strong>on a 10+</strong>, you can also ask the GM a reasonable question about your quarry and get an honest, useful answer.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Home on the Range",
+        "description": "<p>When <strong><em>a journey requires you to Defy Danger or Struggle as One</em></strong>, treat a 6- as a 7-9.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Improved Stat",
+        "description": "<p>Each time you take this move, increase one of your stats by 1 (to a max of +2).</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Mental Map",
+        "description": "<p>You can always retrace your steps and can accurately gauge distances and directions. You might not know the way forward but can always find your way back.</p><p>When you <strong><em>think back on a place you’ve been to or observed</em></strong>, you can retroactively Seek Insight about it as if you were still there.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Naturalist",
+        "description": "<p>When you <strong><em>Know Things about beasts, natural environs, or spirits of the wild</em></strong>, you have advantage.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "On the Hoof",
+        "description": "<p>When you <strong><em>travel through the wilderness</em></strong>, you can procure 1d6 uses of provisions each day (roll with disadvantage in winter or barren terrain). Each use of provisions can substitute for 1 supplies when you Make Camp.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Pack Horse",
+        "description": "<p>You can carry up to 4 O with a light load, 7 O with a normal load, and 10 O with a heavy load.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Predator",
+        "description": "<p>When you <strong><em>Seek Insight</em></strong>, add the following to the list of questions you can ask:</p><ul><li>Who or what is the easiest prey?</li><li>Who is _____ weak or vulnerable?</li></ul><p>When <strong><em>acting on the answer to either question</em></strong>, deal an extra 1d4 damage.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Seek the Unnatural",
+        "description": "<p>When you <strong><em>Seek Insight</em></strong>, you can always ask, 'What here is a perversion of the natural order?' for free, even on a 6-.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Stalker",
+        "description": "<p>When you <strong><em>carry a normal or light load and move with care</em></strong>, you make no noise and leave no sign of your passing. When you <strong><em>hide yourself in a natural environment</em></strong>, you remain unseen until you draw attention to yourself, move positions, or attack.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Wild Speech",
+        "description": "<p>The grunts, barks, chirps, and calls of natural creatures are as a language to you. You can understand the intentions of and communicate basic ideas with any beast.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Alpha",
+        "description": "<p style='text-align: center;'>(Requires Wild Speech or Spirit Tongue)</p><p>When you assert your dominance over a beast or spirit of the wild, roll +WIS: <strong>on a 7+</strong>, it must choose 1 from the list below; <strong>on a 10+</strong>, you also gain advantage on your next roll against it.</p><ul><li>Fight you for dominance</li><li>Slink away or flee, then avoid you</li><li>Accept your authority, at least for now</li></ul>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Wordly",
+        "description": "<p style='text-align: center;'>(Requires level 2+ and the Ranger)</p><p>Take a move from the Blessed, Fox, Heavy, or Seeker playbooks, for which you otherwise qualify. You can pick from a different playbook each time. You can’t pick Improved Stat or Superior Stat.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Beast of Legend",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Magnificent Specimen)</p><p>Each time you take this move, pick 1:</p><ul><li>They are <em>exceptional</em> (and roll +2 instead of +1)</li><li>They get +4 HP and +1 armor</li></ul>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Constant Vigilance",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>When <strong><em>a foe would get the drop on you</em></strong>, they don’t— you get to act first instead (if the GM describes an enemy taking you by surprise, even on a 6-, remind them of this move and say what you do).</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Giant Slayer",
+        "description": "<p style='text-align: center;'>(Requires level 6+; replaces Big Game Hunter)</p><p>When you <strong><em>strike at a weak spot of a large or huge creature</em></strong>, you deal another +2 damage (+4 total).</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Master Tracker",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Expert Tracker)</p><p>When you <strong><em>even briefly scan for tracks or other signs left by passing creatures</em></strong>, you can ask the GM, 'What happened here recently?' and get an honest answer—no need to Seek Insight.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Superior Stat",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>Increase one of your stats by +1 (to a max of +3).</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Trailblazer",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Home on the Range)</p><p>When a <strong><em>journey causes you to Defy Danger or Struggle as One</em></strong>, don’t roll; you always get a 10+.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Walk It Off",
+        "description": "<p style='text-align: center;'>(Requires level 6+)</p><p>When you <strong><em>would mark a debility</em></strong>, you can mark this move instead to no ill effect. Clear it as you would a debility.</p>"
+    },
+    {
+        "playbook": "The Ranger",
+        "name": "Warden of the Wild",
+        "description": "<p style='text-align: center;'>(Requires level 6+ and Sense the Unnatural)</p><p>When you <strong><em>deal damage to something you know to be a perversion of the natural order</em></strong>, deal +1d4 damage.</p>"
     }
 ]
