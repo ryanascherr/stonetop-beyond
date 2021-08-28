@@ -1062,6 +1062,51 @@
     {
         "playbook": "The Would-Be-Hero",
         "name": "Anger is a Gift",
-        "description": "<p>When you <strong><em>burn with righteous anger</em></strong> (see Fear & Anger on back of playbook), hold 2 Resolve. You can spend your Resolve 1-for-1 to:</p><ul><li>"
+        "description": "<p>When you <strong><em>burn with righteous anger</em></strong> (see Fear & Anger on back of playbook), hold 2 Resolve. You can spend your Resolve 1-for-1 to:</p><ul><li>Set aside fear and doubt to do what must be done</li><li>Act suddenly, catching them off-guard</li><li>Inspire allies or bystanders to follow your lead</li><li>Strike hard (+1d4 damage, <em>forceful</em>)</li><li>Keep your footing, position, and/or your course depsite what befalls you</li></ul>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "Speak Truth to Power",
+        "description": "<p style='text-align: center;'>(Requires Anger is a Gift)</p><p>When you <strong><em>demand that someone does what is clearly good and right</em></strong>, you have advantage to Persuade. If they refuse, gain +1 Resolve.</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "Better Part of Valor",
+        "description": "<p>When you <strong><em>are outnumbered or facing a foe bigger than you</em></strong>, you have advantage to hide from, escape from, or sneak past them.</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "I Get Knocked Down",
+        "description": "<p>When you <strong><em>take damage despite your best efforts to avoid it</em></strong>, you can choose to halve the damage but pick 1 of the following:</p><ul><li>You lose something (footing, grip, etc.)</li><li>Something on your person breaks</li><li>You're out of it for a moment</li></ul><p>Whatever you choose, the GM will describe the details.</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "But I Get Up Againt",
+        "description": "<p style='text-align: center;'>(Requires I Get Knocked Down)</p><p>When you <strong><em>use I Get Knocked Down</em></strong>, you have advantage on your next roll against whatever dealt the damage and your next blow against them does +1d4 damage.</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "Improved Stat",
+        "description": "<p>Each time you take this move, increase one of your stats by 1 (to a max of +2).</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "In Over Your Head",
+        "description": "<p>When <strong><em>another PC rescues you from danger</em></strong>, mark XP.</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "Iron Will",
+        "description": "<p>When you <strong><em>are subject to mind control or magic that affects your feelings</em></strong>, you can take 1d4 damage (ignoring armor) to disregard its influence.</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "Inquiring Minds",
+        "description": "<p>When you <strong><em>seek out and receive honest advice</em></strong>, gain advantage on your next roll to follow that advice.</p>"
+    },
+    {
+        "playbook": "The Would-Be-Hero",
+        "name": "Never Gonna Keep Me Down",
+        "description": "<p>When you <strong><em>have 5 or fewer current HP</em></strong>, you impose disadvantage on any damage you take.</p><p>Once per session, when you are at Death’s Door, don’t roll. You get a 10+.</p>"
     }
 ]
