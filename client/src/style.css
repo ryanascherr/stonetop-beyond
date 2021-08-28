@@ -165,6 +165,11 @@ body {
 
 /* Homepage */
 
+/* .homepage-title-container {
+    background-color: var(--darkest-blue);
+    color: var(--off-white);
+} */
+
 .homepage-title {
     margin-bottom: 15px;
 }
@@ -173,6 +178,25 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.info-container hr {
+    border: 1px solid var(--darkest-blue);
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 1000px;
+}
+
+.info {
+    max-width: 1000px;
+}
+
+.info h2 {
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin-bottom: 10px;
 }
 
 /* Login */
