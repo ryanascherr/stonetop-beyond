@@ -328,8 +328,13 @@ body {
 
 /* Playbook */
 
+.playbook-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .playbook-container {
-    /* padding: 10px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

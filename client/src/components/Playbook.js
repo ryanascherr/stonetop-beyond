@@ -18,6 +18,14 @@ export default function Playbook() {
       localStorage.setItem('playbook', playbook);
       // $(".playbook").removeClass("selected");
       // $(this).parent().addClass("selected");
+      window.location.replace('/make#background');
+      window.location.reload();
+    })
+  })
+
+  $(document).ready(function () {
+    $(".test").click(function () {
+      window.location.replace('/make#background');
       window.location.reload();
     })
   })
@@ -98,7 +106,11 @@ export default function Playbook() {
 
   return (
     <div className="content">
-      <h2 className="playbook-title">Get started by choosing a playbook below!</h2>
+      <div className="playbook-title-container">
+        <button>Prev</button>
+        <h2 className="playbook-title">Get started by choosing a playbook below!</h2>
+        <button className="test">Next</button>
+      </div>
       <div className="playbook-container">
         {listOfPlaybooks}
       </div>
