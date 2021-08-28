@@ -50,6 +50,10 @@ export default function Drive() {
     <div className="content">
       <h2 className="drive-title"> </h2>
       <h2 className="drive-title2"> </h2>
+      <div className="prev-next-btn-container">
+          <button className="prev">Prev</button>
+          <button className="next">Next</button>
+      </div>
       <div className="drive-container">
         {listOfDrives}
       </div>

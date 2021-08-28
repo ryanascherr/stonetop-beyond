@@ -50,6 +50,10 @@ export default function Stat() {
     <div className="content">
         <h2 className="stat-title"> </h2>
         <h2 className="stat-title2"> </h2>
+        <div className="prev-next-btn-container">
+          <button className="prev">Prev</button>
+          <button className="next">Next</button>
+        </div>
         <div className="stat-container-container hidden">
         <div className="stat-container">
           <div className="stat card">

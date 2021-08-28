@@ -326,13 +326,12 @@ body {
     width: 125px;
 }
 
-/* Playbook */
-
-.playbook-title-container {
+.prev-next-btn-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
+/* Playbook */
 
 .playbook-container {
     display: flex;

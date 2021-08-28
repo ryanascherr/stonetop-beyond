@@ -20,6 +20,13 @@ export default function Background() {
     })
   })
 
+  $(document).ready(function () {
+    $(".test").click(function () {
+      window.location.replace('/make#background');
+      window.location.reload();
+    })
+  })
+
   let playbook = localStorage.getItem('playbook');
 
   $(document).ready(function () {
@@ -50,6 +57,10 @@ export default function Background() {
     <div className="content">
       <h2 className="background-title"> </h2>
       <h2 className="background-title2"> </h2>
+      <div className="prev-next-btn-container">
+          <button className="prev">Prev</button>
+          <button className="next">Next</button>
+      </div>
       <div className="background-container">
         {listOfBackgrounds}
       </div>

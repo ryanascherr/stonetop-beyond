@@ -57,6 +57,10 @@ export default function Origin() {
     <div className="content">
       <h2 className="origin-title"> </h2>
       <h2 className="origin-title2"> </h2>
+      <div className="prev-next-btn-container">
+          <button className="prev">Prev</button>
+          <button className="next">Next</button>
+      </div>
       <div className="origin-options-container hidden">
         <div className="origin-options">
           <h3>Choose a place of origin:</h3>
