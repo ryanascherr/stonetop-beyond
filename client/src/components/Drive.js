@@ -32,6 +32,20 @@ export default function Drive() {
   }
   })
 
+  $(document).ready(function () {
+    $(".prev").click(function () {
+      window.location.replace('/make#background');
+      window.location.reload();
+    })
+  })
+
+  $(document).ready(function () {
+    $(".next").click(function () {
+      window.location.replace('/make#origin');
+      window.location.reload();
+    })
+  })
+
   const { data } = useQuery(QUERY_DRIVES, {
     variables: { playbook: playbook }
   });
@@ -51,8 +65,8 @@ export default function Drive() {
       <h2 className="drive-title"> </h2>
       <h2 className="drive-title2"> </h2>
       <div className="prev-next-btn-container">
-          <button className="prev">Prev</button>
-          <button className="next">Next</button>
+          <button className="prev btn-inverse">Prev</button>
+          <button className="next btn-inverse">Next</button>
       </div>
       <div className="drive-container">
         {listOfDrives}

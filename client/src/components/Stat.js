@@ -46,13 +46,27 @@ export default function Stat() {
   }
   })
 
+  $(document).ready(function () {
+    $(".prev").click(function () {
+      window.location.replace('/make#origin');
+      window.location.reload();
+    })
+  })
+
+  $(document).ready(function () {
+    $(".next").click(function () {
+      window.location.replace('/make#finalize');
+      window.location.reload();
+    })
+  })
+
   return (
     <div className="content">
         <h2 className="stat-title"> </h2>
         <h2 className="stat-title2"> </h2>
         <div className="prev-next-btn-container">
-          <button className="prev">Prev</button>
-          <button className="next">Next</button>
+          <button className="prev btn-inverse">Prev</button>
+          <button className="next btn-inverse">Next</button>
         </div>
         <div className="stat-container-container hidden">
         <div className="stat-container">

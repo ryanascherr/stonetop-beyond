@@ -36,6 +36,20 @@ export default function Origin() {
     }
   })
 
+  $(document).ready(function () {
+    $(".prev").click(function () {
+      window.location.replace('/make#drive');
+      window.location.reload();
+    })
+  })
+
+  $(document).ready(function () {
+    $(".next").click(function () {
+      window.location.replace('/make#stat');
+      window.location.reload();
+    })
+  })
+
   const { data } = useQuery(QUERY_ORIGIN, {
     variables: { playbook: playbook }
   });
@@ -58,8 +72,8 @@ export default function Origin() {
       <h2 className="origin-title"> </h2>
       <h2 className="origin-title2"> </h2>
       <div className="prev-next-btn-container">
-          <button className="prev">Prev</button>
-          <button className="next">Next</button>
+          <button className="prev btn-inverse">Prev</button>
+          <button className="next btn-inverse">Next</button>
       </div>
       <div className="origin-options-container hidden">
         <div className="origin-options">

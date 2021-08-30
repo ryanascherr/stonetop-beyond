@@ -21,8 +21,15 @@ export default function Background() {
   })
 
   $(document).ready(function () {
-    $(".test").click(function () {
-      window.location.replace('/make#background');
+    $(".prev").click(function () {
+      window.location.replace('/make#playbook');
+      window.location.reload();
+    })
+  })
+
+  $(document).ready(function () {
+    $(".next").click(function () {
+      window.location.replace('/make#drive');
       window.location.reload();
     })
   })
@@ -58,8 +65,8 @@ export default function Background() {
       <h2 className="background-title"> </h2>
       <h2 className="background-title2"> </h2>
       <div className="prev-next-btn-container">
-          <button className="prev">Prev</button>
-          <button className="next">Next</button>
+          <button className="prev btn-inverse">Prev</button>
+          <button className="next btn-inverse">Next</button>
       </div>
       <div className="background-container">
         {listOfBackgrounds}

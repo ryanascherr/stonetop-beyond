@@ -69,6 +69,12 @@ body {
     border: 2px solid var(--darkest-blue);
 }
 
+.btn-inverse:hover {
+    background-color: var(--off-white);
+    color: var(--darkest-blue);
+    border: 2px solid var(--darkest-blue);
+}
+
 .hidden {
     display: none;
 }
@@ -329,6 +335,10 @@ body {
 .prev-next-btn-container {
     display: flex;
     justify-content: center;
+}
+
+.next, .prev {
+    margin: 0 5px;
 }
 
 /* Playbook */

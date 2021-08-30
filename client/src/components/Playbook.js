@@ -108,8 +108,7 @@ export default function Playbook() {
     <div className="content">
         <h2 className="playbook-title">Get started by choosing a playbook below!</h2>
         <div className="prev-next-btn-container">
-          <button className="prev">Prev</button>
-          <button className="next">Next</button>
+          <button className="next btn-inverse">Next</button>
         </div>
       <div className="playbook-container">
         {listOfPlaybooks}

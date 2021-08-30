@@ -34,6 +34,13 @@ export default function Finalize() {
     }
   })
 
+  $(document).ready(function () {
+    $(".prev").click(function () {
+      window.location.replace('/make#stat');
+      window.location.reload();
+    })
+  })
+
   const [addCharacter] = useMutation(ADD_CHARACTER);
 
   const handleCreateCharacter = async () => {
@@ -89,8 +96,7 @@ export default function Finalize() {
     <div className="content">
       <h2 className="finalize-title"> </h2>
       <div className="prev-next-btn-container">
-          <button className="prev">Prev</button>
-          <button className="next">Next</button>
+          <button className="prev btn-inverse">Prev</button>
       </div>
       <div className="finalize-container hidden">
         <div className="character-review">
