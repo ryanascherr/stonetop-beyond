@@ -284,6 +284,51 @@ body {
 
 /* Make Character */
 
+.progress-bar {
+    margin: 0 auto;
+    background-color: var(--off-white);
+    border: 5px solid green;
+    /* border-radius: 10px; */
+    width: 50%;
+    height: 20px;
+}
+
+.zero {
+    height: 100%;
+    background-color: green;
+    width: 0;
+}
+
+.one {
+    height: 100%;
+    background-color: green;
+    width: 20%;
+}
+
+.two {
+    height: 100%;
+    background-color: green;
+    width: 40%;
+}
+
+.three {
+    height: 100%;
+    background-color: green;
+    width: 60%;
+}
+
+.four {
+    height: 100%;
+    background-color: green;
+    width: 80%;
+}
+
+.five {
+    height: 100%;
+    background-color: green;
+    width: 100%;
+}
+
 .checks {
     display: flex;
     background-color: var(--darkest-blue);
@@ -406,7 +451,7 @@ body {
 }
 
 .origin-title2 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .origin-select, .origin-name {
@@ -417,7 +462,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0;
+    margin: 15px 0 0 0;
 }
 
 .origin-options select, .origin-options input {
