@@ -62,12 +62,12 @@ export default function Background() {
 
   return (
     <div className="content">
-      <h2 className="background-title"> </h2>
-      <h2 className="background-title2"> </h2>
       <div className="prev-next-btn-container">
           <button className="prev btn-inverse">Prev</button>
           <button className="next btn-inverse">Next</button>
       </div>
+      <h2 className="background-title"> </h2>
+      <h2 className="background-title2"> </h2>
       <div className="background-container">
         {listOfBackgrounds}
       </div>

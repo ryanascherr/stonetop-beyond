@@ -93,13 +93,13 @@ body {
     margin: 15px;
     background-color: var(--darkest-blue);
     color: var(--off-white);
-    padding: 15px;
+    padding: 15px 15px 0 15px;
     box-shadow: 10px 10px 5px gray;
     width: 100%;
     max-width: 500px;
 }
 
-.card h2, .card h3, .card div, .card p {
+.card h2, .card h3, .card div, .card p, .card button {
     margin-bottom: 15px;
 }
 
@@ -118,6 +118,7 @@ body {
 .header-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     background-color: var(--light-blue);
 }
@@ -193,7 +194,7 @@ body {
     margin: 15px;
     background-color: var(--darkest-blue);
     color: var(--off-white);
-    padding: 15px;
+    padding: 15px 15px 0 15px;
     box-shadow: 10px 10px 5px gray;
     width: 100%;
     max-width: 1000px;
@@ -330,11 +331,16 @@ body {
     color: var(--off-white);
     justify-content: center;
     margin-bottom: 0;
-    padding-top: 30px;
+    padding-top: 10px;
+}
+
+.playbook-check, .background-check, .drive-check, .origin-check, .stat-check {
+    display: none;
 }
 
 .checks h2 {
     width: 100px;
+    min-width: 100px;
     padding: 10px;
     margin: 0 10px;
 }
@@ -349,32 +355,42 @@ body {
 
 .nav-tabs {
     display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    flex-direction: row;
+    background-color: var(--darkest-blue);
+    margin: 0;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: var(-darkest-blue);
+    width: 100%;
 }
 
 .nav-link {
-    padding: 10px;
-    width: 100px;
-    text-align: center;
-    border-radius: 0 10px 10px 0;
-    margin-bottom: 10px;
-    background-color: var(--darkest-blue);
-    color: var(--off-white);
+    margin: 0 10px;
+    border-bottom: 5px solid var(--darkest-blue);
+    border-radius: 10px 10px 0 0;
+    background-color: var(--off-white);
+    padding: 10px 10px 10px 10px;
+    color: var(--darkest-blue);
     font-weight: bold;
+    width: 100px;
+    min-width: 100px;
+    text-align: center;
 }
 
 .nav-link:hover {
-    color:var(--light-blue);
+    color:var(--kinda-dark-blue);
 }
 
 .active {
-    width: 125px;
+    border-bottom: none;
+    padding-bottom: 12px;
 }
 
 .prev-next-btn-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
+
 }
 
 .next, .prev {
@@ -892,6 +908,10 @@ body {
     .active {
         border-bottom: none;
         padding-bottom: 12px;
+    }
+
+    .playbook-check, .background-check, .drive-check, .origin-check, .stat-check {
+        display: block;
     }
 
 }

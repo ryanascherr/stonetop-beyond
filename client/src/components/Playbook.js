@@ -23,6 +23,13 @@ export default function Playbook() {
     })
   })
 
+  let selectedPlaybook = localStorage.getItem('playbook');
+
+  if (selectedPlaybook) {
+    console.log(selectedPlaybook);
+    $(`#${selectedPlaybook}`).addClass("selected");
+  }
+
   $(document).ready(function () {
     $(".next").click(function () {
       window.location.replace('/make#background');
@@ -106,10 +113,10 @@ export default function Playbook() {
 
   return (
     <div className="content">
-        <h2 className="playbook-title">Get started by choosing a playbook below!</h2>
         <div className="prev-next-btn-container">
           <button className="next btn-inverse">Next</button>
         </div>
+        <h2 className="playbook-title">Get started by choosing a playbook below!</h2>
       <div className="playbook-container">
         {listOfPlaybooks}
       </div>

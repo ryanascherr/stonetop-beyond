@@ -17,83 +17,83 @@ function MakeCharacter({ currentPage, handlePageChange }) {
     let origin = localStorage.getItem('origin');
     let str = localStorage.getItem('str');
 
-    let percentComplete = 0;
+    // let percentComplete = 0;
 
-    if (playbook) {
-        percentComplete++;
-        console.log(percentComplete);
-    }
-    if (background) {
-        percentComplete++;
-        console.log(percentComplete);
-    }
-    if (drive) {
-        percentComplete++;
-        console.log(percentComplete);
-    }
-    if (origin) {
-        percentComplete++;
-        console.log(percentComplete);
-    }
-    if (str) {
-        percentComplete++;
-        console.log(percentComplete);
-    }
+    // if (playbook) {
+    //     percentComplete++;
+    //     console.log(percentComplete);
+    // }
+    // if (background) {
+    //     percentComplete++;
+    //     console.log(percentComplete);
+    // }
+    // if (drive) {
+    //     percentComplete++;
+    //     console.log(percentComplete);
+    // }
+    // if (origin) {
+    //     percentComplete++;
+    //     console.log(percentComplete);
+    // }
+    // if (str) {
+    //     percentComplete++;
+    //     console.log(percentComplete);
+    // }
 
-    if (percentComplete === 0) {
-        $(".progress-percent").removeClass("zero");
-        $(".progress-percent").removeClass("one");
-        $(".progress-percent").removeClass("two");
-        $(".progress-percent").removeClass("three");
-        $(".progress-percent").removeClass("four");
-        $(".progress-percent").removeClass("five");
-        $(".progress-percent").addClass("zero");
-    }
-    if (percentComplete === 1) {
-        $(".progress-percent").removeClass("zero");
-        $(".progress-percent").removeClass("one");
-        $(".progress-percent").removeClass("two");
-        $(".progress-percent").removeClass("three");
-        $(".progress-percent").removeClass("four");
-        $(".progress-percent").removeClass("five");
-        $(".progress-percent").addClass("one");
-    }
-    if (percentComplete === 2) {
-        $(".progress-percent").removeClass("zero");
-        $(".progress-percent").removeClass("one");
-        $(".progress-percent").removeClass("two");
-        $(".progress-percent").removeClass("three");
-        $(".progress-percent").removeClass("four");
-        $(".progress-percent").removeClass("five");
-        $(".progress-percent").addClass("two");
-    }
-    if (percentComplete === 3) {
-        $(".progress-percent").removeClass("zero");
-        $(".progress-percent").removeClass("one");
-        $(".progress-percent").removeClass("two");
-        $(".progress-percent").removeClass("three");
-        $(".progress-percent").removeClass("four");
-        $(".progress-percent").removeClass("five");
-        $(".progress-percent").addClass("three");
-    }
-    if (percentComplete === 4) {
-        $(".progress-percent").removeClass("zero");
-        $(".progress-percent").removeClass("one");
-        $(".progress-percent").removeClass("two");
-        $(".progress-percent").removeClass("three");
-        $(".progress-percent").removeClass("four");
-        $(".progress-percent").removeClass("five");
-        $(".progress-percent").addClass("four");
-    }
-    if (percentComplete === 5) {
-        $(".progress-percent").removeClass("zero");
-        $(".progress-percent").removeClass("one");
-        $(".progress-percent").removeClass("two");
-        $(".progress-percent").removeClass("three");
-        $(".progress-percent").removeClass("four");
-        $(".progress-percent").removeClass("five");
-        $(".progress-percent").addClass("five");
-    }
+    // if (percentComplete === 0) {
+    //     $(".progress-percent").removeClass("zero");
+    //     $(".progress-percent").removeClass("one");
+    //     $(".progress-percent").removeClass("two");
+    //     $(".progress-percent").removeClass("three");
+    //     $(".progress-percent").removeClass("four");
+    //     $(".progress-percent").removeClass("five");
+    //     $(".progress-percent").addClass("zero");
+    // }
+    // if (percentComplete === 1) {
+    //     $(".progress-percent").removeClass("zero");
+    //     $(".progress-percent").removeClass("one");
+    //     $(".progress-percent").removeClass("two");
+    //     $(".progress-percent").removeClass("three");
+    //     $(".progress-percent").removeClass("four");
+    //     $(".progress-percent").removeClass("five");
+    //     $(".progress-percent").addClass("one");
+    // }
+    // if (percentComplete === 2) {
+    //     $(".progress-percent").removeClass("zero");
+    //     $(".progress-percent").removeClass("one");
+    //     $(".progress-percent").removeClass("two");
+    //     $(".progress-percent").removeClass("three");
+    //     $(".progress-percent").removeClass("four");
+    //     $(".progress-percent").removeClass("five");
+    //     $(".progress-percent").addClass("two");
+    // }
+    // if (percentComplete === 3) {
+    //     $(".progress-percent").removeClass("zero");
+    //     $(".progress-percent").removeClass("one");
+    //     $(".progress-percent").removeClass("two");
+    //     $(".progress-percent").removeClass("three");
+    //     $(".progress-percent").removeClass("four");
+    //     $(".progress-percent").removeClass("five");
+    //     $(".progress-percent").addClass("three");
+    // }
+    // if (percentComplete === 4) {
+    //     $(".progress-percent").removeClass("zero");
+    //     $(".progress-percent").removeClass("one");
+    //     $(".progress-percent").removeClass("two");
+    //     $(".progress-percent").removeClass("three");
+    //     $(".progress-percent").removeClass("four");
+    //     $(".progress-percent").removeClass("five");
+    //     $(".progress-percent").addClass("four");
+    // }
+    // if (percentComplete === 5) {
+    //     $(".progress-percent").removeClass("zero");
+    //     $(".progress-percent").removeClass("one");
+    //     $(".progress-percent").removeClass("two");
+    //     $(".progress-percent").removeClass("three");
+    //     $(".progress-percent").removeClass("four");
+    //     $(".progress-percent").removeClass("five");
+    //     $(".progress-percent").addClass("five");
+    // }
 
     $(document).ready(function () {
         if (playbook) {
@@ -128,11 +128,11 @@ function MakeCharacter({ currentPage, handlePageChange }) {
     })
 
     return (
-        <div>
-            <div className="progress-bar">
+        <div className="checks-nav">
+            {/* <div className="progress-bar">
                 <div className="progress-percent"></div>
-            </div>
-            <div className="hidden">
+            </div> */}
+            <div className="checks">
                 {/* checks */}
                 <h2 className="playbook-check"> </h2>
                 <h2 className="background-check"> </h2>
@@ -141,7 +141,7 @@ function MakeCharacter({ currentPage, handlePageChange }) {
                 <h2 className="stat-check"> </h2>
                 <h2 className=""> </h2>
             </div>
-            <div className="hidden">
+            <div className="nav-tabs">
                 {/* nav-tabs */}
                 <a
                     href="#playbook"

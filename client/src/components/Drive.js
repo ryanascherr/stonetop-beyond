@@ -62,12 +62,12 @@ export default function Drive() {
 
   return (
     <div className="content">
-      <h2 className="drive-title"> </h2>
-      <h2 className="drive-title2"> </h2>
       <div className="prev-next-btn-container">
           <button className="prev btn-inverse">Prev</button>
           <button className="next btn-inverse">Next</button>
       </div>
+      <h2 className="drive-title"> </h2>
+      <h2 className="drive-title2"> </h2>
       <div className="drive-container">
         {listOfDrives}
       </div>

@@ -94,10 +94,10 @@ export default function Finalize() {
 
   return (
     <div className="content">
-      <h2 className="finalize-title"> </h2>
       <div className="prev-next-btn-container">
           <button className="prev btn-inverse">Prev</button>
       </div>
+      <h2 className="finalize-title"> </h2>
       <div className="finalize-container hidden">
         <div className="character-review">
           <div>
