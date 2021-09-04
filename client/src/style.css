@@ -205,10 +205,6 @@ body {
 
 /* Login */
 
-.login-title {
-    margin-bottom: 15px;
-}
-
 .login-signup-container {
     display: flex;
     justify-content: center;
@@ -237,9 +233,10 @@ body {
 .login-container, .signup-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--darkest-blue);
+    border: 5px solid var(--darkest-blue);
+    border-radius: 10px;
     padding: 20px;
-    margin: 15px;
+    margin: 15px 7.5px;
 }
 
 .login-container h2, .signup-container h2 {
