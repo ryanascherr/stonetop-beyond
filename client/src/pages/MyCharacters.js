@@ -3,7 +3,6 @@ import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { DELETE_CHARACTER } from '../utils/mutations';
 import { useParams, Link } from 'react-router-dom';
-import icon from '../img/icon-blessed.png';
 import Auth from '../utils/auth';
 
 export default function MyCharacters() {
@@ -52,7 +51,7 @@ export default function MyCharacters() {
                 <h3>Background: {character.background}</h3>
                 <h3>Level {character.level}</h3>
                 <div className="playbook-image-container">
-                    <img src={icon} className="playbook-image" alt="Icon"></img>
+                    <img src={character.image} className="playbook-image" alt="Icon"></img>
                 </div>
                 <Link to={`/characters/${character._id}`}>
                     <button data-id={character._id} className="character-btn">Select</button>

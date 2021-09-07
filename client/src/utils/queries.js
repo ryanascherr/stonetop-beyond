@@ -35,6 +35,7 @@ export const QUERY_CHARACTER = gql`
       level
       exp
       armor
+      image
     }
   }
 `;
@@ -59,6 +60,8 @@ export const QUERY_CHARACTERS = gql`
       damage
       level
       exp
+      armor
+      image
     }
   }
 `;
@@ -179,6 +182,7 @@ export const QUERY_USER = gql`
         level
         exp
         armor
+        image
       }
     }
   }
@@ -210,6 +214,7 @@ export const QUERY_ME = gql`
         level
         exp
         armor
+        image
       }
     }
   }

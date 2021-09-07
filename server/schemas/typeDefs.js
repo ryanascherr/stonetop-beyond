@@ -61,6 +61,7 @@ const typeDefs = gql`
         level: String
         exp: String
         armor: String
+        image: String
         characterCreator: String
     }
 
@@ -96,7 +97,7 @@ const typeDefs = gql`
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-        addCharacter(playbook: String, background: String, drive: String, origin: String, name: String, str: String, dex: String, int: String, wis: String, con: String, cha: String, maxHP: String, currentHP: String, damage: String, level: String, exp: String, armor: String): Character
+        addCharacter(playbook: String, background: String, drive: String, origin: String, name: String, str: String, dex: String, int: String, wis: String, con: String, cha: String, maxHP: String, currentHP: String, damage: String, level: String, exp: String, armor: String, image: String): Character
         updateCharacterName(_id: ID!, name: String!): Character
         updateCharacterCurrentHP(_id: ID!, currentHP: String!): Character
         updateCharacterArmor(_id: ID!, armor: String!): Character

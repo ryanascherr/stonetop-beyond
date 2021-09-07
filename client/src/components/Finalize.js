@@ -24,6 +24,7 @@ export default function Finalize() {
   let level = "1";
   let exp = "0";
   let armor = "0";
+  let image = localStorage.getItem('image');
 
   $(document).ready(function () {
     if (!playbook || !background || !drive || !origin || !str) {
@@ -65,6 +66,7 @@ export default function Finalize() {
           level: level,
           exp: exp,
           armor: armor,
+          image: image,
           // characterCreator: Auth.getProfile().data.username,
         },
         
@@ -85,6 +87,7 @@ export default function Finalize() {
       window.localStorage.removeItem("wis");
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
+      window.localStorage.removeItem("image");
       window.location.assign('/my-characters');
 
     } catch (err) {

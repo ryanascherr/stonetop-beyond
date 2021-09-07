@@ -15,10 +15,8 @@ export default function Playbook() {
       let playbook = $(this).data("playbook");
       setHP(playbook);
       setDamage(playbook);
+      setImage(playbook);
       localStorage.setItem('playbook', playbook);
-      // $(".playbook").removeClass("selected");
-      // $(this).parent().addClass("selected");
-      // window.location.replace('/make#background');
       window.location.reload();
     })
   })
@@ -91,6 +89,13 @@ export default function Playbook() {
       let damage = 10;
       localStorage.setItem('damage', damage);
     }
+  }
+
+  function setImage(playbook) {
+    let image = playbook.split(" ");
+    image = image[1].toLowerCase();
+    image = `../img/icon-${image}.png`;
+    localStorage.setItem('image', image);
   }
 
   const { data } = useQuery(QUERY_PLAYBOOKS);

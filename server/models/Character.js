@@ -54,6 +54,9 @@ const characterSchema = new Schema({
     armor: {
         type: String,
     },
+    image: {
+        type: String,
+    },
     characterCreator: {
         type: String,
         trim: true,

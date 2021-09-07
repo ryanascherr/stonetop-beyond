@@ -4,7 +4,6 @@ import { QUERY_CHARACTER } from '../utils/queries';
 import { UPDATE_CHARACTER_NAME, UPDATE_CHARACTER_CURRENT_HP, UPDATE_CHARACTER_ARMOR, UPDATE_CHARACTER_EXP, UPDATE_CHARACTER_LEVEL } from '../utils/mutations';
 import { useParams } from 'react-router-dom';
 import $ from 'jquery';
-import icon from '../img/icon-heavy.png';
 import editIcon from '../img/edit-icon.png'
 import Auth from '../utils/auth';
 
@@ -327,7 +326,7 @@ const CharacterStats = () => {
                         <h3 className="stat-lower">Damage</h3>
                     </div>
                     <div className="playbook-image-container">
-                        <img src={icon} className="playbook-image" alt="Icon"></img>
+                        <img src={character.image} className="playbook-image" alt="Icon"></img>
                     </div>
                     <div className="character-sheet-stat">
                         <h2>{character.currentHP}</h2>

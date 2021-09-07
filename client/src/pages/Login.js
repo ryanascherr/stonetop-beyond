@@ -57,6 +57,7 @@ const Login = () => {
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
       window.localStorage.removeItem("id");
+      window.localStorage.removeItem("image");
       window.location.assign('/');
 
     } catch (e) {
@@ -110,6 +111,7 @@ const Login = () => {
       window.localStorage.removeItem("con");
       window.localStorage.removeItem("cha");
       window.localStorage.removeItem("id");
+      window.localStorage.removeItem("image");
       window.location.assign('/');
 
     } catch (e) {
