@@ -625,13 +625,17 @@ body {
 
 /* Character Sheet */
 
-.character-info-tabs {
+/* .character-info-tabs {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+} */
+
+.info-tabs {
+    padding-top: 15px;
 }
 
-.info-link {
+/* .info-link {
     padding: 10px;
     width: 100px;
     text-align: center;
@@ -640,15 +644,15 @@ body {
     background-color: var(--darkest-blue);
     color: var(--off-white);
     font-weight: bold;
-}
+} */
 
-.info-link:hover {
+/* .info-link:hover {
     color:var(--light-blue);
-}
+} */
 
-.active {
+/* .active {
     width: 125px;
-}
+} */
 
 /* Character Stats */
 
