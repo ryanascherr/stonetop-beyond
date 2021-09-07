@@ -14,11 +14,11 @@ There is no installation required to use this webpage.
 
 Users can use the navitgation tab at the top of the page to view the various sections of Ryan's amazing portfolio.
 
-![Stonetop Beyond](public/img/stonetop-1.png)
-![Stonetop Beyond](public/img/stonetop-2.png)
-![Stonetop Beyond](public/img/stonetop-3.png)
-![Stonetop Beyond](public/img/stonetop-4.png)
-![Stonetop Beyond](public/img/stonetop-5.png)
+![Stonetop Beyond](client/public/img/stonetop-1.png)
+![Stonetop Beyond](client/public/img/stonetop-2.png)
+![Stonetop Beyond](client/public/img/stonetop-3.png)
+![Stonetop Beyond](client/public/img/stonetop-4.png)
+![Stonetop Beyond](client/public/img/stonetop-5.png)
 
 ## Features
 
