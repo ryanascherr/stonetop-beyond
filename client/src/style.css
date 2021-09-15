@@ -241,6 +241,7 @@ body {
     padding: 20px;
     margin: 15px 7.5px;
     max-width: 300px;
+    height: 250px;
 }
 
 .login-container h2, .signup-container h2 {
@@ -724,13 +725,14 @@ body {
     border: 5px solid var(--darkest-blue);
     color: var(--darkest-blue);
     padding: 20px;
-    margin: 15px;
+    margin: 15px 10px;
     border-radius: 10px;
-    min-width: 150px;
-    max-width: 300px;
-    width: 50%;
+    /* min-width: 150px; */
+    width: 150px;
+    /* width: 50%; */
     position: relative;
     /* height: 100px; */
+    height: 100px;
 }
 
 #edit-hp, #edit-armor, #edit-exp, #edit-level {
@@ -741,6 +743,7 @@ body {
 
 .two-stats {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }

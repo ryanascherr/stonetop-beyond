@@ -309,6 +309,9 @@ const CharacterStats = () => {
                     <img src={editIcon} className="edit-image" alt=""></img>
                 </div>
             </div>
+            <div className="playbook-image-container">
+                <img src={character.image} className="playbook-image" alt="Icon"></img>
+            </div>
             <div className="hidden edit-name-container-container">
                 <div className="edit-name-container">
                     <h2>New Name:</h2>
@@ -324,9 +327,6 @@ const CharacterStats = () => {
                     <div className="character-sheet-stat">
                         <h2 className="stat-number damage-btn" data-damage={character.damage}>d{character.damage}</h2>
                         <h3 className="stat-lower">Damage</h3>
-                    </div>
-                    <div className="playbook-image-container">
-                        <img src={character.image} className="playbook-image" alt="Icon"></img>
                     </div>
                     <div className="character-sheet-stat">
                         <h2>{character.currentHP}</h2>
@@ -405,10 +405,10 @@ const CharacterStats = () => {
                         <h2 className="stat-number stat-btn" data-number={character.str} data-stat="STR" id="str">{character.str}</h2>
                         <h3 className="stat-lower">(STR)</h3>
                     </div>
-                    <div className="condition-container">
+                    {/* <div className="condition-container">
                         <h3>Weakened</h3>
                         <input type="checkbox" name="weakened" value="" id="weakened"></input>
-                    </div>
+                    </div> */}
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Dexterity</h3>
                         <h2 className="stat-number stat-btn" data-number={character.dex} data-stat="DEX" id="dex">{character.dex}</h2>
@@ -421,10 +421,10 @@ const CharacterStats = () => {
                         <h2 className="stat-number stat-btn" data-number={character.int} data-stat="INT" id="int">{character.int}</h2>
                         <h3 className="stat-lower">(INT)</h3>
                     </div>
-                    <div className="condition-container">
+                    {/* <div className="condition-container">
                         <h3>Dazed</h3>
                         <input type="checkbox" name="dazed" value=""></input>
-                    </div>
+                    </div> */}
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Wisdom</h3>
                         <h2 className="stat-number stat-btn" data-number={character.wis} data-stat="WIS" id="wis">{character.wis}</h2>
@@ -437,10 +437,10 @@ const CharacterStats = () => {
                         <h2 className="stat-number stat-btn" data-number={character.con} data-stat="CON" id="con">{character.con}</h2>
                         <h3 className="stat-lower">(CON)</h3>
                     </div>
-                    <div className="condition-container">
+                    {/* <div className="condition-container">
                         <h3>Miserable</h3>
                         <input type="checkbox" name="miserable" value=""></input>
-                    </div>
+                    </div> */}
                     <div className="character-sheet-stat">
                         <h3 className="stat-higher">Charisma</h3>
                         <h2 className="stat-number stat-btn" data-number={character.cha} data-stat="CHA" id="cha">{character.cha}</h2>
