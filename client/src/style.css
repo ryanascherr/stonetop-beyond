@@ -669,7 +669,7 @@ body {
 .character-sheet-title {
     display: flex;
     justify-content: center;
-    margin: 0 0 15px 50px;
+    margin: 0 0 15px 0;
 }
 
 .edit-name-container-container, .edit-hp-container-container, .edit-armor-container-container, .edit-exp-container-container, .edit-level-container-container {
@@ -705,7 +705,8 @@ body {
 }
 
 .edit-image-container {
-    width: 25px;
+    min-width: 25px;
+    max-width: 25px;
     cursor: pointer;
 }
 
