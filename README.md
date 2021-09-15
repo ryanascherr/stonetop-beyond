@@ -4,7 +4,7 @@
 
 This application allows users to create and view characters for Stonetop, a tabletop roleplaying game.
 
-The application features login and signup functionality, the ability to update and delete created characters, and dice automatically rolling dice based on your character's stats!
+The application features login and signup functionality, characters tied to a user's account, the ability to update and delete characters, and automatic dice rolls based on a character's stats!
 
 ## Installation
 
